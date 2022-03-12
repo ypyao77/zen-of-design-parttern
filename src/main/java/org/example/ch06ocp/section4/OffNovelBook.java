@@ -1,22 +1,22 @@
-package com.company.section4;
+package org.example.ch06ocp.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´òÕÛÏúÊÛµÄÍ¼Êé
+ * æ‰“æŠ˜é”€å”®çš„å›¾ä¹¦
  */
 public class OffNovelBook extends NovelBook {
 	public OffNovelBook(String _name,int _price,String _author){
 		super(_name,_price,_author);
 	}
 	
-	//¸²Ð´ÏúÊÛ¼Û¸ñ
+	//è¦†å†™é”€å”®ä»·æ ¼
 	@Override
 	public int getPrice(){
-		//Ô­¼Û
+		//åŽŸä»·
 		int selfPrice = super.getPrice();
 		int offPrice=0;
-		if(selfPrice>4000){  //Ô­¼Û´óÓÚ40Ôª£¬Ôò´ò9ÕÛ
+		if(selfPrice>4000){  //åŽŸä»·å¤§äºŽ40å…ƒï¼Œåˆ™æ‰“9æŠ˜
 			offPrice = selfPrice * 90 /100;
 		}else{
 			offPrice = selfPrice * 80 /100;

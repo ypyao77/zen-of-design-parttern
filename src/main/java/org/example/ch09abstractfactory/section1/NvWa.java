@@ -1,35 +1,35 @@
-package com.company.section1;
+package org.example.ch09abstractfactory.section1;
 
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Å®æ´½¨Á¢ÆğÁËÁ½ÌõÉú²úÏß£¬·Ö±ğÊÇ£º
- * ÄĞĞÔÉú²úÏß
- * Å®ĞÔÉú²úÏß
+ * å¥³å¨²å»ºç«‹èµ·äº†ä¸¤æ¡ç”Ÿäº§çº¿ï¼Œåˆ†åˆ«æ˜¯ï¼š
+ * ç”·æ€§ç”Ÿäº§çº¿
+ * å¥³æ€§ç”Ÿäº§çº¿
  */
 public class NvWa {
 	
 	public static void main(String[] args) {
 		
-		//µÚÒ»ÌõÉú²úÏß£¬ÄĞĞÔÉú²úÏß
+		//ç¬¬ä¸€æ¡ç”Ÿäº§çº¿ï¼Œç”·æ€§ç”Ÿäº§çº¿
 		HumanFactory maleHumanFactory = new MaleFactory();
 		
-		//µÚ¶şÌõÉú²úÏß£¬Å®ĞÔÉú²úÏß
+		//ç¬¬äºŒæ¡ç”Ÿäº§çº¿ï¼Œå¥³æ€§ç”Ÿäº§çº¿
 		HumanFactory femaleHumanFactory = new FemaleFactory();
 		
-		//Éú²úÏß½¨Á¢Íê±Ï£¬¿ªÊ¼Éú²úÈËÁË:
+		//ç”Ÿäº§çº¿å»ºç«‹å®Œæ¯•ï¼Œå¼€å§‹ç”Ÿäº§äººäº†:
 		Human maleYellowHuman = maleHumanFactory.createYellowHuman();
 		
 		Human femaleYellowHuman = femaleHumanFactory.createYellowHuman();
 		
 		
-		System.out.println("---Éú²úÒ»¸ö»ÆÉ«Å®ĞÔ---");
+		System.out.println("---ç”Ÿäº§ä¸€ä¸ªé»„è‰²å¥³æ€§---");
 		femaleYellowHuman.getColor();
 		femaleYellowHuman.talk();
 		femaleYellowHuman.getSex();
 		
-		System.out.println("\n---Éú²úÒ»¸ö»ÆÉ«ÄĞĞÔ---");
+		System.out.println("\n---ç”Ÿäº§ä¸€ä¸ªé»„è‰²ç”·æ€§---");
 		maleYellowHuman.getColor();
 		maleYellowHuman.talk();
 		maleYellowHuman.getSex();
@@ -38,7 +38,7 @@ public class NvWa {
 		
 		/*
 		 * .....
-		 * ºóÃæÄã¿ÉÒÔĞøÁË
+		 * åé¢ä½ å¯ä»¥ç»­äº†
 		 */
 	}
 }

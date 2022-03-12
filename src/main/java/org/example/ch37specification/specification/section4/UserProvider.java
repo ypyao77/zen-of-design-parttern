@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch37specification.specification.section4;
 
 import java.util.ArrayList;
 
@@ -7,17 +7,17 @@ import java.util.ArrayList;
  * I'm glad to share my knowledge with you all.
  */
 public class UserProvider implements IUserProvider {
-	//ÓÃ»§ÁĞ±í
+	//ç”¨æˆ·åˆ—è¡¨
 	private ArrayList<User> userList;
-	//´«µİÓÃ»§ÁĞ±í
+	//ä¼ é€’ç”¨æˆ·åˆ—è¡¨
 	public UserProvider(ArrayList<User> _userList){
 		this.userList = _userList;
 	}
-	//¸ù¾İÖ¸¶¨µÄ¹æ¸ñ²éÕÒÓÃ»§
+	//æ ¹æ®æŒ‡å®šçš„è§„æ ¼æŸ¥æ‰¾ç”¨æˆ·
 	public ArrayList<User> findUser(IUserSpecification userSpec) {
 		ArrayList<User> result = new ArrayList<User>();
 		for(User u:userList){
-			if(userSpec.IsSatisfiedBy(u)){//·ûºÏÖ¸¶¨¹æ¸ñ
+			if(userSpec.IsSatisfiedBy(u)){//ç¬¦åˆæŒ‡å®šè§„æ ¼
 				result.add(u);
 			}
 		}

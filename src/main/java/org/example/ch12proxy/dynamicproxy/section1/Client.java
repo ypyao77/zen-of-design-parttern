@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch12proxy.dynamicproxy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com

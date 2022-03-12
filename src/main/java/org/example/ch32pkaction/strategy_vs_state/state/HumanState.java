@@ -1,17 +1,17 @@
-package com.company.state;
+package org.example.ch32pkaction.strategy_vs_state.state;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class HumanState {
-	//Ö¸ÏòÒ»¸ö¾ßÌåµÄÈË
+	//æŒ‡å‘ä¸€ä¸ªå…·ä½“çš„äºº
 	protected Human human;
-	//ÉèÖÃÒ»¸ö¾ßÌåµÄÈË
+	//è®¾ç½®ä¸€ä¸ªå…·ä½“çš„äºº
 	public void setHuman(Human _human){
 		this.human = _human;
 	}
 	
-	//²»¹ÜÈËÊÇÊ²Ã´×´Ì¬¶¼Òª¹¤×÷
+	//ä¸ç®¡äººæ˜¯ä»€ä¹ˆçŠ¶æ€éƒ½è¦å·¥ä½œ
 	public abstract void work();
 }

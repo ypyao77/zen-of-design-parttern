@@ -1,19 +1,19 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 交易信息
+ * 浜ゆ槗淇℃伅
  */
 public class Trade {
 	
-	//交易编号
+	//浜ゆ槗缂栧彿
 	private String tradeNo = "";
 
-	//交易金额
+	//浜ゆ槗閲戦
 	private int amount = 0;
 	
-	//getter/setter方法
+	//getter/setter鏂规硶
 	public String getTradeNo() {
 		return tradeNo;
 	}

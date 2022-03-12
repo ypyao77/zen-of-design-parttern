@@ -1,4 +1,4 @@
-package com.cbf4life.view;
+package org.example.ch38mvc.cbf4life.view;
 
 import java.util.Map;
 
@@ -8,6 +8,6 @@ import java.util.Map;
  */
 public abstract class AbsLangData {
 
-	//»ñµÃËùÓĞµÄ¶¯Ì¬ÔªËØµÄÅäÖÃÏî
+	//è·å¾—æ‰€æœ‰çš„åŠ¨æ€å…ƒç´ çš„é…ç½®é¡¹
 	public abstract Map<String,String> getItems();
 }

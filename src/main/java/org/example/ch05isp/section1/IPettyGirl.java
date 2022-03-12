@@ -1,18 +1,18 @@
-package com.company.section1;
+package org.example.ch05isp.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Æ¯ÁÁÅ®º¢µÄ×Ü³Æ
+ * æ¼‚äº®å¥³å­©çš„æ€»ç§°
  */
 public interface IPettyGirl {
 	
-	//ÒªÓĞæ¯ºÃµÄÃæ¿×
+	//è¦æœ‰å§£å¥½çš„é¢å­”
 	public void goodLooking();
 	
-	//ÒªÓĞºÃÉí²Ä
+	//è¦æœ‰å¥½èº«æ
 	public void niceFigure();
 	
-	//ÒªÓĞÆøÖÊ
+	//è¦æœ‰æ°”è´¨
 	public void greatTemperament();
 }

@@ -1,4 +1,4 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 
 /**
@@ -7,15 +7,15 @@ package com.company;
  */
 public class DeductionContext {
 
-	//¿Û¿î²ßÂÔ
+	//æ‰£æ¬¾ç­–ç•¥
 	private IDeduction deduction = null;
 	
-	//¹¹Ôìº¯Êý´«µÝ²ßÂÔ
+	//æž„é€ å‡½æ•°ä¼ é€’ç­–ç•¥
 	public DeductionContext(IDeduction _deduction){
 		this.deduction = _deduction;
 	}
 	
-	//Ö´ÐÐ¿Û¿î
+	//æ‰§è¡Œæ‰£æ¬¾
 	public boolean exec(Card card,Trade trade){
 		return this.deduction.exec(card, trade);
 	}

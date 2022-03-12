@@ -1,15 +1,15 @@
-package com.company.proxy;
+package org.example.ch33pkoverzone.wrapper.proxy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸èÐÇ
+ * æ­Œæ˜Ÿ
  */
 public class Singer implements IStar {
 
 
 	public void sign() {
-		System.out.println("Ã÷ÐÇÇ©×Ö£ºÎÒÊÇXXX´óÃ÷ÐÇ");
+		System.out.println("æ˜Žæ˜Ÿç­¾å­—ï¼šæˆ‘æ˜¯XXXå¤§æ˜Žæ˜Ÿ");
 	}
 
 }

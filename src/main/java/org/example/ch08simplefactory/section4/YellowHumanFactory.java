@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch08simplefactory.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com

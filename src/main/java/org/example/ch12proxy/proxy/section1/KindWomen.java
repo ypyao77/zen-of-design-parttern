@@ -1,22 +1,22 @@
 /**
  * 
  */
-package com.company.section1;
+package org.example.ch12proxy.proxy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»ÖÖÀàĞÍµÄÅ®ÈË£¬ÍõÆÅºÍÅË½ğÁ«¶¼ÊôÓÚÕâ¸öÀàĞÍµÄÅ®ÈË
+ * å®šä¹‰ä¸€ç§ç±»å‹çš„å¥³äººï¼Œç‹å©†å’Œæ½˜é‡‘è²éƒ½å±äºè¿™ä¸ªç±»å‹çš„å¥³äºº
  */
 public interface KindWomen {
 	
-	//Å×ÃÄÑÛ
+	//æŠ›åªšçœ¼
 	public void makeEyesWithMan();  
 	
 	//happy what? You know that!
 	public void happyWithMan(); 
 	
-	//Å®ÈË£¬²»½ö½öÊÇÅ®ÈËÁË£¬Ğß³Ü¸Ğ¶¼»áËæ×Å»·¾³±ä»¯±ä»¯
+	//å¥³äººï¼Œä¸ä»…ä»…æ˜¯å¥³äººäº†ï¼Œç¾è€»æ„Ÿéƒ½ä¼šéšç€ç¯å¢ƒå˜åŒ–å˜åŒ–
 	public void increaseSharme(int level);
 	
 }

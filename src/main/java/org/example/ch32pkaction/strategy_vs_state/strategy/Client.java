@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch32pkaction.strategy_vs_state.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,17 +7,17 @@ package com.company.strategy;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸ö»·¾³½ÇÉ«
+		//å®šä¹‰ä¸€ä¸ªç¯å¢ƒè§’è‰²
 		Context context=new Context();
-		System.out.println("====¶ùÍ¯µÄÖ÷Òª¹¤×÷=====");
+		System.out.println("====å„¿ç«¥çš„ä¸»è¦å·¥ä½œ=====");
 		context.setWork(new ChildWork());
 		context.work();
 		
-		System.out.println("\n====³ÉÄêÈËµÄÖ÷Òª¹¤×÷=====");
+		System.out.println("\n====æˆå¹´äººçš„ä¸»è¦å·¥ä½œ=====");
 		context.setWork(new AdultWork());
 		context.work();
 		
-		System.out.println("\n====ÀÏÄêÈËµÄÖ÷Òª¹¤×÷=====");
+		System.out.println("\n====è€å¹´äººçš„ä¸»è¦å·¥ä½œ=====");
 		context.setWork(new OldWork());
 		context.work();
 		

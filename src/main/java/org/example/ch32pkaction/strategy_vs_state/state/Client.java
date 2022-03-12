@@ -1,4 +1,4 @@
-package com.company.state;
+package org.example.ch32pkaction.strategy_vs_state.state;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,15 +7,15 @@ package com.company.state;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÆÕÍ¨µÄÈË
+		//å®šä¹‰ä¸€ä¸ªæ™®é€šçš„äºº
 		Human human = new Human();
-		//ÉèÖÃÒ»¸öÈËµÄ³õÊ¼×´Ì¬
+		//è®¾ç½®ä¸€ä¸ªäººçš„åˆå§‹çŠ¶æ€
 		human.setState(new ChildState());
-		System.out.println("====¶ùÍ¯µÄÖ÷Òª¹¤×÷=====");
+		System.out.println("====å„¿ç«¥çš„ä¸»è¦å·¥ä½œ=====");
 		human.work();
-		System.out.println("\n====³ÉÄêÈËµÄÖ÷Òª¹¤×÷=====");
+		System.out.println("\n====æˆå¹´äººçš„ä¸»è¦å·¥ä½œ=====");
 		human.work();
-		System.out.println("\n====ÀÏÄêÈËµÄÖ÷Òª¹¤×÷=====");
+		System.out.println("\n====è€å¹´äººçš„ä¸»è¦å·¥ä½œ=====");
 		human.work();
 	}
 }

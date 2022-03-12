@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch12proxy.proxy.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.section3;
  */
 public class RealSubject implements Subject {
 	
-	//实现方法
+	//瀹炵幇鏂规硶
 	public void request() {
-		//业务逻辑处理
+		//涓氬姟閫昏緫澶勭悊
 	}
 
 }

@@ -1,13 +1,13 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÆÕÍ¨µÄXML¼ì²é£¬Ò²¾ÍÊÇXMLÓï·¨¼ì²é
+ * æ™®é€šçš„XMLæ£€æŸ¥ï¼Œä¹Ÿå°±æ˜¯XMLè¯­æ³•æ£€æŸ¥
  */
 public class CommonXmlValidate implements IXmlValidate {
 
-	//XMLÓï·¨¼ì²é£¬±ÈÈçÊÇ·ñÉÙĞ´ÁËÒ»¸ö½áÊø±êÖ¾
+	//XMLè¯­æ³•æ£€æŸ¥ï¼Œæ¯”å¦‚æ˜¯å¦å°‘å†™äº†ä¸€ä¸ªç»“æŸæ ‡å¿—
 	public boolean validate(String xmlPath) {
 		return false;
 	}

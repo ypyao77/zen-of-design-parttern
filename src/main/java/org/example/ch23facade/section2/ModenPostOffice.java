@@ -1,7 +1,7 @@
-package com.company.section2;
+package org.example.ch23facade.section2;
 
-import com.company.section1.ILetterProcess;
-import com.company.section1.LetterProcessImpl;
+import org.example.ch23facade.section1.ILetterProcess;
+import org.example.ch23facade.section1.LetterProcessImpl;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -10,19 +10,19 @@ import com.company.section1.LetterProcessImpl;
 public class ModenPostOffice {
 	private ILetterProcess letterProcess = new LetterProcessImpl();
 	
-	//Ğ´ĞÅ£¬·â×°£¬Í¶µİ£¬Ò»Ìå»¯ÁË
+	//å†™ä¿¡ï¼Œå°è£…ï¼ŒæŠ•é€’ï¼Œä¸€ä½“åŒ–äº†
 	public void sendLetter(String context,String address){
 		
-		//°ïÄãĞ´ĞÅ
+		//å¸®ä½ å†™ä¿¡
 		letterProcess.writeContext(context);
 		
-		//Ğ´ºÃĞÅ·â
+		//å†™å¥½ä¿¡å°
 		letterProcess.fillEnvelope(address);
 		
-		//°ÑĞÅ·Åµ½ĞÅ·âÖĞ
+		//æŠŠä¿¡æ”¾åˆ°ä¿¡å°ä¸­
 		letterProcess.letterInotoEnvelope();
 			
-		//ÓÊµİĞÅ¼ş
+		//é‚®é€’ä¿¡ä»¶
 		letterProcess.sendLetter();
 		
 	}

@@ -1,21 +1,21 @@
-package com.company.section3;
+package org.example.ch01srp.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * µç»°µÄ½Ó¿Ú
+ * ç”µè¯çš„æ¥å£
  */
 public interface IPhone {
 	
-	//²¦Í¨µç»°
+	//æ‹¨é€šç”µè¯
 	public void dial(String phoneNumber);
 	
-	//Í¨»°
+	//é€šè¯
 	public void call(Object o);
 	
-	//»ØÓ¦£¬Ö»ÓĞ×Ô¼ºËµ»°¶øÃ»ÓĞ»ØÓ¦£¬ÄÇËãÉ¶£¿£¡
+	//å›åº”ï¼Œåªæœ‰è‡ªå·±è¯´è¯è€Œæ²¡æœ‰å›åº”ï¼Œé‚£ç®—å•¥ï¼Ÿï¼
 	public void answer(Object o);
 	
-	//Í¨»°Íê±Ï£¬¹Òµç»°
+	//é€šè¯å®Œæ¯•ï¼ŒæŒ‚ç”µè¯
 	public void huangup();
 }

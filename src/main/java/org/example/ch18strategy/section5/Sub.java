@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch18strategy.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section5;
  */
 public class Sub implements Calculator {
 
-	//¼õ·¨
+	//å‡æ³•
 	public int exec(int a, int b) {
 		return a-b;
 	}

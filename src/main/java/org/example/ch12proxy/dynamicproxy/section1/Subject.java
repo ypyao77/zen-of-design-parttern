@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch12proxy.dynamicproxy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.section1;
  */
 public interface Subject {
 	
-	//ÒµÎñ²Ù×÷
+	//ä¸šåŠ¡æ“ä½œ
 	public void doSomething(String abc);
 }

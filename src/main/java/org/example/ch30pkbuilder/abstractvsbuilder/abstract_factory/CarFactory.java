@@ -1,4 +1,4 @@
-package com.company.abstract_factory;
+package org.example.ch30pkbuilder.abstractvsbuilder.abstract_factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.abstract_factory;
  */
 public interface CarFactory {
 	
-	//Éú²úSUV
+	//ç”Ÿäº§SUV
 	public ICar createSuv();
-	//Éú²úÉÌÎñ³µ
+	//ç”Ÿäº§å•†åŠ¡è½¦
 	public ICar createVan();
 }
 

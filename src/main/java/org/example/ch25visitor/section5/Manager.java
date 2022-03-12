@@ -1,13 +1,13 @@
-package com.company.section5;
+package org.example.ch25visitor.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¾­Àí¼¶ÈËÎï
+ * ç»ç†çº§äººç‰©
  */
 public class Manager extends Employee {
 
-	//ÕâÀàÈËÎïµÄÖ°Ôğ·Ç³£Ã÷È·£ºÒµ¼¨
+	//è¿™ç±»äººç‰©çš„èŒè´£éå¸¸æ˜ç¡®ï¼šä¸šç»©
 	private String performance;
 
 	public String getPerformance() {
@@ -18,7 +18,7 @@ public class Manager extends Employee {
 		this.performance = performance;
 	}   
 	
-	//²¿ÃÅ¾­ÀíÔÊĞí·ÃÎÊÕß·ÃÎÊ
+	//éƒ¨é—¨ç»ç†å…è®¸è®¿é—®è€…è®¿é—®
 	@Override
 	public void accept(IVisitor visitor){
 		visitor.visit(this);

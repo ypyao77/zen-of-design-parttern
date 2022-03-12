@@ -1,31 +1,31 @@
-package com.company.section2;
+package org.example.ch12proxy.proxy.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÕæÊÇµÄÍæ¼Ò
+ * çœŸæ˜¯çš„ç©å®¶
  */
 public class GamePlayer implements IGamePlayer {
 	private String name = "";
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİÃû³Æ
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’åç§°
 	public GamePlayer(String _name){
 		this.name = _name;
 	}
 		
-	//´ò¹Ö£¬×îÆÚÍûµÄ¾ÍÊÇÉ±ÀÏ¹Ö
+	//æ‰“æ€ªï¼Œæœ€æœŸæœ›çš„å°±æ˜¯æ€è€æ€ª
 	public void killBoss() {
-		System.out.println(this.name + "ÔÚ´ò¹Ö£¡");
+		System.out.println(this.name + "åœ¨æ‰“æ€ªï¼");
 	}
 	
-	//½øÓÎÏ·Ö®Ç°Äã¿Ï¶¨ÒªµÇÂ¼°É£¬ÕâÊÇÒ»¸ö±ØÒªÌõ¼ş
+	//è¿›æ¸¸æˆä¹‹å‰ä½ è‚¯å®šè¦ç™»å½•å§ï¼Œè¿™æ˜¯ä¸€ä¸ªå¿…è¦æ¡ä»¶
 	public void login(String user, String password) {
-		System.out.println("µÇÂ¼ÃûÎª"+user + " µÄÓÃ»§ " + this.name + "µÇÂ¼³É¹¦£¡");
+		System.out.println("ç™»å½•åä¸º"+user + " çš„ç”¨æˆ· " + this.name + "ç™»å½•æˆåŠŸï¼");
 	}
 
-	//Éı¼¶£¬Éı¼¶ÓĞºÜ¶à·½·¨£¬»¨Ç®ÂòÊÇÒ»ÖÖ£¬×öÈÎÎñÒ²ÊÇÒ»ÖÖ
+	//å‡çº§ï¼Œå‡çº§æœ‰å¾ˆå¤šæ–¹æ³•ï¼ŒèŠ±é’±ä¹°æ˜¯ä¸€ç§ï¼Œåšä»»åŠ¡ä¹Ÿæ˜¯ä¸€ç§
 	public void upgrade() {
-		System.out.println(this.name + " ÓÖÉıÁËÒ»¼¶£¡");
+		System.out.println(this.name + " åˆå‡äº†ä¸€çº§ï¼");
 	}
 
 }

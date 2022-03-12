@@ -1,14 +1,14 @@
-package com.company.command;
+package org.example.ch33pkoverzone.command_vs_strategy.command;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class AbstractCmd {
-	//对接收者的应用
+	//瀵规帴鏀惰�呯殑搴旂敤
 	protected IReceiver compress = new CompressReceiver();
 	protected IReceiver uncompress = new UncompressReceiver();
 	
-	//抽象方法，命令的具体单元
+	//鎶借薄鏂规硶锛屽懡浠ょ殑鍏蜂綋鍗曞厓
 	public abstract boolean execute(String source,String to);
 }

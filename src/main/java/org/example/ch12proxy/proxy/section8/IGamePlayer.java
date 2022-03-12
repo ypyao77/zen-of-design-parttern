@@ -1,18 +1,18 @@
-package com.company.section8;
+package org.example.ch12proxy.proxy.section8;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÓÎÏ·Íæ¼Ò
+ * æ¸¸æˆç©å®¶
  */
 public interface IGamePlayer {
 
-	//µÇÂ¼ÓÎÏ·
+	//ç™»å½•æ¸¸æˆ
 	public void login(String user,String password);
 	
-	//É±¹Ö£¬ÕâÊÇÍøÂçÓÎÏ·µÄÖ÷ÒªÌØÉ«
+	//æ€æ€ªï¼Œè¿™æ˜¯ç½‘ç»œæ¸¸æˆçš„ä¸»è¦ç‰¹è‰²
 	public void killBoss();
 	
-	//Éı¼¶
+	//å‡çº§
 	public void upgrade();
 }

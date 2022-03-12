@@ -1,9 +1,9 @@
-package com.company.section6;
+package org.example.ch08simplefactory.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³éÏó²úÆ·Àà
+ * æŠ½è±¡äº§å“ç±»
  */
 public abstract class Product {
 	public abstract void doSomething();

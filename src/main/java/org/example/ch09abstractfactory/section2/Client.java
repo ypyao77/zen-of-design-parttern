@@ -1,28 +1,28 @@
-package com.company.section2;
+package org.example.ch09abstractfactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³¡¾°Àà
+ * åœºæ™¯ç±»
  */
 public class Client {
 
 	public static void main(String[] args) {
-		//¶¨Òå³öÁ½¸ö¹¤³§
+		//å®šä¹‰å‡ºä¸¤ä¸ªå·¥å‚
 		AbstractCreator creator1 = new Creator1();
 		AbstractCreator creator2 = new Creator2();
 		
-		//²úÉúA1¶ÔÏó
+		//äº§ç”ŸA1å¯¹è±¡
 		AbstractProductA a1 =  creator1.createProductA();
-		//²úÉúA2¶ÔÏó
+		//äº§ç”ŸA2å¯¹è±¡
 		AbstractProductA a2 = creator2.createProductA();
-		//²úÉúB1¶ÔÏó
+		//äº§ç”ŸB1å¯¹è±¡
 		AbstractProductB b1 = creator1.createProductB();
-		//²úÉúB2¶ÔÏó
+		//äº§ç”ŸB2å¯¹è±¡
 		AbstractProductB b2 = creator2.createProductB();
 		
 		/*
-		 * È»ºóÔÚÕâÀï¾Í¿ÉÒÔÎªËùÓûÎªÁË...
+		 * ç„¶ååœ¨è¿™é‡Œå°±å¯ä»¥ä¸ºæ‰€æ¬²ä¸ºäº†...
 		 */
 		
 	}

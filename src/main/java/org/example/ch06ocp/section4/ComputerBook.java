@@ -1,9 +1,9 @@
-package com.company.section4;
+package org.example.ch06ocp.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼ÆËã»úÊé¼®
+ * è®¡ç®—æœºä¹¦ç±
  */
 public class ComputerBook implements IComputerBook {
 	private String name;

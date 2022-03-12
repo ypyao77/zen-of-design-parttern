@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch18strategy.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.section2;
  */
 public interface Strategy {
 	
-	//²ßÂÔÄ£Ê½µÄÔËËã·¨Ôò
+	//ç­–ç•¥æ¨¡å¼çš„è¿ç®—æ³•åˆ™
 	public void doSomething();
 }

@@ -1,4 +1,4 @@
-package com.company.section6;
+package org.example.ch08simplefactory.section6;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,7 @@ public class Factory {
 	public static synchronized  Product createProduct(String type) throws Exception{
 		Product product =null;
 		
-		//如果Map中已经有这个对象
+		//濡傛灉Map涓凡缁忔湁杩欎釜瀵硅薄
 		if(prMap.containsKey(type)){
 			product = prMap.get(type);
 		}else{
@@ -23,7 +23,7 @@ public class Factory {
 			}else{
 				product = new ConcreteProduct2();
 			}
-			//同时把对象放到缓存容器中
+			//鍚屾椂鎶婂璞℃斁鍒扮紦瀛樺鍣ㄤ腑
 			prMap.put(type,product);
 		}
 		return product;

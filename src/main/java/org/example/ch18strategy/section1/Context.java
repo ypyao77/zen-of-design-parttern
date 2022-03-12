@@ -1,21 +1,21 @@
 /**
  * 
  */
-package com.company.section1;
+package org.example.ch18strategy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼ÆÄ±ÓĞÁË£¬ÄÇ»¹ÒªÓĞ½õÄÒ
+ * è®¡è°‹æœ‰äº†ï¼Œé‚£è¿˜è¦æœ‰é”¦å›Š
  */
 public class Context {
-	//¹¹Ôìº¯Êı£¬ÄãÒªÊ¹ÓÃÄÇ¸öÃî¼Æ
+	//æ„é€ å‡½æ•°ï¼Œä½ è¦ä½¿ç”¨é‚£ä¸ªå¦™è®¡
 	private IStrategy straegy;
 	public Context(IStrategy strategy){
 		this.straegy = strategy;
 	}
 	
-	//Ê¹ÓÃ¼ÆÄ±ÁË£¬¿´ÎÒ³öÕĞÁË
+	//ä½¿ç”¨è®¡è°‹äº†ï¼Œçœ‹æˆ‘å‡ºæ‹›äº†
 	public void operate(){
 		this.straegy.operate();
 	}

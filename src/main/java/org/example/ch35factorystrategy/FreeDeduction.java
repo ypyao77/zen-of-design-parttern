@@ -1,4 +1,4 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company;
  */
 public class FreeDeduction implements IDeduction {
 
-	//自由扣款
+	//鑷敱鎵ｆ
 	public boolean exec(Card card, Trade trade) {
-		//直接从自由余额中扣除
+		//鐩存帴浠庤嚜鐢变綑棰濅腑鎵ｉ櫎
 		card.setFreeMoney(card.getFreeMoney() - trade.getAmount());
 		return true;
 	}

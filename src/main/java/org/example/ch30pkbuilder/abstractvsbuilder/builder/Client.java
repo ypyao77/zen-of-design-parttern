@@ -1,4 +1,4 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.abstractvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,18 +7,18 @@ package com.company.builder;
 public class Client {
 
 	public static void main(String[] args) {
-		//¶¨Òå³öµ¼ÑİÀà
+		//å®šä¹‰å‡ºå¯¼æ¼”ç±»
 		Director director =new Director();
-		//¸øÎÒÒ»Á¾±¼³Û³µSUV
-		System.out.println("===ÖÆÔìÒ»Á¾±¼³ÛµÄSUV===");
+		//ç»™æˆ‘ä¸€è¾†å¥”é©°è½¦SUV
+		System.out.println("===åˆ¶é€ ä¸€è¾†å¥”é©°çš„SUV===");
 		ICar benzSuv = director.createBenzSuv();
 		System.out.println(benzSuv);
-		//¸øÎÒÒ»Á¾±¦ÂíµÄÉÌÎñ³µ
-		System.out.println("\n===ÖÆÔìÒ»Á¾±¦ÂíµÄÉÌÎñ³µ===");
+		//ç»™æˆ‘ä¸€è¾†å®é©¬çš„å•†åŠ¡è½¦
+		System.out.println("\n===åˆ¶é€ ä¸€è¾†å®é©¬çš„å•†åŠ¡è½¦===");
 		ICar bmwVan = director.createBMWVan();
 		System.out.println(bmwVan);
-		//¸øÎÒÒ»Á¾»ìºÏ³µĞÍ
-		System.out.println("\n===ÖÆÔìÒ»Á¾»ìºÏ³µ===");
+		//ç»™æˆ‘ä¸€è¾†æ··åˆè½¦å‹
+		System.out.println("\n===åˆ¶é€ ä¸€è¾†æ··åˆè½¦===");
 		ICar complexCar = director.createComplexCar();
 		System.out.println(complexCar);
 	}

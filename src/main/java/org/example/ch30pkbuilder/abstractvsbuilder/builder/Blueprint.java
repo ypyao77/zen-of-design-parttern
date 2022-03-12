@@ -1,13 +1,13 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.abstractvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Blueprint {
-	//³µÂÖµÄÒªÇó
+	//è½¦è½®çš„è¦æ±‚
 	private String wheel;
-	//ÒıÇæµÄÒªÇó
+	//å¼•æ“çš„è¦æ±‚
 	private String engine;
 	public String getWheel() {
 		return wheel;

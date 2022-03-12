@@ -1,9 +1,9 @@
-package com.company.section2;
+package org.example.ch01srp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÓÃ»§¹ÜÀíµÄÊµÏÖÀà
+ * ç”¨æˆ·ç®¡ç†çš„å®ç°ç±»
  */
 public class UserInfo implements IUserInfo {
 	private String userName;
@@ -34,30 +34,30 @@ public class UserInfo implements IUserInfo {
 		this.password = password;
 	}
 	
-	//ĞŞ¸ÄÓÃ»§ÃÜÂë
+	//ä¿®æ”¹ç”¨æˆ·å¯†ç 
 	public boolean changePassword(String oldPassword){
-		System.out.println("ÃÜÂëĞŞ¸Ä³É¹¦...");
+		System.out.println("å¯†ç ä¿®æ”¹æˆåŠŸ...");
 		return true;
 	}
 	
-	//É¾³ıÓÃ»§
+	//åˆ é™¤ç”¨æˆ·
 	public boolean deleteUser(){
-		System.out.println("É¾³ıÓÃ»§³É¹¦...");
+		System.out.println("åˆ é™¤ç”¨æˆ·æˆåŠŸ...");
 		return true;
 	}
 	
-	//ÓÃ»§Ó³Éä
+	//ç”¨æˆ·æ˜ å°„
 	public void mapUser(){
-		System.out.println("ÓÃ»§Ó³Éä³É¹¦...");
+		System.out.println("ç”¨æˆ·æ˜ å°„æˆåŠŸ...");
 	}
 	
-	//Ôö¼ÓÒ»¸ö×éÖ¯
+	//å¢åŠ ä¸€ä¸ªç»„ç»‡
 	public void addOrg(IUserBO userBO,int orgID){
-		System.out.println("Ôö¼Ó×éÖ¯³É¹¦...");
+		System.out.println("å¢åŠ ç»„ç»‡æˆåŠŸ...");
 	}
 	
-	//Ôö¼ÓÒ»¸ö½ÇÉ«
+	//å¢åŠ ä¸€ä¸ªè§’è‰²
 	public void addRole(IUserBO userBO,int roleID){
-		System.out.println("Ôö¼Ó½ÇÉ«³É¹¦...");
+		System.out.println("å¢åŠ è§’è‰²æˆåŠŸ...");
 	}
 }

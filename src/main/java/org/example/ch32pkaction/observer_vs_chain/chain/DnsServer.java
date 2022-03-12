@@ -1,4 +1,4 @@
-package com.company.chain;
+package org.example.ch32pkaction.observer_vs_chain.chain;
 
 import java.util.Random;
 
@@ -7,39 +7,39 @@ import java.util.Random;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class DnsServer {
-	//ÉÏ¼¶DNSÊÇË­
+	//ä¸Šçº§DNSæ˜¯è°
 	private DnsServer upperServer;
-	//½âÎöÓòÃû
+	//è§£æåŸŸå
 	public final Recorder resolve(String domain){
 		Recorder recorder=null;
-		if(isLocal(domain)){//ÊÇ±¾·şÄÜ½âÎöµÄÓòÃû
+		if(isLocal(domain)){//æ˜¯æœ¬æœèƒ½è§£æçš„åŸŸå
 			recorder = echo(domain);
-		}else{//±¾·ş²»ÄÜ½âÎö
-			//Ìá½»ÉÏ¼¶DNS½øĞĞ½âÎö
+		}else{//æœ¬æœä¸èƒ½è§£æ
+			//æäº¤ä¸Šçº§DNSè¿›è¡Œè§£æ
 			recorder = upperServer.resolve(domain);
 		}
 		return recorder;
 	}
 	
-	//Ö¸ÏòÉÏ¼¶DNS
+	//æŒ‡å‘ä¸Šçº§DNS
 	public void setUpperServer(DnsServer _upperServer){
 		this.upperServer = _upperServer;
 	}
 	
-	//Ã¿¸öDNS¶¼ÓĞÒ»¸öDNSµÄÊı¾İ´¦ÀíÇø£¨ZONE£©,¼ì²éÓòÃûÊÇ·ñÔÚ±¾zoneÖĞ
+	//æ¯ä¸ªDNSéƒ½æœ‰ä¸€ä¸ªDNSçš„æ•°æ®å¤„ç†åŒºï¼ˆZONEï¼‰,æ£€æŸ¥åŸŸåæ˜¯å¦åœ¨æœ¬zoneä¸­
 	protected abstract boolean isLocal(String domain);
 	
-	//Ã¿¸öDNS·şÎñÆ÷¶¼±ØĞëÊµÏÖ½âÎöÈÎÎñ
+	//æ¯ä¸ªDNSæœåŠ¡å™¨éƒ½å¿…é¡»å®ç°è§£æä»»åŠ¡
 	protected Recorder echo(String domain){
 		Recorder recorder = new Recorder();
-		//»ñµÃIPµØÖ·
+		//è·å¾—IPåœ°å€
 		recorder.setIp(genIpAddress());
 		recorder.setDomain(domain);
 		
 		return recorder;
 	}
 	
-	//Ëæ»ú²úÉúÒ»¸öIPµØÖ·£¬¹¤¾ßÀà
+	//éšæœºäº§ç”Ÿä¸€ä¸ªIPåœ°å€ï¼Œå·¥å…·ç±»
 	protected String genIpAddress(){
 		Random rand = new Random();
 		String address = rand.nextInt(255) + "." + rand.nextInt(255) + "."+ rand.nextInt(255) + "."+ rand.nextInt(255);

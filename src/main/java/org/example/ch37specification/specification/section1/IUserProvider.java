@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch37specification.specification.section1;
 
 import java.util.ArrayList;
 
@@ -8,10 +8,10 @@ import java.util.ArrayList;
  */
 public interface IUserProvider {
 
-	//¸ù¾İÓÃ»§Ãû²éÕÒÓÃ»§
+	//æ ¹æ®ç”¨æˆ·åæŸ¥æ‰¾ç”¨æˆ·
 	public ArrayList<User> findUserByNameEqual(String name);
 	
-	//ÄêÁä´óÓÚÖ¸¶¨ÄêÁäµÄÓÃ»§
+	//å¹´é¾„å¤§äºæŒ‡å®šå¹´é¾„çš„ç”¨æˆ·
 	public ArrayList<User> findUserByAgeThan(int age);
 		
 }

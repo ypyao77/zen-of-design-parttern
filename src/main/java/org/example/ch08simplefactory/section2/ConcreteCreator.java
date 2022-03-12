@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch08simplefactory.section2;
 
 
 /**
@@ -12,7 +12,7 @@ public class ConcreteCreator extends Creator {
 		try {
 			 product = (Product)Class.forName(c.getName()).newInstance();
 		} catch (Exception e) {
-			//“Ï≥£¥¶¿Ì
+			//ÂºÇÂ∏∏Â§ÑÁêÜ
 		}		
 		return (T)product;		
 	}

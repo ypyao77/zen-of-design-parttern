@@ -1,28 +1,28 @@
-package com.company.section3;
+package org.example.ch08simplefactory.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ê×ÏÈ¶¨ÒåÅ®æ´£¬ÕâÕæÊÇ¶îµÄÉñÑ½
+ * é¦–å…ˆå®šä¹‰å¥³å¨²ï¼Œè¿™çœŸæ˜¯é¢çš„ç¥å‘€
  */
 public class NvWa {
 
 	public static void main(String[] args) {
 		
-		//Å®æ´µÚÒ»´ÎÔìÈË£¬»ğºò²»×ã£¬È±Ïİ²úÆ·
-		System.out.println("--Ôì³öµÄµÚÈıÅúÈËÊÇ°×É«ÈËÖÖ--");
+		//å¥³å¨²ç¬¬ä¸€æ¬¡é€ äººï¼Œç«å€™ä¸è¶³ï¼Œç¼ºé™·äº§å“
+		System.out.println("--é€ å‡ºçš„ç¬¬ä¸‰æ‰¹äººæ˜¯ç™½è‰²äººç§--");
 		Human whiteHuman = HumanFactory.createHuman(WhiteHuman.class);
 		whiteHuman.getColor();
 		whiteHuman.talk();
 		
-		//Å®æ´µÚ¶ş´ÎÔìÈË£¬»ğºò¹ı×ã£¬ÓÖÊÇ´ÎÆ·£¬
-		System.out.println("\n--Ôì³öµÄµÚÈıÅúÈËÊÇºÚÉ«ÈËÖÖ--");
+		//å¥³å¨²ç¬¬äºŒæ¬¡é€ äººï¼Œç«å€™è¿‡è¶³ï¼Œåˆæ˜¯æ¬¡å“ï¼Œ
+		System.out.println("\n--é€ å‡ºçš„ç¬¬ä¸‰æ‰¹äººæ˜¯é»‘è‰²äººç§--");
 		Human blackHuman = HumanFactory.createHuman(BlackHuman.class);
 		blackHuman.getColor();
 		blackHuman.talk();
 		
-		//µÚÈı´ÎÔìÈË£¬»ğºòÕıÕıºÃ£¬ÓÅÆ·£¡»ÆÉ«ÈËÖÖ
-		System.out.println("\n--Ôì³öµÄµÚÈıÅúÈËÊÇ»ÆÉ«ÈËÖÖ--");
+		//ç¬¬ä¸‰æ¬¡é€ äººï¼Œç«å€™æ­£æ­£å¥½ï¼Œä¼˜å“ï¼é»„è‰²äººç§
+		System.out.println("\n--é€ å‡ºçš„ç¬¬ä¸‰æ‰¹äººæ˜¯é»„è‰²äººç§--");
 		Human yellowHuman = HumanFactory.createHuman(YellowHuman.class);
 		yellowHuman.getColor();
 		yellowHuman.talk();

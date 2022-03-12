@@ -1,14 +1,14 @@
-package com.company.section3;
+package org.example.ch12proxy.proxy.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Proxy implements Subject {
-	//Òª´úÀíÄÄ¸öÊµÏÖÀà
+	//è¦ä»£ç†å“ªä¸ªå®ç°ç±»
 	private Subject subject = null;
 	
-	//Ä¬ÈÏ±»´úÀíÕß
+	//é»˜è®¤è¢«ä»£ç†è€…
 	public Proxy(){
 		this.subject = new Proxy();
 	}
@@ -17,24 +17,24 @@ public class Proxy implements Subject {
 		this.subject = _subject;
 	}
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ´úÀíÕß
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’ä»£ç†è€…
 	public Proxy(Object...objects ){
 
 	}
 	
-	//ÊµÏÖ½Ó¿ÚÖĞ¶¨ÒåµÄ·½·¨
+	//å®ç°æ¥å£ä¸­å®šä¹‰çš„æ–¹æ³•
 	public void request() {
 		this.before();
 		this.subject.request();
 		this.after();
 	}
 	
-	//Ô¤´¦Àí
+	//é¢„å¤„ç†
 	private void before(){
 		//do something
 	}
 	
-	//ÉÆºó´¦Àí
+	//å–„åå¤„ç†
 	private void after(){
 		//do something
 	}

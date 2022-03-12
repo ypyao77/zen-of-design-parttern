@@ -1,32 +1,32 @@
-package com.company.section4;
+package org.example.ch37specification.specification.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class UserByNameLike implements IUserSpecification {
-	//likeµÄ±ê¼Ç
+	//likeçš„æ ‡è®°
 	private final static String LIKE_FLAG = "%";
-	//»ù×¼µÄlike×Ö·û´®
+	//åŸºå‡†çš„likeå­—ç¬¦ä¸²
 	private String likeStr;
-	//¹¹Ôìº¯Êı´«µİ»ù×¼ĞÕÃû
+	//æ„é€ å‡½æ•°ä¼ é€’åŸºå‡†å§“å
 	public UserByNameLike(String _likeStr){
 		this.likeStr = _likeStr;
 	}
 	
-	//¼ìÑéÓÃ»§ÊÇ·ñÂú×ãÌõ¼ş
+	//æ£€éªŒç”¨æˆ·æ˜¯å¦æ»¡è¶³æ¡ä»¶
 	public boolean IsSatisfiedBy(User user) {
 		boolean result = false;
 		String name = user.getName();
-		//Ìæ»»µô%ºóµÄ¸É¾»×Ö·û´®
+		//æ›¿æ¢æ‰%åçš„å¹²å‡€å­—ç¬¦ä¸²
 		String str = likeStr.replace("%","");
-		//ÊÇÒÔÃû×Ö¿ªÍ·£¬Èç'¹úÇì%'
+		//æ˜¯ä»¥åå­—å¼€å¤´ï¼Œå¦‚'å›½åº†%'
 		if(likeStr.endsWith(LIKE_FLAG) && !likeStr.startsWith(LIKE_FLAG)){
 			result = name.startsWith(str);
-		}else if(likeStr.startsWith(LIKE_FLAG) && !likeStr.endsWith(LIKE_FLAG)){ //ÀàËÆ '%¹úÇì'
+		}else if(likeStr.startsWith(LIKE_FLAG) && !likeStr.endsWith(LIKE_FLAG)){ //ç±»ä¼¼ '%å›½åº†'
 			result = name.endsWith(str);
 		}else{
-			result = name.contains(str); //ÀàËÆÓÚ'%¹úÇì%'
+			result = name.contains(str); //ç±»ä¼¼äº'%å›½åº†%'
 		}
 		
 		return result;

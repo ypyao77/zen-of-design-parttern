@@ -1,19 +1,19 @@
-package com.company.section1;
+package org.example.ch09abstractfactory.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»¸öÈËÀàµÄÍ³³Æ
+ * å®šä¹‰ä¸€ä¸ªäººç±»çš„ç»Ÿç§°
  */
 public interface Human {
 	
-	//Ã¿¸öÈËÖÖ¶¼ÓĞÏàÓ¦µÄÑÕÉ«
+	//æ¯ä¸ªäººç§éƒ½æœ‰ç›¸åº”çš„é¢œè‰²
 	public void getColor();
 	
-	//ÈËÀà»áËµ»°
+	//äººç±»ä¼šè¯´è¯
 	public void talk();  
 	
-	//Ã¿¸öÈË¶¼ÓĞĞÔ±ğ
+	//æ¯ä¸ªäººéƒ½æœ‰æ€§åˆ«
 	public void getSex();
 
 }

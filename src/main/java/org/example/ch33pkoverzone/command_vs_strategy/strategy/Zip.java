@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch33pkoverzone.command_vs_strategy.strategy;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,15 +14,15 @@ import java.util.zip.ZipOutputStream;
  */
 public class Zip implements Algorithm {
 
-	//zip¸ñÊ½µÄÑ¹ËõËã·¨
+	//zipæ ¼å¼çš„å‹ç¼©ç®—æ³•
 	public boolean compress(String source, String to) {
-		System.out.println(source + " --> " +to + " ZIPÑ¹Ëõ³É¹¦!");
+		System.out.println(source + " --> " +to + " ZIPå‹ç¼©æˆåŠŸ!");
 		return true;
 	}
 	
-	//zip¸ñÊ½µÄ½âÑ¹ËõËã·¨
+	//zipæ ¼å¼çš„è§£å‹ç¼©ç®—æ³•
 	public boolean uncompress(String source,String to){
-		System.out.println(source + " --> " +to + " ZIP½âÑ¹Ëõ³É¹¦!");
+		System.out.println(source + " --> " +to + " ZIPè§£å‹ç¼©æˆåŠŸ!");
 		return true;
 	}
 }

@@ -1,17 +1,17 @@
-package com.company.section6;
+package org.example.ch18strategy.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public enum Calculator {
-	//¼Ó·¨ÔËËã
+	//åŠ æ³•è¿ç®—
 	ADD("+"){
 		public int exec(int a,int b){
 			return a+b;
 		}
 	},
-	//¼õ·¨ÔËËã
+	//å‡æ³•è¿ç®—
 	SUB("-"){
 		public int exec(int a,int b){
 			return a - b;
@@ -19,15 +19,15 @@ public enum Calculator {
 	};
 	
 	String value = "";
-	//¶¨Òå³ÉÔ±ÖµÀàĞÍ
+	//å®šä¹‰æˆå‘˜å€¼ç±»å‹
 	private Calculator(String _value){
 		this.value = _value;
 	}
-	//»ñµÃÃ¶¾Ù³ÉÔ±µÄÖµ
+	//è·å¾—æšä¸¾æˆå‘˜çš„å€¼
 	public String getValue(){
 		return this.value;
 	}
 	
-	//ÉùÃ÷Ò»¸ö³éÏóº¯Êı
+	//å£°æ˜ä¸€ä¸ªæŠ½è±¡å‡½æ•°
 	public abstract int exec(int a,int b);
 }

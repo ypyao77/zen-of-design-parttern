@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch13prototype.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,14 +6,14 @@ package com.company.section2;
  */
 public class PrototypeClass  implements Cloneable{
 	
-	//覆写父类Object方法
+	//瑕嗗啓鐖剁被Object鏂规硶
 	@Override
 	public PrototypeClass clone(){
 		PrototypeClass prototypeClass = null;
 		try {
 			prototypeClass = (PrototypeClass)super.clone();
 		} catch (CloneNotSupportedException e) {
-			//异常处理
+			//寮傚父澶勭悊
 		}
 		return prototypeClass;
 	}

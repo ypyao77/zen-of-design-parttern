@@ -1,24 +1,24 @@
-package com.company.section5;
+package org.example.ch37specification.specification.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class CompositeSpecification implements IUserSpecification {
-	//是否满足条件有实现类实现
+	//鏄惁婊¤冻鏉′欢鏈夊疄鐜扮被瀹炵幇
 	public abstract boolean isSatisfiedBy(User user);
 
-	//and操作
+	//and鎿嶄綔
 	public IUserSpecification and(IUserSpecification spec) {
 		return new AndSpecification(this,spec);
 	}
 
-	//not操作
+	//not鎿嶄綔
 	public IUserSpecification not() {
 		return new NotSpecification(this);
 	}
 
-	//or操作
+	//or鎿嶄綔
 	public IUserSpecification or(IUserSpecification spec) {
 		return new OrSpecification(this,spec);
 	}

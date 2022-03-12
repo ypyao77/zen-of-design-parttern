@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch02lsp.section4;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class Client {
 	public static void invoker(){
-		//¸¸Àà´æÔÚµÄµØ·½£¬×ÓÀà¾ÍÓ¦¸ÃÄÜ¹»´æÔÚ
+		//çˆ¶ç±»å­˜åœ¨çš„åœ°æ–¹ï¼Œå­ç±»å°±åº”è¯¥èƒ½å¤Ÿå­˜åœ¨
 		//Father f = new Father();
 		Son f =new Son();
 		HashMap map = new HashMap();

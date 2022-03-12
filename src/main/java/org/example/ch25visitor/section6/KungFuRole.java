@@ -1,9 +1,9 @@
-package com.company.section6;
+package org.example.ch25visitor.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class KungFuRole implements Role {
-	//�书���ӵ�һ�Ľ�ɫ
+	//武功天子第一的角色
 }

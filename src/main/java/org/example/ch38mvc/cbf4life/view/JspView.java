@@ -1,4 +1,4 @@
-package com.cbf4life.view;
+package org.example.ch38mvc.cbf4life.view;
 
 import java.util.Map;
 
@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class JspView extends AbsView {
 	
-	//传递一个语言配置文件
+	//浼犻�掍竴涓瑷�閰嶇疆鏂囦欢
 	public JspView(AbsLangData _langData){
 		super(_langData);
 	}
@@ -18,7 +18,7 @@ public class JspView extends AbsView {
 		Map<String,String> langMap = getLangData().getItems();
 		for(String key:langMap.keySet()){
 			/*
-			 * 直接替换文件中的语言条目
+			 * 鐩存帴鏇挎崲鏂囦欢涓殑璇█鏉＄洰
 			 * 
 			 */
 		}

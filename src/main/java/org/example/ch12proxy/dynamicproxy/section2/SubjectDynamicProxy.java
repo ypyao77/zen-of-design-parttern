@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch12proxy.dynamicproxy.section2;
 
 import java.lang.reflect.InvocationHandler;
 
@@ -9,11 +9,11 @@ import java.lang.reflect.InvocationHandler;
 public class SubjectDynamicProxy extends DynamicProxy{
 
 	public static <T> T newProxyInstance(Subject subject){
-		//获得ClassLoader
+		//鑾峰緱ClassLoader
 		ClassLoader loader = subject.getClass().getClassLoader();
-		//获得接口数组
+		//鑾峰緱鎺ュ彛鏁扮粍
 		Class<?>[] classes = subject.getClass().getInterfaces();
-		//获得handler
+		//鑾峰緱handler
 		InvocationHandler handler = new MyInvocationHandler(subject);
 		return newProxyInstance(loader, classes, handler);
 	}

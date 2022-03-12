@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch12proxy.dynamicproxy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section1;
  */
 public class RealSubject implements Subject {
 
-	//ÒµÎñ²Ù×÷
+	//ä¸šåŠ¡æ“ä½œ
 	public void doSomething(String str) {
 		System.out.println("do something!---->" + str);
 	}

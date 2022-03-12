@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch33pkoverzone.command_vs_strategy.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,20 +7,20 @@ package com.company.strategy;
 public class Client {
 
 	public static void main(String[] args) {
-		//¶¨Òå»·¾³½ÇÉ«
+		//å®šä¹‰ç¯å¢ƒè§’è‰²
 		Context context;
-		//¶ÔÎÄ¼şÖ´ĞĞzipÑ¹ËõËã·¨
-		System.out.println("========Ö´ĞĞËã·¨========");
+		//å¯¹æ–‡ä»¶æ‰§è¡Œzipå‹ç¼©ç®—æ³•
+		System.out.println("========æ‰§è¡Œç®—æ³•========");
 		context = new Context(new Zip());
 		/*
-		 *Ëã·¨Ìæ»»
+		 *ç®—æ³•æ›¿æ¢
 		 * context = new Context(new Gzip());
 		 * 
 		 */
 		
-		//Ö´ĞĞÑ¹ËõËã·¨
+		//æ‰§è¡Œå‹ç¼©ç®—æ³•
 		context.compress("c:\\windows","d:\\windows.zip");
-		//Ö´ĞĞ½âÑ¹ËõËã·¨
+		//æ‰§è¡Œè§£å‹ç¼©ç®—æ³•
 		context.uncompress("c:\\windows.zip","d:\\windows");
 	}
 }

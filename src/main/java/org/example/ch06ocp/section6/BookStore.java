@@ -1,4 +1,4 @@
-package com.company.section6;
+package org.example.ch06ocp.section6;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -6,28 +6,28 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÊéµêÏúÊÛÊé¼®
+ * ä¹¦åº—é”€å”®ä¹¦ç±
  */
 public class BookStore {
 	private final static ArrayList<NovelBook> bookList = new ArrayList<NovelBook>();
 	
-	//¾²Ì¬Ä£¿é³õÊ¼»¯£¬ÏîÄ¿ÖĞÒ»°ãÊÇ´Ó³Ö¾Ã²ã³õÊ¼»¯²úÉú
+	//é™æ€æ¨¡å—åˆå§‹åŒ–ï¼Œé¡¹ç›®ä¸­ä¸€èˆ¬æ˜¯ä»æŒä¹…å±‚åˆå§‹åŒ–äº§ç”Ÿ
 	static{
-		bookList.add(new NovelBook("ÌìÁú°Ë²¿",3200,"½ğÓ¹"));
-		bookList.add(new NovelBook("°ÍÀèÊ¥Ä¸Ôº",5600,"Óê¹û"));
-		bookList.add(new NovelBook("±¯²ÒÊÀ½ç",3500,"Óê¹û"));
-		bookList.add(new NovelBook("½ğÆ¿Ã·",4300,"À¼ÁêĞ¦Ğ¦Éú"));
-		//Ôö¼Ó¼ÆËã»úÊé¼®
-		//bookList.add(new ComputerBook("Think in Java",4300,"Bruce Eckel","±à³ÌÓïÑÔ"));
+		bookList.add(new NovelBook("å¤©é¾™å…«éƒ¨",3200,"é‡‘åº¸"));
+		bookList.add(new NovelBook("å·´é»åœ£æ¯é™¢",5600,"é›¨æœ"));
+		bookList.add(new NovelBook("æ‚²æƒ¨ä¸–ç•Œ",3500,"é›¨æœ"));
+		bookList.add(new NovelBook("é‡‘ç“¶æ¢…",4300,"å…°é™µç¬‘ç¬‘ç”Ÿ"));
+		//å¢åŠ è®¡ç®—æœºä¹¦ç±
+		//bookList.add(new ComputerBook("Think in Java",4300,"Bruce Eckel","ç¼–ç¨‹è¯­è¨€"));
 	}
 	
-	//Ä£ÄâÊéµêÂòÊé
+	//æ¨¡æ‹Ÿä¹¦åº—ä¹°ä¹¦
 	public static void main(String[] args) {
 		NumberFormat formatter = NumberFormat.getCurrencyInstance();
 		formatter.setMaximumFractionDigits(2);
-		System.out.println("------------ÊéµêÂò³öÈ¥µÄÊé¼®¼ÇÂ¼ÈçÏÂ£º---------------------");
+		System.out.println("------------ä¹¦åº—ä¹°å‡ºå»çš„ä¹¦ç±è®°å½•å¦‚ä¸‹ï¼š---------------------");
 		for(IBook book:bookList){
-			System.out.println("Êé¼®Ãû³Æ£º" + book.getName()+"\tÊé¼®×÷Õß£º" + book.getAuthor()+ "\tÊé¼®¼Û¸ñ£º" + formatter.format(book.getPrice()/100.0)+"Ôª");
+			System.out.println("ä¹¦ç±åç§°ï¼š" + book.getName()+"\tä¹¦ç±ä½œè€…ï¼š" + book.getAuthor()+ "\tä¹¦ç±ä»·æ ¼ï¼š" + formatter.format(book.getPrice()/100.0)+"å…ƒ");
 		}
 	}
 }

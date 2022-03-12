@@ -1,19 +1,19 @@
-package com.company.command_name.df;
+package org.example.ch34commandchain.command_name.df;
 
-import com.company.CommandVO;
-import com.company.command_name.os.DiskManager;
+import org.example.ch34commandchain.CommandVO;
+import org.example.ch34commandchain.command_name.os.DiskManager;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class DF extends AbstractDF{
-	//¶¨ÒåÒ»ÏÂ×Ô¼ºÄÜ´¦ÀíÊ²Ã´²ÎÊı
+	//å®šä¹‰ä¸€ä¸‹è‡ªå·±èƒ½å¤„ç†ä»€ä¹ˆå‚æ•°
 	protected String getOperateParam() {
 		return super.DEFAULT_PARAM;
 	}
 	
-	//ÃüÁî´¦Àí
+	//å‘½ä»¤å¤„ç†
 	protected String echo(CommandVO vo) {
 		return DiskManager.df();
 	}

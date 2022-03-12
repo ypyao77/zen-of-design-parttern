@@ -1,4 +1,4 @@
-package com.company.section6;
+package org.example.ch37specification.specification.section6;
 
 import java.util.ArrayList;
 
@@ -9,15 +9,15 @@ import java.util.ArrayList;
 public class Client {
 	
 	public static void main(String[] args) {
-		//´ı·ÖÎöµÄ¶ÔÏó
+		//å¾…åˆ†æçš„å¯¹è±¡
 		ArrayList<Object> list = new ArrayList<Object>();
 		
-		//¶¨ÒåÁ½¸öÒµÎñ¹æ¸ñ
+		//å®šä¹‰ä¸¤ä¸ªä¸šåŠ¡è§„æ ¼
 		ISpecification spec1 = new BizSpecification(new Object());
 		ISpecification spec2 = new BizSpecification(new Object());
-		//¹æÔòµÄµ÷ÓÃ
+		//è§„åˆ™çš„è°ƒç”¨
 		for(Object obj:list){
-			if(spec1.and(spec2).isSatisfiedBy(obj)){  //and²Ù×÷
+			if(spec1.and(spec2).isSatisfiedBy(obj)){  //andæ“ä½œ
 				System.out.println(obj);
 			}
 		}

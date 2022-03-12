@@ -1,4 +1,4 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.factoryvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -8,9 +8,9 @@ public class AdultSuperManBuilder extends Builder {
 
 	@Override
 	public SuperMan getSuperMan() {
-		super.setBody("Ç¿×³µÄÇûÌå");
-		super.setSpecialTalent("»á·ÉĞĞ");
-		super.setSpecialSymbol("ĞØÇ°´øS±ê¼Ç");
+		super.setBody("å¼ºå£®çš„èº¯ä½“");
+		super.setSpecialTalent("ä¼šé£è¡Œ");
+		super.setSpecialSymbol("èƒ¸å‰å¸¦Sæ ‡è®°");
 		return super.superMan;
 	}
 

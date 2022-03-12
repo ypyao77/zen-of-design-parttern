@@ -1,4 +1,4 @@
-package com.company.section9;
+package org.example.ch12proxy.proxy.section9;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -7,29 +7,29 @@ import java.lang.reflect.Proxy;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³¡¾°Àà
+ * åœºæ™¯ç±»
  */
 public class Client {
 
 	public static void main(String[] args) throws Throwable  {
-		//¶¨ÒåÒ»¸ö³ÕÃÔµÄÍæ¼Ò
-		IGamePlayer player = new GamePlayer("ÕÅÈı");		
-		//¶¨ÒåÒ»¸öhanlder
+		//å®šä¹‰ä¸€ä¸ªç—´è¿·çš„ç©å®¶
+		IGamePlayer player = new GamePlayer("å¼ ä¸‰");		
+		//å®šä¹‰ä¸€ä¸ªhanlder
 		InvocationHandler handler = new GamePlayIH(player);		
-		//¿ªÊ¼´òÓÎÏ·£¬¼ÇÏÂÊ±¼ä´Á
-		System.out.println("¿ªÊ¼Ê±¼äÊÇ£º2009-8-25 10:45");		
-		//»ñµÃÀàµÄclass loader
+		//å¼€å§‹æ‰“æ¸¸æˆï¼Œè®°ä¸‹æ—¶é—´æˆ³
+		System.out.println("å¼€å§‹æ—¶é—´æ˜¯ï¼š2009-8-25 10:45");		
+		//è·å¾—ç±»çš„class loader
 		ClassLoader cl = player.getClass().getClassLoader();		
-		//¶¯Ì¬²úÉúÒ»¸ö´úÀíÕß
+		//åŠ¨æ€äº§ç”Ÿä¸€ä¸ªä»£ç†è€…
 		IGamePlayer proxy = (IGamePlayer)Proxy.newProxyInstance(cl,new Class[]{IGamePlayer.class},handler);		
-		//µÇÂ¼
+		//ç™»å½•
 		proxy.login("zhangSan", "password");		
-		//¿ªÊ¼É±¹Ö
+		//å¼€å§‹æ€æ€ª
 		proxy.killBoss();
-		//Éı¼¶
+		//å‡çº§
 		proxy.upgrade();
-		//¼ÇÂ¼½áÊøÓÎÏ·Ê±¼ä
-		System.out.println("½áÊøÊ±¼äÊÇ£º2009-8-26 03:40");
+		//è®°å½•ç»“æŸæ¸¸æˆæ—¶é—´
+		System.out.println("ç»“æŸæ—¶é—´æ˜¯ï¼š2009-8-26 03:40");
 		
 	}
 }

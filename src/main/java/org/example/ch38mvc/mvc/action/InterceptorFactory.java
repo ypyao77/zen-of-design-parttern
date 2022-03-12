@@ -1,4 +1,4 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class InterceptorFactory {
 
 
 	public static ArrayList<Interceptors> createInterceptors(){
-		//根据本质配置文件创建出所有的拦截器链
+		//鏍规嵁鏈川閰嶇疆鏂囦欢鍒涘缓鍑烘墍鏈夌殑鎷︽埅鍣ㄩ摼
 		return null;
 	}
 

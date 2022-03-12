@@ -1,15 +1,15 @@
-package com.company.adapter;
+package org.example.ch33pkoverzone.wrapper.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * µçÓ°Ã÷ĞÇ
+ * ç”µå½±æ˜æ˜Ÿ
  *  
  */
 public class FilmStar implements IStar {
 
 	public void act(String context) {
-		System.out.println("Ã÷ĞÇÑİÏ·£º" + context);
+		System.out.println("æ˜æ˜Ÿæ¼”æˆï¼š" + context);
 	}
 
 }

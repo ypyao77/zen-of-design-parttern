@@ -1,15 +1,15 @@
-package com.company.section2;
+package org.example.ch09abstractfactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ²úÆ·AµÄÊµÏÖÀà
+ * äº§å“Açš„å®ç°ç±»
  */
 public class ProductA1 extends AbstractProductA {
 
 	@Override
 	public void doSomething() {
-		System.out.println("²úÆ·A1µÄÊµÏÖ·½·¨");
+		System.out.println("äº§å“A1çš„å®ç°æ–¹æ³•");
 	}
 
 }

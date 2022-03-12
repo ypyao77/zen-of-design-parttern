@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch02lsp.section5;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class Client {
 	public static void invoker(){
-		//有父类的地方就有子类
+		//鏈夌埗绫荤殑鍦版柟灏辨湁瀛愮被
 		//Father f= new Father();
 		Son f =new Son();
 		HashMap map = new HashMap();

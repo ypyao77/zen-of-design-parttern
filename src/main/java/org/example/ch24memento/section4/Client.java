@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch24memento.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,13 +7,13 @@ package com.company.section4;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨Òå³ö·¢ÆğÈË
+		//å®šä¹‰å‡ºå‘èµ·äºº
 		Originator originator = new Originator();
-		//¶¨Òå³ö±¸ÍüÂ¼¹ÜÀíÔ±
+		//å®šä¹‰å‡ºå¤‡å¿˜å½•ç®¡ç†å‘˜
 		Caretaker caretaker = new Caretaker();
-		//´´½¨Ò»¸ö±¸ÍüÂ¼
+		//åˆ›å»ºä¸€ä¸ªå¤‡å¿˜å½•
 		caretaker.setMemento(originator.createMemento());
-		//»Ö¸´Ò»¸ö±¸ÍüÂ¼
+		//æ¢å¤ä¸€ä¸ªå¤‡å¿˜å½•
 		originator.restoreMemento(caretaker.getMemento());
 	}
 }

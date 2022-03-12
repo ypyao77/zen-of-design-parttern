@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch09abstractfactory.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.section1;
  */
 public abstract class AbstractYellowHuman implements Human {
 	public void getColor(){
-		System.out.println("»ÆÉ«ÈËÖÖµÄÆ¤·ôÑÕÉ«ÊÇ»ÆÉ«µÄ£¡");
+		System.out.println("é»„è‰²äººç§çš„çš®è‚¤é¢œè‰²æ˜¯é»„è‰²çš„ï¼");
 	}
 
 	public void talk() {
-		System.out.println("»ÆÉ«ÈËÖÖ»áËµ»°£¬Ò»°ãËµµÄ¶¼ÊÇË«×Ö½Ú¡£");
+		System.out.println("é»„è‰²äººç§ä¼šè¯´è¯ï¼Œä¸€èˆ¬è¯´çš„éƒ½æ˜¯åŒå­—èŠ‚ã€‚");
 	}
 }

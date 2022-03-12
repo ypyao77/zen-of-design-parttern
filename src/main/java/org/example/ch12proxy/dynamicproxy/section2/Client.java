@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch12proxy.dynamicproxy.section2;
 
 import java.lang.reflect.InvocationHandler;
 
@@ -9,11 +9,11 @@ import java.lang.reflect.InvocationHandler;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÖ÷Ìâ
+		//å®šä¹‰ä¸€ä¸ªä¸»é¢˜
 		Subject subject = new RealSubject();
-		//¶¨ÒåÖ÷ÌâµÄ´úÀí
+		//å®šä¹‰ä¸»é¢˜çš„ä»£ç†
 		Subject proxy = SubjectDynamicProxy.newProxyInstance(subject);
-		//´úÀíµÄĞĞÎª
+		//ä»£ç†çš„è¡Œä¸º
 		proxy.doSomething("Finish");
 	}
 }

@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch33pkoverzone.wrapper.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,7 +7,7 @@ package com.company.decorator;
 public class FreakStar implements IStar {
 
 	public void act() {
-		System.out.println("ÅÅÑÝÖÐ£ºÑÝ¼¼ºÜ×¾ÁÓ");
+		System.out.println("æŽ’æ¼”ä¸­ï¼šæ¼”æŠ€å¾ˆæ‹™åŠ£");
 	}
 
 }

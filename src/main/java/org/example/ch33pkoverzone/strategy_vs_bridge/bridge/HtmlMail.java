@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.strategy_vs_bridge.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -11,10 +11,10 @@ public class HtmlMail extends MailTemplate {
 	}
 
 	public String getContext(){
-		//³¬ÎÄ±¾ÀàĞÍÔòÉèÖÃÓÊ¼şµÄ¸ñÊ½Îª£ºmultipart/mixed
+		//è¶…æ–‡æœ¬ç±»å‹åˆ™è®¾ç½®é‚®ä»¶çš„æ ¼å¼ä¸ºï¼šmultipart/mixed
 		String context = "\nContent-Type: multipart/mixed;charset=GB2312\n"+super.getContext();
-		//Í¬Ê±¶ÔÓÊ¼ş½øĞĞHTML¼ì²é£¬ÊÇ·ñÓĞÀàËÆÎ´¹Ø±ÕµÄ±êÇ©¡¢²»·ûºÏ¶¨ÒåµÄ±êÇ©µÈ,ÕâÀïÓÃÒ»¾ä»°À´´úÌæ
-		context = context + "\nÓÊ¼ş¸ñÊ½Îª£º³¬ÎÄ±¾¸ñÊ½";
+		//åŒæ—¶å¯¹é‚®ä»¶è¿›è¡ŒHTMLæ£€æŸ¥ï¼Œæ˜¯å¦æœ‰ç±»ä¼¼æœªå…³é—­çš„æ ‡ç­¾ã€ä¸ç¬¦åˆå®šä¹‰çš„æ ‡ç­¾ç­‰,è¿™é‡Œç”¨ä¸€å¥è¯æ¥ä»£æ›¿
+		context = context + "\né‚®ä»¶æ ¼å¼ä¸ºï¼šè¶…æ–‡æœ¬æ ¼å¼";
 		return context;
 	}
 }

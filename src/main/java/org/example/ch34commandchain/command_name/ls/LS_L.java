@@ -1,12 +1,12 @@
-package com.company.command_name.ls;
+package org.example.ch34commandchain.command_name.ls;
 
-import com.company.CommandVO;
-import com.company.command_name.os.FileManager;
+import org.example.ch34commandchain.CommandVO;
+import org.example.ch34commandchain.command_name.os.FileManager;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ls -l ÃüÁî
+ * ls -l å‘½ä»¤
  */
 public class LS_L extends AbstractLS {
 
@@ -14,7 +14,7 @@ public class LS_L extends AbstractLS {
 		return FileManager.ls_l(vo.formatData());
 	}
 
-	//l²ÎÊı
+	//lå‚æ•°
 	protected String getOperateParam() {
 		return super.L_PARAM;
 	}

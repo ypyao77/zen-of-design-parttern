@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch24memento.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.section4;
  */
 public class Memento {
 	
-	//·¢ÆğÈËµÄÄÚ²¿×´Ì¬
+	//å‘èµ·äººçš„å†…éƒ¨çŠ¶æ€
 	private String state = "";
 	
-	//¹¹Ôìº¯Êı´«µİ²ÎÊı
+	//æ„é€ å‡½æ•°ä¼ é€’å‚æ•°
 	public Memento(String _state){
 		this.state = _state;
 	}

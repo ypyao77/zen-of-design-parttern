@@ -1,30 +1,30 @@
-package com.cbf4life.view;
+package org.example.ch38mvc.cbf4life.view;
 
-import com.company.helper.ValueStackHelper;
-import com.company.valuestack.ValueStack;
+import org.example.ch38mvc.mvc.helper.ValueStackHelper;
+import org.example.ch38mvc.mvc.valuestack.ValueStack;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class ViewManager {
-	//ActionµÄÃû³Æ
+	//Actionçš„åç§°
 	private String actionName;
-	//µ±Ç°µÄÖµÕ»
+	//å½“å‰çš„å€¼æ ˆ
 	private ValueStack valueStack = ValueStackHelper.getValueStack();
 	
-	//½ÓÊÜÒ»¸öActionName£¬³õÊ¼»¯ËùÓĞµÄÊÓÍ¼
+	//æ¥å—ä¸€ä¸ªActionNameï¼Œåˆå§‹åŒ–æ‰€æœ‰çš„è§†å›¾
 	public ViewManager(String _actionName){
 		this.actionName = _actionName;
 	}
 	
-	//¸ù¾İmodelµÄ·µ»Ø½á¹ûÌá¹©ÊÓÍ¼
+	//æ ¹æ®modelçš„è¿”å›ç»“æœæä¾›è§†å›¾
 	public String getViewPath(String result){
-		//¸ù¾İÖµÕ»²éÕÒµ½ĞèÒªÌá¹©µÄÓïÑÔ°ü
+		//æ ¹æ®å€¼æ ˆæŸ¥æ‰¾åˆ°éœ€è¦æä¾›çš„è¯­è¨€åŒ…
 		AbsLangData langData = new GBLangData();
-		//¸ù¾İactionºÍresult²éÕÒµ½Ö¸¶¨µÄÊÓÍ¼,²¢¼ÓÔØÓïÑÔ
+		//æ ¹æ®actionå’ŒresultæŸ¥æ‰¾åˆ°æŒ‡å®šçš„è§†å›¾,å¹¶åŠ è½½è¯­è¨€
 		AbsView view = new JspView(langData);
-		//·µ»ØÊÓÍ¼µÄµØÖ·
+		//è¿”å›è§†å›¾çš„åœ°å€
 		return view.getURI();
 	}
 }

@@ -1,4 +1,4 @@
-package com.company.controller;
+package org.example.ch38mvc.mvc.controller;
 
 
 import java.io.IOException;
@@ -13,11 +13,11 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.cbf4life.view.ViewManager;
-import com.company.action.ActionDispather;
-import com.company.action.IActionDispather;
-import com.company.helper.ValueStackHelper;
-import com.company.valuestack.ValueStack;
+import org.example.ch38mvc.cbf4life.view.ViewManager;
+import org.example.ch38mvc.mvc.action.ActionDispather;
+import org.example.ch38mvc.mvc.action.IActionDispather;
+import org.example.ch38mvc.mvc.helper.ValueStackHelper;
+import org.example.ch38mvc.mvc.valuestack.ValueStack;
 
 
 /**
@@ -25,48 +25,48 @@ import com.company.valuestack.ValueStack;
  * I'm glad to share my knowledge with you all.
  */
 public class FilterDispather implements Filter {
-	//¶¨ÒåÒ»¸öÖµÕ»¸¨ÖúÀà
+	//å®šä¹‰ä¸€ä¸ªå€¼æ ˆè¾…åŠ©ç±»
 	private ValueStackHelper valueStackHelper = new ValueStackHelper();
-	//Ó¦ÓÃIActionDispather
+	//åº”ç”¨IActionDispather
 	IActionDispather actionDispather = new ActionDispather();
 	
 	
-	//serverÏú»ÙÊ±Òª×öµÄÊÂÇé
+	//serveré”€æ¯æ—¶è¦åšçš„äº‹æƒ…
 	public void destroy() {
 
 	}
 
-	//¹ıÂËÆ÷±ØĞëÊµÏÖµÄ
+	//è¿‡æ»¤å™¨å¿…é¡»å®ç°çš„
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 	
-		//×ª»»ÎªHttpServletRequest
+		//è½¬æ¢ä¸ºHttpServletRequest
 		HttpServletRequest req = (HttpServletRequest)request;
 		HttpServletResponse res = (HttpServletResponse)response;
-		//´«µİµ½ÆäËû¹ıÂËÆ÷´¦Àí
+		//ä¼ é€’åˆ°å…¶ä»–è¿‡æ»¤å™¨å¤„ç†
 		chain.doFilter(req, res);
-		//»ñµÃ´ÓHTTPÇëÇóµÄACTIONÃû³Æ
+		//è·å¾—ä»HTTPè¯·æ±‚çš„ACTIONåç§°
 		String actionName = getActionNameFromURI(req);		
-		//¶ÔViewManagerµÄÓ¦ÓÃ
+		//å¯¹ViewManagerçš„åº”ç”¨
 		ViewManager viewManager = new ViewManager(actionName);
-		//ËùÓĞ²ÎÊı·ÅÈëÖµÕ»
+		//æ‰€æœ‰å‚æ•°æ”¾å…¥å€¼æ ˆ
 		ValueStack  valueStack = valueStackHelper.putIntoStack(req);
-		//°ÑËùÓĞµÄÇëÇó´«µİ¸øActionDispatcher´¦Àí
+		//æŠŠæ‰€æœ‰çš„è¯·æ±‚ä¼ é€’ç»™ActionDispatcherå¤„ç†
 		String result =actionDispather.actionInvoke(actionName);
 		String viewPath = viewManager.getViewPath(result);
-		//Ö±½Ó×ªÏò
+		//ç›´æ¥è½¬å‘
 		RequestDispatcher rd = req.getRequestDispatcher(viewPath);
 		rd.forward(req, res);
 	}
 
 	public void init(FilterConfig arg0) throws ServletException {
 		/*
-		 * 1¡¢¼ì²éXMLÅäÖÃÎÄ¼şÊÇ·ñÕıÈ·
-		 * 2¡¢Æô¶¯¼à¿Ø³ÌĞò£¬¹Û²ìÅäÖÃÎÄ¼şÊÇ·ñÕıÈ·
+		 * 1ã€æ£€æŸ¥XMLé…ç½®æ–‡ä»¶æ˜¯å¦æ­£ç¡®
+		 * 2ã€å¯åŠ¨ç›‘æ§ç¨‹åºï¼Œè§‚å¯Ÿé…ç½®æ–‡ä»¶æ˜¯å¦æ­£ç¡®
 		 */
 	}
 	
-	//Í¨¹ıurl»ñµÃactionName
+	//é€šè¿‡urlè·å¾—actionName
 	private String getActionNameFromURI(HttpServletRequest req){
 		String path = (String) req.getRequestURI();
 		String actionName = path.substring(path.lastIndexOf("/") + 1,path.lastIndexOf("."));

@@ -1,4 +1,4 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
 import java.lang.reflect.Method;
 
@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 public class ActionManager {
 	
 
-	//Ö´ÐÐActionµÄÖ¸¶¨·½·¨
+	//æ‰§è¡ŒActionçš„æŒ‡å®šæ–¹æ³•
 	public String execAction(String actionName){
 		return null;
 	}

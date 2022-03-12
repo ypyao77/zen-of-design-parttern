@@ -1,4 +1,4 @@
-package com.company.command;
+package org.example.ch32pkaction.command_vs_strategy.command;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.command;
  */
 public interface IReceiver {
 	
-	//执行zip命令
+	//鎵цzip鍛戒护
 	public boolean zipExec(String source,String to);
 	
-	//执行gzip命令
+	//鎵цgzip鍛戒护
 	public boolean gzipExec(String source,String to);
 }

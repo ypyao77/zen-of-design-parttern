@@ -1,17 +1,17 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.decorator_vs_adapter.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class StrongBehavior extends Decorator {
-	//«øªØÀ≠
+	//Âº∫ÂåñË∞Å
 	public StrongBehavior(Swan _swan){
 		super(_swan);
 	}
 	
-	//ª·∑…––¡À
+	//‰ºöÈ£ûË°å‰∫Ü
 	public void fly(){
-		System.out.println("ª·∑…––¡À£°");
+		System.out.println("‰ºöÈ£ûË°å‰∫ÜÔºÅ");
 	}
 }

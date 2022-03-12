@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch37specification.specification.section4;
 
 import java.util.ArrayList;
 
@@ -9,6 +9,6 @@ import java.util.ArrayList;
  */
 public interface IUserProvider {
 	
-	//根据条件查找用户
+	//鏍规嵁鏉′欢鏌ユ壘鐢ㄦ埛
 	public ArrayList<User> findUser(IUserSpecification userSpec);
 }

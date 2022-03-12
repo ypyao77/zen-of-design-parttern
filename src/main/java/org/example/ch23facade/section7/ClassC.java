@@ -1,4 +1,4 @@
-package com.company.section7;
+package org.example.ch23facade.section7;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,6 +7,6 @@ package com.company.section7;
 public class ClassC {
 	
 	public void doSomethingC(){
-		//ÒµÎñÂß¼­
+		//ä¸šåŠ¡é€»è¾‘
 	}
 }

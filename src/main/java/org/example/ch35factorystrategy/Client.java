@@ -1,4 +1,4 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,72 +10,72 @@ import java.io.InputStreamReader;
  */
 public class Client {
 	
-	//Ä£Äâ½»Ò×
+	//æ¨¡æ‹Ÿäº¤æ˜“
 	public static void main(String[] args) {
 	
-		//³õÊ¼»¯Ò»ÕÅIC¿¨
+		//åˆå§‹åŒ–ä¸€å¼ ICå¡
 		Card card = initIC();
-		//ÏÔÊ¾Ò»ÏÂ¿¨ÄÚĞÅÏ¢
-		System.out.println("========³õÊ¼¿¨ĞÅÏ¢£º=========");
+		//æ˜¾ç¤ºä¸€ä¸‹å¡å†…ä¿¡æ¯
+		System.out.println("========åˆå§‹å¡ä¿¡æ¯ï¼š=========");
 		showCard(card);
 		
-		//ÊÇ·ñÍ£Ö¹ÔËĞĞ±êÖ¾
+		//æ˜¯å¦åœæ­¢è¿è¡Œæ ‡å¿—
 		boolean flag = true;
 		while(flag){
 			Trade trade = createTrade();
 			
 			DeductionFacade.deduct(card, trade);
-			//½»Ò×³É¹¦£¬´òÓ¡³ö³É¹¦´¦ÀíÏûÏ¢
-			System.out.println("\n======½»Ò×Æ¾Ö¤========");
-			System.out.println(trade.getTradeNo()+" ½»Ò×³É¹¦£¡");
-			System.out.println("±¾´Î·¢ÉúµÄ½»Ò×½ğ¶îÎª£º"+ trade.getAmount()/100.0 + " Ôª");
-			//Õ¹Ê¾Ò»ÏÂ¿¨ÄÚĞÅÏ¢
+			//äº¤æ˜“æˆåŠŸï¼Œæ‰“å°å‡ºæˆåŠŸå¤„ç†æ¶ˆæ¯
+			System.out.println("\n======äº¤æ˜“å‡­è¯========");
+			System.out.println(trade.getTradeNo()+" äº¤æ˜“æˆåŠŸï¼");
+			System.out.println("æœ¬æ¬¡å‘ç”Ÿçš„äº¤æ˜“é‡‘é¢ä¸ºï¼š"+ trade.getAmount()/100.0 + " å…ƒ");
+			//å±•ç¤ºä¸€ä¸‹å¡å†…ä¿¡æ¯
 			showCard(card);
 			
-			System.out.print("\nÊÇ·ñĞèÒªÍË³ö£¿(Y/N)");
+			System.out.print("\næ˜¯å¦éœ€è¦é€€å‡ºï¼Ÿ(Y/N)");
 			if(getInput().equalsIgnoreCase("y")){
-				flag = false;  //ÍË³ö£»
+				flag = false;  //é€€å‡ºï¼›
 			}
 		}
 		
 	}
 	
-	//³õÊ¼»¯Ò»¸öIC¿¨
+	//åˆå§‹åŒ–ä¸€ä¸ªICå¡
 	private static Card initIC(){
 		Card card = new Card();
 		card.setCardNo("1100010001000");
-		card.setFreeMoney(100000);  //Ò»Ç§Ôª
-		card.setSteadyMoney(80000); //°Ë°ÙÔª
+		card.setFreeMoney(100000);  //ä¸€åƒå…ƒ
+		card.setSteadyMoney(80000); //å…«ç™¾å…ƒ
 		return card;
 	}
 	
-	//²úÉúÒ»Ìõ½»Ò×
+	//äº§ç”Ÿä¸€æ¡äº¤æ˜“
 	private static Trade createTrade(){
 		Trade trade = new Trade();
-		System.out.print("ÇëÊäÈë½»Ò×±àºÅ£º");
+		System.out.print("è¯·è¾“å…¥äº¤æ˜“ç¼–å·ï¼š");
 		trade.setTradeNo(getInput());
-		System.out.print("ÇëÊäÈë½»Ò×½ğ¶î£º");
+		System.out.print("è¯·è¾“å…¥äº¤æ˜“é‡‘é¢ï¼š");
 		trade.setAmount(Integer.parseInt(getInput()));
 		
-		//·µ»Ø½»Ò×
+		//è¿”å›äº¤æ˜“
 		return trade;
 	}
 	
-	//´òÓ¡³öµ±Ç°¿¨ÄÚ½»Ò×Óà¶î
+	//æ‰“å°å‡ºå½“å‰å¡å†…äº¤æ˜“ä½™é¢
 	public static void showCard(Card card){
 
-		System.out.println("IC¿¨±àºÅ:" + card.getCardNo());
-		System.out.println("¹Ì¶¨ÀàĞÍÓà¶î£º"+ card.getSteadyMoney()/100.0 + " Ôª");
-		System.out.println("×ÔÓÉÀàĞÍÓà¶î£º"+ card.getFreeMoney()/100.0 + " Ôª");
+		System.out.println("ICå¡ç¼–å·:" + card.getCardNo());
+		System.out.println("å›ºå®šç±»å‹ä½™é¢ï¼š"+ card.getSteadyMoney()/100.0 + " å…ƒ");
+		System.out.println("è‡ªç”±ç±»å‹ä½™é¢ï¼š"+ card.getFreeMoney()/100.0 + " å…ƒ");
 	}
 	
-	//»ñµÃ¼üÅÌÊäÈë
+	//è·å¾—é”®ç›˜è¾“å…¥
 	public static String getInput(){
 		String str ="";
 		try {
 			str = (new BufferedReader(new InputStreamReader(System.in))).readLine();
 		} catch (IOException e) {
-			//Òì³£´¦Àí
+			//å¼‚å¸¸å¤„ç†
 		}
 		return str;
 	}

@@ -1,24 +1,24 @@
-package com.company.section3;
+package org.example.ch07singleton.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Singleton {
-	private static final Singleton singleton = new Singleton();
-	
-	//ÏŞÖÆ²úÉú¶à¸ö¶ÔÏó
-	private Singleton(){
-		
-	}
-	
-	//Í¨¹ı¸Ã·½·¨»ñµÃÊµÀı¶ÔÏó
-	public static Singleton getSingleton(){
-		return singleton;
-	}
-	
-	//ÀàÖĞÆäËû·½·¨£¬¾¡Á¿ÊÇstatic
-	public static void doSomething(){
-		
-	}
+    private static final Singleton singleton = new Singleton();
+
+    //é™åˆ¶äº§ç”Ÿå¤šä¸ªå¯¹è±¡
+    private Singleton() {
+
+    }
+
+    //é€šè¿‡è¯¥æ–¹æ³•è·å¾—å®ä¾‹å¯¹è±¡
+    public static Singleton getSingleton() {
+        return singleton;
+    }
+
+    //ç±»ä¸­å…¶ä»–æ–¹æ³•ï¼Œå°½é‡æ˜¯static
+    public static void doSomething() {
+
+    }
 }

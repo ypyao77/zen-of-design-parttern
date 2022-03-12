@@ -1,19 +1,19 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.wrapper.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class AbstractStar {
-	//Ò»¸öÃ÷ĞÇ²Î¼ÓÄÄĞ©»î¶¯
+	//ä¸€ä¸ªæ˜æ˜Ÿå‚åŠ å“ªäº›æ´»åŠ¨
 	protected final AbstractAction action;
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ¾ßÌå»î¶¯
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’å…·ä½“æ´»åŠ¨
 	public AbstractStar(AbstractAction _action){
 		this.action = _action;
 	}
 	
-	//Ã¿¸öÃ÷ĞÇ¶¼ÓĞ×Ô¼ºµÄÖ÷Òª¹¤×÷
+	//æ¯ä¸ªæ˜æ˜Ÿéƒ½æœ‰è‡ªå·±çš„ä¸»è¦å·¥ä½œ
 	public void doJob(){
 		action.desc();
 	}

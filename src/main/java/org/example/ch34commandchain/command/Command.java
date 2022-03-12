@@ -1,12 +1,12 @@
-package com.company.command;
+package org.example.ch34commandchain.command;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.company.ClassUtils;
-import com.company.CommandVO;
-import com.company.command_name.CommandName;
-import com.company.command_name.ls.AbstractLS;
+import org.example.ch34commandchain.ClassUtils;
+import org.example.ch34commandchain.CommandVO;
+import org.example.ch34commandchain.command_name.CommandName;
+import org.example.ch34commandchain.command_name.ls.AbstractLS;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -15,22 +15,22 @@ import com.company.command_name.ls.AbstractLS;
 public abstract class Command {
 	public abstract String execute(CommandVO vo);
 	
-	//½¨Á¢Á´±í
+	//å»ºç«‹é“¾è¡¨
 	protected final List<? extends CommandName> buildChain(Class<? extends CommandName> abstractClass){
-		//È¡³öËùÓĞµÄÃüÁîÃûÏÂµÄ×ÓÀà
+		//å–å‡ºæ‰€æœ‰çš„å‘½ä»¤åä¸‹çš„å­ç±»
 		List<Class> classes = ClassUtils.getSonClass(abstractClass);
-		//´æ·ÅÃüÁîµÄÊµÀı£¬²¢½¨Á¢Á´±í¹ØÏµ
+		//å­˜æ”¾å‘½ä»¤çš„å®ä¾‹ï¼Œå¹¶å»ºç«‹é“¾è¡¨å…³ç³»
 		List<CommandName> commandNameList = new ArrayList<CommandName>();
 		for(Class c:classes){
 			CommandName commandName =null;
 			try {
-				//²úÉúÊµÀı
+				//äº§ç”Ÿå®ä¾‹
 				commandName = (CommandName)Class.forName(c.getName()).newInstance();
 			} catch (Exception e){
-				// TODO Òì³£´¦Àí
+				// TODO å¼‚å¸¸å¤„ç†
 			}
 			
-			//½¨Á¢Á´±í
+			//å»ºç«‹é“¾è¡¨
 			if(commandNameList.size()>0){
 				commandNameList.get(commandNameList.size()-1).setNext(commandName);
 			}

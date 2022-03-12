@@ -1,9 +1,9 @@
-package com.company.section3;
+package org.example.ch04lod.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ҵ�񳡾�
+ * 业务场景
  */
 public class Client {
 	

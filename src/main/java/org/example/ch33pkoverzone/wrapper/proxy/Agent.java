@@ -1,17 +1,17 @@
-package com.company.proxy;
+package org.example.ch33pkoverzone.wrapper.proxy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Agent implements IStar {
-	//¶¨ÒåÊÇË­µÄ´úÀíÈË
+	//å®šä¹‰æ˜¯è°çš„ä»£ç†äºº
 	private IStar star;
-	//¹¹Ôìº¯Êı´«µİÃ÷ĞÇ
+	//æ„é€ å‡½æ•°ä¼ é€’æ˜æ˜Ÿ
 	public Agent(IStar _star){
 		this.star = _star;
 	}
-	//´úÀíÈËÊÇ²»»áÇ©×ÖµÄ£¬Ç©×ÖÁË¸èÃÔÒ²²»ÈÏÑ½
+	//ä»£ç†äººæ˜¯ä¸ä¼šç­¾å­—çš„ï¼Œç­¾å­—äº†æ­Œè¿·ä¹Ÿä¸è®¤å‘€
 	public void sign() {
 		star.sign();
 	}

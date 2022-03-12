@@ -1,18 +1,18 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.decorator_vs_adapter.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class BeautifyAppearance extends Decorator {
-	//ÒªÃÀ»¯Ë­
+	//è¦ç¾åŒ–è°
 	public BeautifyAppearance(Swan _swan){
 		super(_swan);
 	}
 	
-	//Íâ±íÃÀ»¯´¦Àí
+	//å¤–è¡¨ç¾åŒ–å¤„ç†
 	@Override
 	public void desAppaearance(){
-		System.out.println("Íâ±íÊÇ´¿°×É«µÄ£¬·Ç³£ÈÇÈËÏ²°®£¡");
+		System.out.println("å¤–è¡¨æ˜¯çº¯ç™½è‰²çš„ï¼Œéå¸¸æƒ¹äººå–œçˆ±ï¼");
 	}
 }

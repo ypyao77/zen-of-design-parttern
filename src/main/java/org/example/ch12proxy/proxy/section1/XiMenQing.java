@@ -1,24 +1,24 @@
-package com.company.section1;
+package org.example.ch12proxy.proxy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Î÷ÃÅÇì
+ * è¥¿é—¨åº†
  */
 public class XiMenQing {
 	private KindWomen women;
 	
-	//ÌìÉú¾ÍÊÇÎªÅ®ÈË¶ø´æÔÚ
+	//å¤©ç”Ÿå°±æ˜¯ä¸ºå¥³äººè€Œå­˜åœ¨
 	public XiMenQing(KindWomen kindWomen){
 		this.women = kindWomen;
 	}
 	
-	//ÓëÅ®ĞÔ½»Á÷
+	//ä¸å¥³æ€§äº¤æµ
 	public void communicate(){
 		
 	}
 	
-	//Î÷ÃÅÇìµÄÖÕ¼«Ä¿±ê
+	//è¥¿é—¨åº†çš„ç»ˆæç›®æ ‡
 	public void doSomething(){
 		this.women.makeEyesWithMan();
 	}

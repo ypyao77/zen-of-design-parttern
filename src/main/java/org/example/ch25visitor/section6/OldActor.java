@@ -1,12 +1,12 @@
-package com.company.section6;
+package org.example.ch25visitor.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class OldActor extends AbsActor {
-	//不演功夫角色
+	//涓嶆紨鍔熷か瑙掕壊
 	public void act(KungFuRole role){
-		System.out.println("年龄大了，不能演功夫角色");
+		System.out.println("骞撮緞澶т簡锛屼笉鑳芥紨鍔熷か瑙掕壊");
 	}
 }

@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch08simplefactory.section5;
 
 import java.lang.reflect.Constructor;
 
@@ -11,14 +11,14 @@ public class SingletonFactory {
 	static{ 
 		try {
 			Class cl= Class.forName(Singleton.class.getName());
-			//»ñµÃÎŞ²Î¹¹Ôì
+			//è·å¾—æ— å‚æ„é€ 
 			Constructor constructor=cl.getDeclaredConstructor();
-			//ÉèÖÃÎŞ²Î¹¹ÔìÊÇ¿É·ÃÎÊµÄ
+			//è®¾ç½®æ— å‚æ„é€ æ˜¯å¯è®¿é—®çš„
 			constructor.setAccessible(true);
-			//²úÉúÒ»¸öÊµÀı¶ÔÏó
+			//äº§ç”Ÿä¸€ä¸ªå®ä¾‹å¯¹è±¡
 			singleton = (Singleton)constructor.newInstance();
 		} catch (Exception e) {
-			//Òì³£´¦Àí
+			//å¼‚å¸¸å¤„ç†
 		}		
 	}
 	

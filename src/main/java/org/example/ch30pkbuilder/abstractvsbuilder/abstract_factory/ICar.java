@@ -1,4 +1,4 @@
-package com.company.abstract_factory;
+package org.example.ch30pkbuilder.abstractvsbuilder.abstract_factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.abstract_factory;
  */
 public interface ICar {
 	
-	//Æû³µµÄÉú²úÉÌ£¬Ò²¾ÍÊÇÅÆ×Ó
+	//æ±½è½¦çš„ç”Ÿäº§å•†ï¼Œä¹Ÿå°±æ˜¯ç‰Œå­
 	public String getBand();
 	
-	//Æû³µµÄĞÍºÅ
+	//æ±½è½¦çš„å‹å·
 	public String getModel();
 	
 }

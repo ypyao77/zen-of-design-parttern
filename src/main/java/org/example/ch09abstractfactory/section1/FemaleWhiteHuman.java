@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch09abstractfactory.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.section1;
  */
 public class FemaleWhiteHuman extends AbstractWhiteHuman {
 
-	//°×ÈËÅ®ÐÔ
+	//ç™½äººå¥³æ€§
 	public void getSex() {
-		System.out.println("°×ÈËÅ®ÐÔ");
+		System.out.println("ç™½äººå¥³æ€§");
 	}
 
 }

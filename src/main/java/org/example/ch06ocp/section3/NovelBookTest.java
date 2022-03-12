@@ -1,22 +1,22 @@
-package com.company.section3;
+package org.example.ch06ocp.section3;
 
 import junit.framework.TestCase;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * NovelBookµÄ²âÊÔÀà
+ * NovelBookçš„æµ‹è¯•ç±»
  */
 public class NovelBookTest extends TestCase {
-	private String name = "Æ½·²µÄÊÀ½ç";
+	private String name = "å¹³å‡¡çš„ä¸–ç•Œ";
 	private int price = 6000;
-	private String author = "Â·Ò£";
+	private String author = "è·¯é¥";
 	
 	private IBook novelBook = new NovelBook(name,price,author);
 
-	//²âÊÔgetPrice·½·¨
+	//æµ‹è¯•getPriceæ–¹æ³•
 	public void testGetPrice() {
-		//Ô­¼ÛÏúÊÛ£¬ÅĞ¶ÏÊäÈëºÍÊä³öµÄÖµÊÇ·ñÏàµÈ½øĞĞ¶ÏÑÔ
+		//åŸä»·é”€å”®ï¼Œåˆ¤æ–­è¾“å…¥å’Œè¾“å‡ºçš„å€¼æ˜¯å¦ç›¸ç­‰è¿›è¡Œæ–­è¨€
 		super.assertEquals(this.price, this.novelBook.getPrice());
 	}
 

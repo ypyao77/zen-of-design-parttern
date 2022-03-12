@@ -1,14 +1,14 @@
-package com.company.section2;
+package org.example.ch02lsp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÒµÎñ³¡¾°Ä£ÄâÀà
+ * ä¸šåŠ¡åœºæ™¯æ¨¡æ‹Ÿç±»
  */
 public class Client {
 	
 	public static void main(String[] args) {
-		//²úÉúÈıÃ«Õâ¸öÊ¿±ø
+		//äº§ç”Ÿä¸‰æ¯›è¿™ä¸ªå£«å…µ
 		Soldier sanMao = new Soldier();
 		sanMao.setGun(new ToyGun());
 		sanMao.killEnemy();

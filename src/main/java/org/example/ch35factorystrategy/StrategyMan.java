@@ -1,9 +1,9 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ²ßÂÔµÇ¼Ç
+ * ç­–ç•¥ç™»è®°
  */
 public enum StrategyMan {
 	

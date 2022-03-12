@@ -1,40 +1,40 @@
-package com.company.section6;
+package org.example.ch06ocp.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ğ¡ËµÊé¼®
+ * å°è¯´ä¹¦ç±
  */
 public class NovelBook implements IBook {
-	//Êé¼®Ãû³Æ
+	//ä¹¦ç±åç§°
 	private String name;
 	
-	//Êé¼®µÄ¼Û¸ñ
+	//ä¹¦ç±çš„ä»·æ ¼
 	private int price;
 	
-	//Êé¼®µÄ×÷Õß
+	//ä¹¦ç±çš„ä½œè€…
 	private String author;
 	
 	
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİÊé¼®Êı¾İ
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’ä¹¦ç±æ•°æ®
 	public NovelBook(String _name,int _price,String _author){
 		this.name = _name;
 		this.price = _price;
 		this.author = _author;
 	}
 	
-	//»ñµÃ×÷ÕßÊÇË­
+	//è·å¾—ä½œè€…æ˜¯è°
 	public String getAuthor() {
 		return this.author;
 	}
 
-	//Êé¼®½ĞÊ²Ã´Ãû×Ö
+	//ä¹¦ç±å«ä»€ä¹ˆåå­—
 	public String getName() {
 		return this.name;
 	}
 
-	//»ñµÃÊé¼®µÄ¼Û¸ñ
+	//è·å¾—ä¹¦ç±çš„ä»·æ ¼
 	public int getPrice() {
 		return this.price;
 	}

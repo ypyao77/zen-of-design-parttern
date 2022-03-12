@@ -1,4 +1,4 @@
-package com.company.command;
+package org.example.ch33pkoverzone.command_vs_strategy.command;
 
 /**
  * @author cbf4Life cbf4life@126.com

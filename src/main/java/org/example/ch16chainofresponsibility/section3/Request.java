@@ -1,12 +1,11 @@
-package com.company.section3;
+package org.example.ch16chainofresponsibility.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Request {
-	
-	//ÇëÇóµÄµÈ¼¶
+	//è¯·æ±‚çš„ç­‰çº§
 	public Level getRequestLevel(){
 		return null;
 	}

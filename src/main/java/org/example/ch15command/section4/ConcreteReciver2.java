@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch15command.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section4;
  */
 public class ConcreteReciver2 extends Receiver{
 	
-	//每个接受者都必须处理一定的业务逻辑
+	//姣忎釜鎺ュ彈鑰呴兘蹇呴』澶勭悊涓�瀹氱殑涓氬姟閫昏緫
 	public void doSomething(){
 		
 	}

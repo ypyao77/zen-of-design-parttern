@@ -1,16 +1,16 @@
-package com.company.section1;
+package org.example.ch03dip.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÒµÎñ³¡¾°Àà
+ * ä¸šåŠ¡åœºæ™¯ç±»
  */
 public class Client {
 	public static void main(String[] args) {
 		Driver zhangSan = new Driver();
 		Benz benz = new Benz();
 		
-		//ÕÅÈý¿ª±¼³Û³µ
+		//å¼ ä¸‰å¼€å¥”é©°è½¦
 		zhangSan.drive(benz);
 	}
 }

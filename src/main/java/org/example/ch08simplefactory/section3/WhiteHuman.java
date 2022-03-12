@@ -1,20 +1,20 @@
-package com.company.section3;
+package org.example.ch08simplefactory.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * °×É«ÈËÈËÖÖ
+ * ç™½è‰²äººäººç§
  */
 public class WhiteHuman implements Human {
 	
-	//°×É«ÈËÖÖµÄÑÕÉ«ÊÇ°×É«µÄ
+	//ç™½è‰²äººç§çš„é¢œè‰²æ˜¯ç™½è‰²çš„
 	public void getColor(){
-		System.out.println("°×É«ÈËÖÖµÄÆ¤·ôÑÕÉ«ÊÇ°×É«µÄ£¡");
+		System.out.println("ç™½è‰²äººç§çš„çš®è‚¤é¢œè‰²æ˜¯ç™½è‰²çš„ï¼");
 	}
 	
-	//°×É«ÈËÖÖ½²»°
+	//ç™½è‰²äººç§è®²è¯
 	public void talk() {
-		System.out.println("°×É«ÈËÖÖ»áËµ»°£¬Ò»°ã¶¼ÊÇµ«ÊÇµ¥×Ö½Ú¡£");
+		System.out.println("ç™½è‰²äººç§ä¼šè¯´è¯ï¼Œä¸€èˆ¬éƒ½æ˜¯ä½†æ˜¯å•å­—èŠ‚ã€‚");
 
 	}
 	

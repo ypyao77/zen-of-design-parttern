@@ -1,4 +1,4 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.action;
  */
 public interface IActionDispather {
 	
-	//根据action的名字，返回处理结果
+	//鏍规嵁action鐨勫悕瀛楋紝杩斿洖澶勭悊缁撴灉
 	public String actionInvoke(String actionName);
 }

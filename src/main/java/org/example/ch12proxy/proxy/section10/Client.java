@@ -1,34 +1,34 @@
-package com.company.section10;
+package org.example.ch12proxy.proxy.section10;
 
 import java.lang.reflect.Method;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³¡¾°Àà
+ * åœºæ™¯ç±»
  */
 public class Client {
 
 	public static void main(String[] args) throws Throwable  {
-		//¶¨ÒåÒ»¸ö³ÕÃÔµÄÍæ¼Ò
-		IGamePlayer player = new GamePlayer("ÕÅÈı");
+		//å®šä¹‰ä¸€ä¸ªç—´è¿·çš„ç©å®¶
+		IGamePlayer player = new GamePlayer("å¼ ä¸‰");
 		
-		//È»ºóÔÙ¶¨ÒåÒ»¸ö´úÁ·Õß
+		//ç„¶åå†å®šä¹‰ä¸€ä¸ªä»£ç»ƒè€…
 		GamePlayIH proxy = new GamePlayIH(player);
 		
-		//¿ªÊ¼´òÓÎÏ·£¬¼ÇÏÂÊ±¼ä´Á
-		System.out.println("¿ªÊ¼Ê±¼äÊÇ£º2009-8-25 10:45");
+		//å¼€å§‹æ‰“æ¸¸æˆï¼Œè®°ä¸‹æ—¶é—´æˆ³
+		System.out.println("å¼€å§‹æ—¶é—´æ˜¯ï¼š2009-8-25 10:45");
 		
 		String str[] = {"zhangSan","password"};
 		Class type[] = {String.class,String.class};
 		proxy.invoke(null, player.getClass().getMethod("login", type),str);
-		//¿ªÊ¼É±¹Ö
+		//å¼€å§‹æ€æ€ª
 		proxy.invoke(null, player.getClass().getMethod("killBoss", null),null);
-		//Éı¼¶
+		//å‡çº§
 		proxy.invoke(null, player.getClass().getMethod("upgrade", null),null);
 
-		//¼ÇÂ¼½áÊøÓÎÏ·Ê±¼ä
-		System.out.println("½áÊøÊ±¼äÊÇ£º2009-8-26 03:40");
+		//è®°å½•ç»“æŸæ¸¸æˆæ—¶é—´
+		System.out.println("ç»“æŸæ—¶é—´æ˜¯ï¼š2009-8-26 03:40");
 		
 	}
 	

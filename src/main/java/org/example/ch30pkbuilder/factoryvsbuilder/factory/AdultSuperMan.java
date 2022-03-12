@@ -1,4 +1,4 @@
-package com.company.factory;
+package org.example.ch30pkbuilder.factoryvsbuilder.factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.factory;
  */
 public class AdultSuperMan implements ISuperMan {
 
-	//超能先生
+	//瓒呰兘鍏堢敓
 	public void specialTalent() {
-		System.out.println("超人力大无穷");
+		System.out.println("瓒呬汉鍔涘ぇ鏃犵┓");
 	}
 
 }

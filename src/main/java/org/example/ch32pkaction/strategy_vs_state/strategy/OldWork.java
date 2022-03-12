@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch32pkaction.strategy_vs_state.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.strategy;
  */
 public class OldWork extends WorkAlgorithm {
 
-	//老年人的工作
+	//鑰佸勾浜虹殑宸ヤ綔
 	@Override
 	public void work() {
-		System.out.println("老年人的工作就是回忆以前的生活！");
+		System.out.println("鑰佸勾浜虹殑宸ヤ綔灏辨槸鍥炲繂浠ュ墠鐨勭敓娲伙紒");
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch37specification.specification.section4;
 
 import java.util.ArrayList;
 
@@ -9,20 +9,20 @@ import java.util.ArrayList;
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ê×ÏÈ³õÊ¼»¯Ò»ÅúÓÃ»§
+		//é¦–å…ˆåˆå§‹åŒ–ä¸€æ‰¹ç”¨æˆ·
 		ArrayList<User> userList = new ArrayList<User>();
-		userList.add(new User("ËÕ¹úÇì",23));
-		userList.add(new User("¹úÇìÅ£",82));		
-		userList.add(new User("ÕÅ¹úÇìÈı",10));
-		userList.add(new User("ÀîËÄ",10));
+		userList.add(new User("è‹å›½åº†",23));
+		userList.add(new User("å›½åº†ç‰›",82));		
+		userList.add(new User("å¼ å›½åº†ä¸‰",10));
+		userList.add(new User("æå››",10));
 		
-		//¶¨ÒåÒ»¸öÓÃ»§²éÑ¯Àà
+		//å®šä¹‰ä¸€ä¸ªç”¨æˆ·æŸ¥è¯¢ç±»
 		IUserProvider userProvider = new UserProvider(userList);
 		
-		//´òÓ¡³öÃû×ÖÒÔ¹úÇì¿ªÍ·µÄÈËÔ±
-		System.out.println("===Ãû×ÖÒÔ¹úÇì¿ªÍ·µÄÈËÔ±===");
-		//¶¨ÒåÒ»¸ö¹æ¸ñ
-		IUserSpecification userSpec = new UserByNameLike("%¹úÇì%");
+		//æ‰“å°å‡ºåå­—ä»¥å›½åº†å¼€å¤´çš„äººå‘˜
+		System.out.println("===åå­—ä»¥å›½åº†å¼€å¤´çš„äººå‘˜===");
+		//å®šä¹‰ä¸€ä¸ªè§„æ ¼
+		IUserSpecification userSpec = new UserByNameLike("%å›½åº†%");
 		for(User u:userProvider.findUser(userSpec)){
 			System.out.println(u);
 		}

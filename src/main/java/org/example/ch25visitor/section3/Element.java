@@ -1,13 +1,13 @@
-package com.company.section3;
+package org.example.ch25visitor.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Element {
-	//定义业务逻辑
+	//瀹氫箟涓氬姟閫昏緫
 	public abstract void doSomething();
 	
-	//允许谁来访问
+	//鍏佽璋佹潵璁块棶
 	public abstract void accept(IVisitor visitor);
 }

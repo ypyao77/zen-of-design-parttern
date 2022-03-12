@@ -1,4 +1,4 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,19 +9,19 @@ import java.util.Iterator;
  */
 public class Interceptors implements Iterable<AbstractInterceptor> {
 
-	//¸ù¾İÀ¹½ØÆ÷½¨Á¢Ò»¸öÀ¹½ØÆ÷Á´Ìõ
+	//æ ¹æ®æ‹¦æˆªå™¨å»ºç«‹ä¸€ä¸ªæ‹¦æˆªå™¨é“¾æ¡
 	public Interceptors(ArrayList<AbstractInterceptor> list){
 		
 	}
 
 	
-	//ÁĞ³öËùÓĞµÄÀ¹½ØÆ÷
+	//åˆ—å‡ºæ‰€æœ‰çš„æ‹¦æˆªå™¨
 	public Iterator<AbstractInterceptor> iterator() {
 		return null;
 	}
 	
-	//À¹½ØÆ÷µÄÖ´ĞĞ·½·¨
+	//æ‹¦æˆªå™¨çš„æ‰§è¡Œæ–¹æ³•
 	public void intercept(){
-		//Î¯ÍĞÀ¹½ØÆ÷Ö´ĞĞ
+		//å§”æ‰˜æ‹¦æˆªå™¨æ‰§è¡Œ
 	}
 }

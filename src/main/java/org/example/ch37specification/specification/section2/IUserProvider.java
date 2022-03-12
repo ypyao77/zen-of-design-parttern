@@ -1,8 +1,8 @@
-package com.company.section2;
+package org.example.ch37specification.specification.section2;
 
 import java.util.ArrayList;
 
-import com.company.section1.User;
+import org.example.ch37specification.specification.section1.User;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -10,6 +10,6 @@ import com.company.section1.User;
  */
 public interface IUserProvider {
 	
-	//根据条件查找用户
+	//鏍规嵁鏉′欢鏌ユ壘鐢ㄦ埛
 	public ArrayList<User> findUser(boolean condition);
 }

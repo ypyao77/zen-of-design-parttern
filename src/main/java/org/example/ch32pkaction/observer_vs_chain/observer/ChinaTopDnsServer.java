@@ -1,4 +1,4 @@
-package com.company.observer;
+package org.example.ch32pkaction.observer_vs_chain.observer;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -9,7 +9,7 @@ public class ChinaTopDnsServer extends DnsServer {
 
 	@Override
 	protected void sign(Recorder recorder) {
-		recorder.setOwner("ÖĞ¹ú¶¥¼¶DNS·şÎñÆ÷");
+		recorder.setOwner("ä¸­å›½é¡¶çº§DNSæœåŠ¡å™¨");
 	}
 	
 	@Override

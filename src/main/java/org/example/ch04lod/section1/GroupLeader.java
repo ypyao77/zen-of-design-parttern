@@ -1,16 +1,16 @@
-package com.company.section1;
+package org.example.ch04lod.section1;
 
 import java.util.List;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÌåÓıÎ¯Ô±£¬Õâ¸öÌ«ÄÑ·­ÒëÁË¶¼ÊÇÖĞ¹úµÄÌØÉ«´Ê»ã
+ * ä½“è‚²å§”å‘˜ï¼Œè¿™ä¸ªå¤ªéš¾ç¿»è¯‘äº†éƒ½æ˜¯ä¸­å›½çš„ç‰¹è‰²è¯æ±‡
  */
 public class GroupLeader {
 	
-	//ÓĞÇå²éÅ®ÉúµÄ¹¤×÷
+	//æœ‰æ¸…æŸ¥å¥³ç”Ÿçš„å·¥ä½œ
 	public void countGirls(List<Girl> listGirls){
-		System.out.println("Å®ÉúÊıÁ¿ÊÇ£º"+listGirls.size());
+		System.out.println("å¥³ç”Ÿæ•°é‡æ˜¯ï¼š"+listGirls.size());
 	}
 }

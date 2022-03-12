@@ -1,19 +1,19 @@
-package com.company.section3;
+package org.example.ch02lsp.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * G3¾Ñ»÷²½Ç¹
+ * G3ç‹™å‡»æ­¥æª
  */
 public class AUG extends Rifle {
 	
-	//¾Ñ»÷Ç¹¶¼ÊÇĞ¯´øÒ»¸ö¾«×¼µÄÍûÔ¶¾µ
+	//ç‹™å‡»æªéƒ½æ˜¯æºå¸¦ä¸€ä¸ªç²¾å‡†çš„æœ›è¿œé•œ
 	public void zoomOut(){
-		System.out.println("Í¨¹ıÍûÔ¶¾µ¹Û¿´µĞÈË...");
+		System.out.println("é€šè¿‡æœ›è¿œé•œè§‚çœ‹æ•Œäºº...");
 	}
 	
 	@Override
 	public void shoot(){
-		System.out.println("AUGÉä»÷...");
+		System.out.println("AUGå°„å‡»...");
 	}
 }

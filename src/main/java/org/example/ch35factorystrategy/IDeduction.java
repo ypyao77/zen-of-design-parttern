@@ -1,4 +1,4 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company;
  */
 public interface IDeduction {
 
-	//¿Û¿î,Ìá¹©½»Ò×ºÍ¿¨ĞÅÏ¢£¬½øĞĞ¿Û¿î£¬²¢·µ»Ø¿Û¿îÊÇ·ñ³É¹¦
+	//æ‰£æ¬¾,æä¾›äº¤æ˜“å’Œå¡ä¿¡æ¯ï¼Œè¿›è¡Œæ‰£æ¬¾ï¼Œå¹¶è¿”å›æ‰£æ¬¾æ˜¯å¦æˆåŠŸ
 	public boolean exec(Card card,Trade trade);
 }

@@ -1,20 +1,20 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * IC¿¨ĞÅÏ¢
+ * ICå¡ä¿¡æ¯
  */
 public class Card {
 
-	//IC¿¨ºÅÂë
+	//ICå¡å·ç 
 	private String cardNo="";
-	//¿¨ÄÚµÄ¹Ì¶¨½»Ò×½ğ¶î
+	//å¡å†…çš„å›ºå®šäº¤æ˜“é‡‘é¢
 	private int steadyMoney =0;
-	//¿¨ÄÚ×ÔÓÉ½»Ò×½ğ¶î
+	//å¡å†…è‡ªç”±äº¤æ˜“é‡‘é¢
 	private int freeMoney =0;
 	
-	//getter/setter·½·¨
+	//getter/setteræ–¹æ³•
 	
 	public String getCardNo() {
 		return cardNo;

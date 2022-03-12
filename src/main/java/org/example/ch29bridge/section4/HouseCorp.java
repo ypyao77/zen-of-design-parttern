@@ -1,18 +1,18 @@
-package com.company.section4;
+package org.example.ch29bridge.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class HouseCorp extends Corp {
-	//¶¨Òå´«µİÒ»¸öHouse²úÆ·½øÀ´
+	//å®šä¹‰ä¼ é€’ä¸€ä¸ªHouseäº§å“è¿›æ¥
 	public HouseCorp(House house){
 		super(house);
 	}
-	//·¿µØ²ú¹«Ë¾ºÜHighÁË£¬×¬Ç®£¬¼ÆËãÀûÈó
+	//æˆ¿åœ°äº§å…¬å¸å¾ˆHighäº†ï¼Œèµšé’±ï¼Œè®¡ç®—åˆ©æ¶¦
 	public void makeMoney(){
 		super.makeMoney();
-		System.out.println("·¿µØ²ú¹«Ë¾×¬´óÇ®ÁË...");
+		System.out.println("æˆ¿åœ°äº§å…¬å¸èµšå¤§é’±äº†...");
 	}
 }
 

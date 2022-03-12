@@ -1,12 +1,12 @@
-package com.company.section2;
+package org.example.ch12proxy.dynamicproxy.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 抽象通知
+ * 鎶借薄閫氱煡
  */
 public interface IAdvice {
 	
-	//通知只有一个方法，执行即可
+	//閫氱煡鍙湁涓�涓柟娉曪紝鎵ц鍗冲彲
 	public void exec();
 }

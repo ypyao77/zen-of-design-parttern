@@ -1,9 +1,9 @@
-package com.company.section1;
+package org.example.ch05isp.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ĞÇÌ½£¬ËÑË÷ÃÀÅ®
+ * æ˜Ÿæ¢ï¼Œæœç´¢ç¾å¥³
  */
 public abstract class AbstractSearcher {
 	protected IPettyGirl pettyGirl;
@@ -11,6 +11,6 @@ public abstract class AbstractSearcher {
 		this.pettyGirl = _pettyGirl;
 	}
 	
-	//ËÑË÷ÃÀÅ®£¬ÁĞ³öÃÀÅ®ĞÅÏ¢
+	//æœç´¢ç¾å¥³ï¼Œåˆ—å‡ºç¾å¥³ä¿¡æ¯
 	public abstract void show();
 }

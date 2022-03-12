@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch04lod.section2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,21 +6,21 @@ import java.util.List;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÎÒÃÇÊ¹ÓÃClientÀ´Ãè»æÒ»ÏÂÕâ¸ö³¡¾°
+ * æˆ‘ä»¬ä½¿ç”¨Clientæ¥æç»˜ä¸€ä¸‹è¿™ä¸ªåœºæ™¯
  */
 public class Client {
 
 	public static void main(String[] args) {
-		//²úÉúÒ»¸öÅ®ÉúÈºÌå
+		//äº§ç”Ÿä¸€ä¸ªå¥³ç”Ÿç¾¤ä½“
 		List<Girl> listGirls = new ArrayList<Girl>();
-		//³õÊ¼»¯Å®Éú
+		//åˆå§‹åŒ–å¥³ç”Ÿ
 		for(int i=0;i<20;i++){
 			listGirls.add(new Girl());
 		}
 			
 		Teacher teacher= new Teacher();
 		
-		//ÀÏÊ¦·¢²¼ÃüÁî
+		//è€å¸ˆå‘å¸ƒå‘½ä»¤
 		teacher.commond(new GroupLeader(listGirls));
 	}
 	

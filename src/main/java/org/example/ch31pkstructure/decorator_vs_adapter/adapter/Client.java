@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch31pkstructure.decorator_vs_adapter.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,16 +7,16 @@ package com.company.adapter;
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ñ¼ÂèÂèÓĞÎå¸öº¢×Ó£¬ÆäÖĞËÄ¸ö¶¼ÊÇÒ»¸öÄ£Ñù
-		System.out.println("===ÂèÂèÓĞÎå¸öº¢×Ó£¬ÆäÖĞËÄ¸öÄ£ÑùÊÇÕâÑùµÄ£º===");
+		//é¸­å¦ˆå¦ˆæœ‰äº”ä¸ªå­©å­ï¼Œå…¶ä¸­å››ä¸ªéƒ½æ˜¯ä¸€ä¸ªæ¨¡æ ·
+		System.out.println("===å¦ˆå¦ˆæœ‰äº”ä¸ªå­©å­ï¼Œå…¶ä¸­å››ä¸ªæ¨¡æ ·æ˜¯è¿™æ ·çš„ï¼š===");
 		Duck duck = new Duckling();
-		duck.cry();  //Ğ¡Ñ¼×ÓµÄ½ĞÉù
-		duck.desAppearance(); //Ğ¡Ñ¼×ÓµÄÍâĞÎ
-		duck.desBehavior(); //Ğ¡Ñ¼×ÓµÄÆäËûĞĞÎª
-		System.out.println("\n===Ò»Ö»¶ÀÌØµÄĞ¡Ñ¼×Ó£¬Ä£ÑùÊÇÕâÑùµÄ£º===");
+		duck.cry();  //å°é¸­å­çš„å«å£°
+		duck.desAppearance(); //å°é¸­å­çš„å¤–å½¢
+		duck.desBehavior(); //å°é¸­å­çš„å…¶ä»–è¡Œä¸º
+		System.out.println("\n===ä¸€åªç‹¬ç‰¹çš„å°é¸­å­ï¼Œæ¨¡æ ·æ˜¯è¿™æ ·çš„ï¼š===");
 		Duck uglyDuckling = new UglyDuckling();
-		uglyDuckling.cry(); //³óĞ¡Ñ¼µÄ½ĞÉù
-		uglyDuckling.desAppearance(); //³óĞ¡Ñ¼µÄÍâĞÎ
-		uglyDuckling.desBehavior(); //³óĞ¡Ñ¼µÄÆäËûĞĞÎª
+		uglyDuckling.cry(); //ä¸‘å°é¸­çš„å«å£°
+		uglyDuckling.desAppearance(); //ä¸‘å°é¸­çš„å¤–å½¢
+		uglyDuckling.desBehavior(); //ä¸‘å°é¸­çš„å…¶ä»–è¡Œä¸º
 	}
 }

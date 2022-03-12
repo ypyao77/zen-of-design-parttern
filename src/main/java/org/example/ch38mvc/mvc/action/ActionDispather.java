@@ -1,4 +1,4 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
 import java.util.ArrayList;
 
@@ -7,16 +7,16 @@ import java.util.ArrayList;
  * I'm glad to share my knowledge with you all.
  */
 public class ActionDispather implements IActionDispather {
-	//ĞèÒªÖ´ĞĞµÄAction
+	//éœ€è¦æ‰§è¡Œçš„Action
 	private ActionManager actionManager = new ActionManager();
 	
-	//À¹½ØÆ÷Á´
+	//æ‹¦æˆªå™¨é“¾
 	private ArrayList<Interceptors> listInterceptors = InterceptorFactory.createInterceptors();
 	
 	public String actionInvoke(String actionName) {
-		//Ç°ÖÃÀ¹½ØÆ÷
+		//å‰ç½®æ‹¦æˆªå™¨
 		return actionManager.execAction(actionName);
-		//ºóÖÃÀ¹½ØÆ÷
+		//åç½®æ‹¦æˆªå™¨
 	}
 
 }

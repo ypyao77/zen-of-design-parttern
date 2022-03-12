@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.decorator_vs_adapter.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.decorator;
  */
 public class Decorator implements Swan {
 	private Swan swan;
-	//ĞŞÊÎµÄÊÇË­
+	//ä¿®é¥°çš„æ˜¯è°
 	public Decorator(Swan _swan){
 		this.swan =_swan;
 	}

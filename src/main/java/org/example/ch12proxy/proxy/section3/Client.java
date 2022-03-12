@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch12proxy.proxy.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com

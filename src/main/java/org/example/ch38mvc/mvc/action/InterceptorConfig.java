@@ -1,4 +1,4 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
 /**
  * @author cbf4Life cbf4life@126.com

@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch33pkoverzone.wrapper.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,17 +7,17 @@ package com.company.adapter;
 public class direcotr {
 
 	public static void main(String[] args) {
-		System.out.println("\n=======ÑİÏ·¹ı³ÌÄ£Äâ==========\n");
-		//¶¨ÒåÒ»¸ö´óÃ÷ĞÇ
+		System.out.println("\n=======æ¼”æˆè¿‡ç¨‹æ¨¡æ‹Ÿ==========\n");
+		//å®šä¹‰ä¸€ä¸ªå¤§æ˜æ˜Ÿ
 		IStar star = new FilmStar();
-		star.act("Ç°Ê®Îå·ÖÖÓ£¬Ã÷ĞÇ±¾ÈËÑİÏ·");
+		star.act("å‰åäº”åˆ†é’Ÿï¼Œæ˜æ˜Ÿæœ¬äººæ¼”æˆ");
 		
-		//µ¼Ñİ°ÑÒ»¸öÆÕÍ¨ÑİÔ±ÈÏÎªÊÇÒ»¸öÃ÷ĞÇÑİÔ±
+		//å¯¼æ¼”æŠŠä¸€ä¸ªæ™®é€šæ¼”å‘˜è®¤ä¸ºæ˜¯ä¸€ä¸ªæ˜æ˜Ÿæ¼”å‘˜
 		IActor actor = new UnknownActor();
 		IStar standin= new Standin(actor);
-		standin.act("ÖĞ¼äÎå·ÖÖÓ£¬ÌæÉíÔÚÑİÏ·");
+		standin.act("ä¸­é—´äº”åˆ†é’Ÿï¼Œæ›¿èº«åœ¨æ¼”æˆ");
 		
-		star.act("ºóÊ®Îå·ÖÖÓ£¬Ã÷ĞÇ±¾ÈËÑİÏ·");
+		star.act("ååäº”åˆ†é’Ÿï¼Œæ˜æ˜Ÿæœ¬äººæ¼”æˆ");
 		
 	}
 }

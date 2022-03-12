@@ -1,36 +1,36 @@
-package com.company.section5;
+package org.example.ch12proxy.proxy.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´úÁ·Õß
+ * ä»£ç»ƒè€…
  */
 public class GamePlayerProxy implements IGamePlayer {
 	private IGamePlayer gamePlayer = null;
 	
-	//¹¹Ôìº¯Êı´«µİÓÃ»§Ãû
+	//æ„é€ å‡½æ•°ä¼ é€’ç”¨æˆ·å
 	public GamePlayerProxy(IGamePlayer _gamePlayer){	
 		this.gamePlayer = _gamePlayer;
 	}
 	
-	//´úÁ·É±¹Ö
+	//ä»£ç»ƒæ€æ€ª
 	public void killBoss() {
 		this.gamePlayer.killBoss();
 	}
 
-	//´úÁ·µÇÂ¼
+	//ä»£ç»ƒç™»å½•
 	public void login(String user, String password) {
 		this.gamePlayer.login(user, password);
 
 	}
 
-	//´úÁ·Éı¼¶
+	//ä»£ç»ƒå‡çº§
 	public void upgrade() {
 		this.gamePlayer.upgrade();
 
 	}
 	
-	//´úÀíµÄ´úÀíÔİÊ±»¹Ã»ÓĞ,¾ÍÊÇ×Ô¼º
+	//ä»£ç†çš„ä»£ç†æš‚æ—¶è¿˜æ²¡æœ‰,å°±æ˜¯è‡ªå·±
 	public IGamePlayer getProxy(){
 		return this;
 	}

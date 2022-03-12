@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch37specification.specification.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,16 +6,16 @@ package com.company.section5;
  */
 public interface IUserSpecification {
 	
-	//ºòÑ¡ÕßÊÇ·ñÂú×ãÒªÇó
+	//å€™é€‰è€…æ˜¯å¦æ»¡è¶³è¦æ±‚
 	public boolean isSatisfiedBy(User user);	
 	
-	//and²Ù×÷
+	//andæ“ä½œ
 	public IUserSpecification and(IUserSpecification spec);
 	
-	//or²Ù×÷
+	//oræ“ä½œ
 	public IUserSpecification or(IUserSpecification spec);
 	
-	//not²Ù×÷
+	//notæ“ä½œ
 	public IUserSpecification not();
 }
 

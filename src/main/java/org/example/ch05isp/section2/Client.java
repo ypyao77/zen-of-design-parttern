@@ -1,16 +1,16 @@
-package com.company.section2;
+package org.example.ch05isp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³¡¾°Àà
+ * åœºæ™¯ç±»
  */
 public class Client {
 	
-	//ËÑË÷²¢Õ¹Ê¾ÃÀÅ®ĞÅÏ¢
+	//æœç´¢å¹¶å±•ç¤ºç¾å¥³ä¿¡æ¯
 	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÆøÖÊÃÀÅ®
-		IGreatTemperamentGirl yanYan = new PettyGirl("æÌæÌ");
+		//å®šä¹‰ä¸€ä¸ªæ°”è´¨ç¾å¥³
+		IGreatTemperamentGirl yanYan = new PettyGirl("å«£å«£");
 		AbstractSearcher searcher = new Searcher(yanYan);
 		searcher.show();
 	}

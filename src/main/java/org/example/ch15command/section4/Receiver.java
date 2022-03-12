@@ -1,10 +1,10 @@
-package com.company.section4;
+package org.example.ch15command.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Receiver {
-	//³éÏó½ÓÊÕÕß£¬¶¨ÒåÃ¿¸ö½ÓÊÕÕß¶¼±ØĞëÍê³ÉµÄÒµÎñ
+	//æŠ½è±¡æ¥æ”¶è€…ï¼Œå®šä¹‰æ¯ä¸ªæ¥æ”¶è€…éƒ½å¿…é¡»å®Œæˆçš„ä¸šåŠ¡
 	public abstract void doSomething();
 }

@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.wrapper.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,16 +7,16 @@ package com.company.bridge;
 public class Client {
 
 	public static void main(String[] args) {
-		//ÉùÃ÷³öÒ»¸öµçÓ°Ã÷ĞÇ
+		//å£°æ˜å‡ºä¸€ä¸ªç”µå½±æ˜æ˜Ÿ
 		AbstractStar zhangSan = new FilmStar();
-		//ÉùÃ÷³öÒ»¸ö¸èĞÇ
+		//å£°æ˜å‡ºä¸€ä¸ªæ­Œæ˜Ÿ
 		AbstractStar liSi = new Singer();
 		
-		//Õ¹Ê¾Ò»ÏÂ¸÷¸öÃ÷ĞÇµÄÖ÷Òª¹¤×÷
+		//å±•ç¤ºä¸€ä¸‹å„ä¸ªæ˜æ˜Ÿçš„ä¸»è¦å·¥ä½œ
 		zhangSan.doJob();
 		liSi.doJob();
 		
-		//µ±È»£¬Ò²ÓĞ²¿·ÖÃ÷ĞÇ²»ÎñÕıÒµ£¬±ÈÈç¸èĞÇÑİÏ·
+		//å½“ç„¶ï¼Œä¹Ÿæœ‰éƒ¨åˆ†æ˜æ˜Ÿä¸åŠ¡æ­£ä¸šï¼Œæ¯”å¦‚æ­Œæ˜Ÿæ¼”æˆ
 		liSi = new Singer(new ActFilm());
 		liSi.doJob();
 	}

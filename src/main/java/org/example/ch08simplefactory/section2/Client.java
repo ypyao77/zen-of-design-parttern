@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch08simplefactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -10,7 +10,7 @@ public class Client {
 		Creator creator = new ConcreteCreator();
 		Product product = creator.createProduct(ConcreteProduct1.class);
 		/*
-		 * 继续业务处理
+		 * 缁х画涓氬姟澶勭悊
 		 */
 	}
 }

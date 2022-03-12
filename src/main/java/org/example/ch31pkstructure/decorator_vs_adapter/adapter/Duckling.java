@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch31pkstructure.decorator_vs_adapter.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,16 +7,16 @@ package com.company.adapter;
 public class Duckling implements Duck {
 
 	public void cry() {
-		System.out.println("½ĞÉùÊÇ¸Â¡ª¡ª¸Â¡ª¡ª¸Â");
+		System.out.println("å«å£°æ˜¯å˜â€”â€”å˜â€”â€”å˜");
 
 	}
 
 	public void desAppearance() {
-		System.out.println("ÍâĞÎÊÇ»Æ°×Ïà¼ä£¬×ì³¤");
+		System.out.println("å¤–å½¢æ˜¯é»„ç™½ç›¸é—´ï¼Œå˜´é•¿");
 	}
 	
-	//Ñ¼×ÓµÄÆäËûĞĞÎª£¬±ÈÈçÓÎÓ¾
+	//é¸­å­çš„å…¶ä»–è¡Œä¸ºï¼Œæ¯”å¦‚æ¸¸æ³³
 	public void desBehavior(){
-		System.out.println("»áÓÎÓ¾");
+		System.out.println("ä¼šæ¸¸æ³³");
 	}
 }

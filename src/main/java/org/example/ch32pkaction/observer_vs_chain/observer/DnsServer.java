@@ -1,4 +1,4 @@
-package com.company.observer;
+package org.example.ch32pkaction.observer_vs_chain.observer;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -8,45 +8,45 @@ import java.util.Random;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ã¿¸öDNS·şÎñÆ÷¶¼¼´Ê¹¹Û²ìÕßÒ²ÊÇ±»¹Û²ìÕß
+ * æ¯ä¸ªDNSæœåŠ¡å™¨éƒ½å³ä½¿è§‚å¯Ÿè€…ä¹Ÿæ˜¯è¢«è§‚å¯Ÿè€…
  */
 public abstract class DnsServer extends Observable implements Observer {
 
-	//´¦ÀíÇëÇó£¬Ò²¾ÍÊÇ½ÓÊÕµ½ÊÂ¼şºóµÄ´¦Àí
+	//å¤„ç†è¯·æ±‚ï¼Œä¹Ÿå°±æ˜¯æ¥æ”¶åˆ°äº‹ä»¶åçš„å¤„ç†
 	public void update(Observable arg0, Object arg1) {
 		Recorder recorder = (Recorder)arg1;
-		//Èç¹û±¾»úÄÜ½âÎö
+		//å¦‚æœæœ¬æœºèƒ½è§£æ
 		if(isLocal(recorder)){
 			recorder.setIp(genIpAddress());
-		}else{//±¾»ú²»ÄÜ½âÎö£¬ÔòÌá½»µ½ÉÏ¼¶DNS
+		}else{//æœ¬æœºä¸èƒ½è§£æï¼Œåˆ™æäº¤åˆ°ä¸Šçº§DNS
 			responsFromUpperServer(recorder);
 		}
-		//Ç©Ãû
+		//ç­¾å
 		sign(recorder);
 	}
 
-	//×÷Îª±»¹Û²ìÕß£¬ÔÊĞíÔö¼Ó¹Û²ìÕß,DNS½âÎöµÄÉÏ¼¶DNSÒ»°ãÊÇÒ»¸ö
+	//ä½œä¸ºè¢«è§‚å¯Ÿè€…ï¼Œå…è®¸å¢åŠ è§‚å¯Ÿè€…,DNSè§£æçš„ä¸Šçº§DNSä¸€èˆ¬æ˜¯ä¸€ä¸ª
 	public void setUpperServer(DnsServer dnsServer){
-		//ÏÈÇå¿Õ£¬È»ºóÔÙÔö¼Ó
+		//å…ˆæ¸…ç©ºï¼Œç„¶åå†å¢åŠ 
 		super.deleteObservers();
 		super.addObserver(dnsServer);
 	}
 	
-	//Ïò¸¸DNSÇëÇó½âÎö£¬Ò²¾ÍÊÇÍ¨Öª¹Û²ìÕß
+	//å‘çˆ¶DNSè¯·æ±‚è§£æï¼Œä¹Ÿå°±æ˜¯é€šçŸ¥è§‚å¯Ÿè€…
 	private void responsFromUpperServer(Recorder recorder){
 		super.setChanged();
 		super.notifyObservers(recorder);
 	}
 	
-	//Ã¿¸öDNS·şÎñÆ÷Ç©ÉÏ×Ô¼ºµÄÃû×Ö
+	//æ¯ä¸ªDNSæœåŠ¡å™¨ç­¾ä¸Šè‡ªå·±çš„åå­—
 	protected abstract void sign(Recorder recorder);
 	
 
 	
-	//Ã¿¸öDNS·şÎñÆ÷¶¼±ØĞë¶¨Òå×Ô¼ºµÄ´¦Àí¼¶±ğ
+	//æ¯ä¸ªDNSæœåŠ¡å™¨éƒ½å¿…é¡»å®šä¹‰è‡ªå·±çš„å¤„ç†çº§åˆ«
 	protected abstract boolean isLocal(Recorder recorder);
 	
-	//Ëæ»ú²úÉúÒ»¸öIPµØÖ·£¬¹¤¾ßÀà
+	//éšæœºäº§ç”Ÿä¸€ä¸ªIPåœ°å€ï¼Œå·¥å…·ç±»
 	private String genIpAddress(){
 		Random rand = new Random();
 		String address = rand.nextInt(255) + "." + rand.nextInt(255) + "."+ rand.nextInt(255) + "."+ rand.nextInt(255);

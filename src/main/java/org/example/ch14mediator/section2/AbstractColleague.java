@@ -1,9 +1,9 @@
-package com.company.section2;
+package org.example.ch14mediator.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 同事的抽象类
+ * 鍚屼簨鐨勬娊璞＄被
  */
 public abstract class AbstractColleague {
 	protected AbstractMediator mediator;

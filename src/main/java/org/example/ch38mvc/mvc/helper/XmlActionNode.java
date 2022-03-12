@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 import org.dom4j.Attribute;
 import org.dom4j.Element;
@@ -9,10 +9,10 @@ import org.dom4j.Element;
  */
 public class XmlActionNode extends ActionNode {
 	
-	//ĞèÒª×ª»»µÄelement
+	//éœ€è¦è½¬æ¢çš„element
 	private Element el;
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’
 	public XmlActionNode(Element _el){
 		this.el = _el;
 	}
@@ -40,7 +40,7 @@ public class XmlActionNode extends ActionNode {
 	}
 	
 	
-	//»ñµÃÖ¸¶¨ÊôĞÔÖµ
+	//è·å¾—æŒ‡å®šå±æ€§å€¼
 	private String getAttValue(String attName){
 		Attribute att = el.attribute(attName);
 		return att.getText();

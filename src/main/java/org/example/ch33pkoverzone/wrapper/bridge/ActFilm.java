@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.wrapper.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -9,7 +9,7 @@ public class ActFilm extends AbstractAction {
 
 	@Override
 	public void desc() {
-		System.out.println("Ñİ³ö¾«²Ê¾øÂ×µÄµçÓ°");
+		System.out.println("æ¼”å‡ºç²¾å½©ç»ä¼¦çš„ç”µå½±");
 	}
 
 }

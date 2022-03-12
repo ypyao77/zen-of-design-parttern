@@ -1,18 +1,18 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.decorator_vs_adapter.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ìì¶ìs
+ * å¤©é¹…s
  */
 public interface Swan {
 	
-	//Ìì¶ì»á·É
+	//å¤©é¹…ä¼šé£
 	public void fly();
 	
-	//Ìì¶ì»á½Ğ
+	//å¤©é¹…ä¼šå«
 	public void cry();
 	
-	//Ìì¶ì¶¼ÓĞÆ¯ÁÁµÄÍâ±í
+	//å¤©é¹…éƒ½æœ‰æ¼‚äº®çš„å¤–è¡¨
 	public void desAppaearance();
 }

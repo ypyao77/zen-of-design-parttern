@@ -1,4 +1,4 @@
-package com.company.factory;
+package org.example.ch30pkbuilder.factoryvsbuilder.factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.factory;
  */
 public interface ISuperMan {
 
-	//Ã¿¸ö³¬ÈË¶¼ÓĞÌØÊâ¼¼ÄÜ
+	//æ¯ä¸ªè¶…äººéƒ½æœ‰ç‰¹æ®ŠæŠ€èƒ½
 	public void specialTalent();
 	
 }

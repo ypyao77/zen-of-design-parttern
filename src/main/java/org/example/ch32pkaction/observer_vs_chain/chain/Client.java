@@ -1,4 +1,4 @@
-package com.company.chain;
+package org.example.ch32pkaction.observer_vs_chain.chain;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,28 +12,28 @@ public class Client {
 	
 	public static void main(String[] args) throws Exception {
 		
-		//ÉÏº£ÓòÃû·şÎñÆ÷
+		//ä¸Šæµ·åŸŸåæœåŠ¡å™¨
 		DnsServer sh = new SHDnsServer();
-		//ÖĞ¹ú¶¥¼¶ÓòÃû·şÎñÆ÷
+		//ä¸­å›½é¡¶çº§åŸŸåæœåŠ¡å™¨
 		DnsServer china = new ChinaTopDnsServer();
-		//¶¥¼¶ÓòÃû·şÎñÆ÷
+		//é¡¶çº§åŸŸåæœåŠ¡å™¨
 		DnsServer top = new TopDnsServer();
 		
-		//¶¨Òå²éÑ¯Â·¾¶
+		//å®šä¹‰æŸ¥è¯¢è·¯å¾„
 		china.setUpperServer(top);
 		sh.setUpperServer(china);
 		
 		
-		//½âÎöÓòÃû
-		System.out.println("=====ÓòÃû½âÎöÄ£ÄâÆ÷=====");
+		//è§£æåŸŸå
+		System.out.println("=====åŸŸåè§£ææ¨¡æ‹Ÿå™¨=====");
 		while(true){
-			System.out.print("\nÇëÊäÈëÓòÃû(ÊäÈëNÍË³ö):");
+			System.out.print("\nè¯·è¾“å…¥åŸŸå(è¾“å…¥Né€€å‡º):");
 			String domain = (new BufferedReader(new InputStreamReader(System.in))).readLine();
 			if(domain.equalsIgnoreCase("n")){
 				return;
 			}
 			Recorder recorder = sh.resolve(domain);
-			System.out.println("----DNS·şÎñÆ÷½âÎö½á¹û----");
+			System.out.println("----DNSæœåŠ¡å™¨è§£æç»“æœ----");
 			System.out.println(recorder);			
 		}		
 	}

@@ -1,20 +1,20 @@
-package com.company.strategy;
+package org.example.ch33pkoverzone.strategy_vs_bridge.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class MailTemplate {
-	//ÓÊ¼ş·¢¼şÈË
+	//é‚®ä»¶å‘ä»¶äºº
 	private String from;
-	//ÊÕ¼şÈË
+	//æ”¶ä»¶äºº
 	private String to;
-	//ÓÊ¼ş±êÌâ
+	//é‚®ä»¶æ ‡é¢˜
 	private String subject;
-	//ÓÊ¼şÄÚÈİ
+	//é‚®ä»¶å†…å®¹
 	private String context;
 
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ×ã¹»¶àµÄĞÅÏ¢
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’è¶³å¤Ÿå¤šçš„ä¿¡æ¯
 	public MailTemplate(String _from,String _to,String _subject,String _context){
 		this.from = _from;
 		this.to = _to;
@@ -50,7 +50,7 @@ public abstract class MailTemplate {
 		this.context = context;
 	}
 	
-	//ÓÊ¼ş¶¼ÓĞÄÚÈİ
+	//é‚®ä»¶éƒ½æœ‰å†…å®¹
 	public String getContext(){
 		return context;
 	}

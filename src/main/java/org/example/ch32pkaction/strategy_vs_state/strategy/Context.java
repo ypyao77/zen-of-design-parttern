@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch32pkaction.strategy_vs_state.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -15,7 +15,7 @@ public class Context {
 		this.workMethod = work;
 	}
 	
-	//Ã¿¸öËã·¨¶¼ÓĞ±ØĞë¾ßÓĞµÄ¹¦ÄÜ
+	//æ¯ä¸ªç®—æ³•éƒ½æœ‰å¿…é¡»å…·æœ‰çš„åŠŸèƒ½
 	public void work(){
 		this.workMethod.work();
 	}

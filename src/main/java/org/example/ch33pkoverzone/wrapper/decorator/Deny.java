@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch33pkoverzone.wrapper.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -13,6 +13,6 @@ public class Deny extends Decorator {
 	@Override
 	public void act(){
 		super.act();
-		System.out.println("ÅÅÑİºó£º°Ù°ãµÖÀµ£¬ËÀ²»³ĞÈÏ");
+		System.out.println("æ’æ¼”åï¼šç™¾èˆ¬æŠµèµ–ï¼Œæ­»ä¸æ‰¿è®¤");
 	}
 }

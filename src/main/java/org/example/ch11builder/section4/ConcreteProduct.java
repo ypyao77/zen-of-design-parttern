@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch11builder.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,15 +7,15 @@ package com.company.section4;
 public class ConcreteProduct extends Builder {
 	private Product product = new Product();
 	
-	//ÉèÖÃ²úÆ·Áã¼ş
+	//è®¾ç½®äº§å“é›¶ä»¶
 	public void setPart(){
 		/*
-		 * ²úÆ·ÀàÄÚµÄÂß¼­´¦Àí
+		 * äº§å“ç±»å†…çš„é€»è¾‘å¤„ç†
 		 */
 	}
 	
 	
-	//×é½¨Ò»¸ö²úÆ·
+	//ç»„å»ºä¸€ä¸ªäº§å“
 	public Product buildProduct() {
 		return product;
 	}

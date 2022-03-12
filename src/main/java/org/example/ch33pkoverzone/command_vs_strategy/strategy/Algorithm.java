@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch33pkoverzone.command_vs_strategy.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.strategy;
  */
 public interface Algorithm {
 
-	//Ñ¹ËõËã·¨
+	//å‹ç¼©ç®—æ³•
 	public boolean compress(String source,String to);
 
-	//½âÑ¹ËõËã·¨
+	//è§£å‹ç¼©ç®—æ³•
 	public boolean uncompress(String source,String to);
 }

@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.wrapper.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -8,7 +8,7 @@ public class Sing extends AbstractAction {
 
 	@Override
 	public void desc() {
-		System.out.println("³ª³öÓÅÃÀµÄ¸èÇú");
+		System.out.println("å”±å‡ºä¼˜ç¾çš„æ­Œæ›²");
 	}
 
 }

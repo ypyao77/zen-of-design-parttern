@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -15,16 +15,16 @@ import org.dom4j.io.SAXReader;
  * I'm glad to share my knowledge with you all.
  */
 public class XmlHelper {
-	//µ¥Àı¶ÔÏó
+	//å•ä¾‹å¯¹è±¡
 	private static Document doc;
-	//Ä¬ÈÏµÄActionµÄXPATHÂ·¾¶
+	//é»˜è®¤çš„Actionçš„XPATHè·¯å¾„
 	private final static String DEFAULT_ACTION_PATH = "/mvc/action";
 	
 	public XmlHelper(){
 		this("c:/ActionConfig.xml");
 	}
 	
-	//³õÊ¼»¯Ò»¸öXML DOCUMENT¶ÔÏó
+	//åˆå§‹åŒ–ä¸€ä¸ªXML DOCUMENTå¯¹è±¡
 	public XmlHelper(String xmlFilePath){
 		try {
 			InputStream xmlStream = new FileInputStream(xmlFilePath);
@@ -35,17 +35,17 @@ public class XmlHelper {
 		
 	}
 	
-	//¸ù¾İActionÃû³Æ²éÕÒ³ö½Úµã
+	//æ ¹æ®Actionåç§°æŸ¥æ‰¾å‡ºèŠ‚ç‚¹
 	@SuppressWarnings("unchecked")
 	public Element getNodeByActionName(String actionName){
-		//È¡µÃËùÓĞ½Úµã
+		//å–å¾—æ‰€æœ‰èŠ‚ç‚¹
 		List<Node> nodeList = doc.selectNodes(DEFAULT_ACTION_PATH);
-		//±éÀúËùÓĞµÄNode½Úµã
+		//éå†æ‰€æœ‰çš„NodeèŠ‚ç‚¹
 		System.out.println(nodeList.size());
 		for(Node node:nodeList){
 			Element e = (Element)node;
 			Attribute a = e.attribute("name");
-			//ÕÒµ½Ãû×ÖÆ¥ÅäµÄaction
+			//æ‰¾åˆ°åå­—åŒ¹é…çš„action
 			if(a.getText().equals(actionName)){
 				return e;
 			}
@@ -53,7 +53,7 @@ public class XmlHelper {
 		return null;
 	}
 	
-	//¶¨Òå¸ö·ÃÎÊÕß
+	//å®šä¹‰ä¸ªè®¿é—®è€…
 	public static void main(String[] args) {
 		XmlHelper xmlhelper = new XmlHelper();
 		Element e=xmlhelper.getNodeByActionName("loginAction");

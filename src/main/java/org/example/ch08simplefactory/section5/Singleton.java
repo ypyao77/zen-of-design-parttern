@@ -1,18 +1,18 @@
-package com.company.section5;
+package org.example.ch08simplefactory.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * µ¥Àı¶ÔÏó
+ * å•ä¾‹å¯¹è±¡
  */
 public class Singleton {
 	
-	//²»ÔÊĞíÍ¨¹ınew²úÉúÒ»¸ö¶ÔÏó
+	//ä¸å…è®¸é€šè¿‡newäº§ç”Ÿä¸€ä¸ªå¯¹è±¡
 	private Singleton(){
 		
 	}
 	
 	public void doSomething(){
-		//ÒµÎñ´¦Àí
+		//ä¸šåŠ¡å¤„ç†
 	}
 }

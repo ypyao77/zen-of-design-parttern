@@ -1,13 +1,13 @@
-package com.company.section3;
+package org.example.ch18strategy.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Calculator {
-	//¼Ó·ûºÅ
+	//åŠ ç¬¦å·
 	private final static String ADD_SYMBOL = "+";
-	//¼õ·ûºÅ
+	//å‡ç¬¦å·
 	private final static String SUB_SYMBOL = "-";
 	
 	public int exec(int a,int b,String symbol){
@@ -20,12 +20,12 @@ public class Calculator {
 		return result;
 	}
 	
-	//¼Ó·¨ÔËËã
+	//åŠ æ³•è¿ç®—
 	private int add(int a,int b){
 		return a+b;
 	}
 	
-	//¼õ·¨ÔËËã
+	//å‡æ³•è¿ç®—
 	private int sub(int a,int b){
 		return a-b;
 	}

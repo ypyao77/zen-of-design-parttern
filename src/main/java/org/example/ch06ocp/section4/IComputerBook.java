@@ -1,12 +1,12 @@
-package com.company.section4;
+package org.example.ch06ocp.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼ÆËã»úÊé¼®
+ * è®¡ç®—æœºä¹¦ç±
  */
 public interface IComputerBook extends IBook{
 	
-	//¼ÆËã»úÊé¼®ÊÇÓĞÒ»¸ö·¶Î§
+	//è®¡ç®—æœºä¹¦ç±æ˜¯æœ‰ä¸€ä¸ªèŒƒå›´
 	public String getScope();
 }

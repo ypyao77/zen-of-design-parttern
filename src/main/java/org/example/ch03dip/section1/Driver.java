@@ -1,13 +1,13 @@
-package com.company.section1;
+package org.example.ch03dip.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ë¾»ú
+ * å¸æœº
  */
 public class Driver {
 	
-	//Ë¾»úµÄÖ÷ÒªÖ°Ôğ¾ÍÊÇ¼İÊ»Æû³µ
+	//å¸æœºçš„ä¸»è¦èŒè´£å°±æ˜¯é©¾é©¶æ±½è½¦
 	public void drive(Benz benz){
 		benz.run();
 	}

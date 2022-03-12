@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch12proxy.dynamicproxy.section2;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -9,16 +9,16 @@ import java.lang.reflect.Proxy;
  * I'm glad to share my knowledge with you all.
  */
 public class MyInvocationHandler implements InvocationHandler {
-	//±»´úÀíµÄ¶ÔÏó
+	//è¢«ä»£ç†çš„å¯¹è±¡
 	private Object target = null;
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİÒ»¸ö¶ÔÏó
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’ä¸€ä¸ªå¯¹è±¡
 	public MyInvocationHandler(Object _obj){
 		this.target = _obj;
 	}
-	//´úÀí·½·¨	
+	//ä»£ç†æ–¹æ³•	
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
-		//Ö´ĞĞ±»´úÀíµÄ·½·¨
+		//æ‰§è¡Œè¢«ä»£ç†çš„æ–¹æ³•
 		return method.invoke(this.target, args);
 	}
 }

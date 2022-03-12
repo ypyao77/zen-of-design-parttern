@@ -1,13 +1,13 @@
-package com.company.section2;
+package org.example.ch12proxy.dynamicproxy.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ç°ÖÃÍ¨Öª
+ * å‰ç½®é€šçŸ¥
  */
 public class BeforeAdvice implements IAdvice{
 	
 	public void exec(){
-		System.out.println("ÎÒÊÇÇ°ÖÃÍ¨Öª£¬ÎÒ±»Ö´ĞĞÁË£¡");
+		System.out.println("æˆ‘æ˜¯å‰ç½®é€šçŸ¥ï¼Œæˆ‘è¢«æ‰§è¡Œäº†ï¼");
 	}
 }

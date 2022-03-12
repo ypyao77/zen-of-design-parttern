@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch32pkaction.strategy_vs_state.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.strategy;
  */
 public class AdultWork extends WorkAlgorithm {
 
-	//³ÉÄêÈËµÄ¹¤×÷
+	//æˆå¹´äººçš„å·¥ä½œ
 	@Override
 	public void work() {
-		System.out.println("³ÉÄêÈËµÄ¹¤×÷¾ÍÊÇÕõÇ®£¡");
+		System.out.println("æˆå¹´äººçš„å·¥ä½œå°±æ˜¯æŒ£é’±ï¼");
 
 	}
 

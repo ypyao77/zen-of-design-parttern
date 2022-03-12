@@ -1,4 +1,4 @@
-package com.cbf4life.view;
+package org.example.ch38mvc.cbf4life.view;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,22 +7,22 @@ package com.cbf4life.view;
 public abstract class AbsView {
 	private AbsLangData langData;
 	
-	//±ØĞëÒªÒ»¸öÓïÑÔÎÄ¼ş
+	//å¿…é¡»è¦ä¸€ä¸ªè¯­è¨€æ–‡ä»¶
 	public AbsView(AbsLangData _langData){
 		this.langData = _langData;
 	}
 	
-	//»ñµÃµ±Ç°µÄÓïÑÔ
+	//è·å¾—å½“å‰çš„è¯­è¨€
 	public AbsLangData getLangData(){
 		return langData;
 	}
 	
-	//Ò³ÃæµÄURLÂ·¾¶
+	//é¡µé¢çš„URLè·¯å¾„
 	public String getURI(){
 		return null;
 	}
 	
-	//×é×°Ò»¸öÒ³Ãæ
+	//ç»„è£…ä¸€ä¸ªé¡µé¢
 	public abstract void assemble();
 	
 }

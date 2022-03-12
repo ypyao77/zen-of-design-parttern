@@ -1,4 +1,4 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company;
  */
 public class SteadyDeduction implements IDeduction {
 	
-	//¹Ì¶¨ĞÔ½»Ò×¿Û¿î
+	//å›ºå®šæ€§äº¤æ˜“æ‰£æ¬¾
 	public boolean exec(Card card, Trade trade) {
-		//¹Ì¶¨½ğ¶îºÍ×ÔÓÉ½ğ¶î¸÷¿Û³ı50%
+		//å›ºå®šé‡‘é¢å’Œè‡ªç”±é‡‘é¢å„æ‰£é™¤50%
 		int halfMoney = (int)Math.rint(trade.getAmount() / 2.0);
 		card.setFreeMoney(card.getFreeMoney() - halfMoney);
 		card.setSteadyMoney(card.getSteadyMoney() - halfMoney);

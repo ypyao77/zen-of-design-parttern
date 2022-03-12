@@ -1,4 +1,4 @@
-package com.company.section6;
+package org.example.ch28flyweight.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.section6;
  */
 public class SignInfo4Pool extends SignInfo {
 	
-	//¶¨ÒåÒ»¸ö¶ÔÏó³ØÌáÈ¡µÄKEYÖµ
+	//å®šä¹‰ä¸€ä¸ªå¯¹è±¡æ± æå–çš„KEYå€¼
 	private String key;
 	
-	//¹¹Ôìº¯Êı»ñµÃÏàÍ¬±êÖ¾
+	//æ„é€ å‡½æ•°è·å¾—ç›¸åŒæ ‡å¿—
 	public SignInfo4Pool(String _key){
 		this.key = _key;
 	}

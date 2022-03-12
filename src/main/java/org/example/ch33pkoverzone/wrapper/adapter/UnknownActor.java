@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch33pkoverzone.wrapper.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.adapter;
  */
 public class UnknownActor implements IActor {
 
-	//ÎŞÃûÑİÔ±ÑİÏ·
+	//æ— åæ¼”å‘˜æ¼”æˆ
 	public void playact(String context) {
-		System.out.println("ÎŞÃûÑİÔ±£º"+context);
+		System.out.println("æ— åæ¼”å‘˜ï¼š"+context);
 	}
 
 }

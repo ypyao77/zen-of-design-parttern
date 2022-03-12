@@ -1,12 +1,12 @@
-package com.company.section5;
+package org.example.ch03dip.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 汽车接口
+ * 姹借溅鎺ュ彛
  */
 public interface ICar {
 
-	//是汽车就应该能跑
+	//鏄苯杞﹀氨搴旇鑳借窇
 	public void run();
 }

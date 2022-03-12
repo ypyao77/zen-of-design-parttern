@@ -1,15 +1,15 @@
-package com.company.section1;
+package org.example.ch12proxy.proxy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÅË½ğÁ«
+ * æ½˜é‡‘è²
  */
 public class PanJinLian implements KindWomen {
-	//Ğß³Ü¸ĞµÈ¼¶
+	//ç¾è€»æ„Ÿç­‰çº§
 	private int shameLevel = 10;	
 	
-	//´´½¨¶ÔÏóµÄÊ±ºò£¬¾ÍÒª¶¨ÒåÒ»¸öĞß³Ü¸Ğ£¬ÓëÍâ½çÓĞ¹ØÏµ
+	//åˆ›å»ºå¯¹è±¡çš„æ—¶å€™ï¼Œå°±è¦å®šä¹‰ä¸€ä¸ªç¾è€»æ„Ÿï¼Œä¸å¤–ç•Œæœ‰å…³ç³»
 	public PanJinLian(int level){
 		this.shameLevel = this.shameLevel + level;
 	}
@@ -17,20 +17,20 @@ public class PanJinLian implements KindWomen {
 	
 	public void happyWithMan() {
 		if(this.shameLevel > 20){
-			System.out.println("¶Ô²»Æğ£¬ÎÒ²»ÈÏÊ¶Äã£¡");
+			System.out.println("å¯¹ä¸èµ·ï¼Œæˆ‘ä¸è®¤è¯†ä½ ï¼");
 		}else{
-			System.out.println("ºÃµÄ.....");
+			System.out.println("å¥½çš„.....");
 		}
 	}
 	
-	//Ôö¼ÓĞß³Ü¸Ğ
+	//å¢åŠ ç¾è€»æ„Ÿ
 	public void increaseSharme(int level) {
 		this.shameLevel = this.shameLevel + level;
 	}
 
-	//Å×ÃÄÑÛ
+	//æŠ›åªšçœ¼
 	public void makeEyesWithMan() {
-		System.out.println("ÅË½ğÁ«Å×ÃÄÑÛ");
+		System.out.println("æ½˜é‡‘è²æŠ›åªšçœ¼");
 	}
 
 }

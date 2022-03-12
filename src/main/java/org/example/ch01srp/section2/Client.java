@@ -1,20 +1,20 @@
-package com.company.section2;
+package org.example.ch01srp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÒµÎñÀàµ÷ÓÃ
+ * ä¸šåŠ¡ç±»è°ƒç”¨
  */
 public class Client {
 	
 	public static void main(String[] args) {
 		IUserBiz userInfo = new UserInfo();
 		
-		//ÎÒÒª¸´ÖÆÁË£¬ÎÒ¾ÍÈÏÎªËüÊÇÒ»¸ö´¿´âµÄBO
+		//æˆ‘è¦å¤åˆ¶äº†ï¼Œæˆ‘å°±è®¤ä¸ºå®ƒæ˜¯ä¸€ä¸ªçº¯ç²¹çš„BO
 		IUserBO userBO = (IUserBO)userInfo;
 		userBO.setPassword("abc");
 		
-		//ÎÒÒªÖ´ĞĞ¶¯×÷ÁË£¬ÎÒ¾ÍÈÏÎªÊÇÒ»¸öÒµÎñÂß¼­Àà
+		//æˆ‘è¦æ‰§è¡ŒåŠ¨ä½œäº†ï¼Œæˆ‘å°±è®¤ä¸ºæ˜¯ä¸€ä¸ªä¸šåŠ¡é€»è¾‘ç±»
 		IUserBiz userBiz = (IUserBiz)userInfo;
 		userBiz.deleteUser();
 				

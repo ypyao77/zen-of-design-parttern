@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.helper;
  */
 public interface IXmlValidate {
 	
-	//只有一个方法，检查XML是否符合条件
+	//鍙湁涓�涓柟娉曪紝妫�鏌ML鏄惁绗﹀悎鏉′欢
 	public boolean validate(String xmlPath);
 }	

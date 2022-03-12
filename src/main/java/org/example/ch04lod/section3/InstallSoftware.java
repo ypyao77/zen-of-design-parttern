@@ -1,16 +1,16 @@
-package com.company.section3;
+package org.example.ch04lod.section3;
 
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 业务组装类，负责调用各个步骤
+ * 涓氬姟缁勮绫伙紝璐熻矗璋冪敤鍚勪釜姝ラ
  */
 public class InstallSoftware {
 	
 	public void installWizard(Wizard wizard){
 		int first = wizard.first();  
-		//根据first返回的结果，看是否需要执行second
+		//鏍规嵁first杩斿洖鐨勭粨鏋滐紝鐪嬫槸鍚﹂渶瑕佹墽琛宻econd
 		if(first>50){
 			int second = wizard.second();
 			if(second>50){

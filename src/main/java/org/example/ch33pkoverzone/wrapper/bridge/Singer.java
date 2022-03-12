@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.wrapper.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,20 +6,20 @@ package com.company.bridge;
  */
 public class Singer extends AbstractStar {
 	
-	//Ä¬ÈÏµÄ¸èĞÇÃ÷ĞÇÓ¦¸ÃÊÇ³ª¸è
+	//é»˜è®¤çš„æ­Œæ˜Ÿæ˜æ˜Ÿåº”è¯¥æ˜¯å”±æ­Œ
 	public Singer(){
 		super(new Sing());
 	}
 	
-	//Ò²¿ÉÒÔÖØĞÂÉèÖÃÒ»¸öĞÂÖ°Òµ
+	//ä¹Ÿå¯ä»¥é‡æ–°è®¾ç½®ä¸€ä¸ªæ–°èŒä¸š
 	public Singer(AbstractAction _action){
 		super(_action);
 	}
 	
-	//Ï¸»¯¸èĞÇÃ÷ĞÇµÄÖ°Ôğ
+	//ç»†åŒ–æ­Œæ˜Ÿæ˜æ˜Ÿçš„èŒè´£
 	@Override
 	public void doJob(){
-		System.out.println("\n======¸èĞÇÃ÷ĞÇµÄÖ÷Òª¹¤×÷=====");
+		System.out.println("\n======æ­Œæ˜Ÿæ˜æ˜Ÿçš„ä¸»è¦å·¥ä½œ=====");
 		super.doJob();
 	}
 }

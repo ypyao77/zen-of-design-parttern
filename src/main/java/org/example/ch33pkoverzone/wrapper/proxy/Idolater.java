@@ -1,19 +1,19 @@
-package com.company.proxy;
+package org.example.ch33pkoverzone.wrapper.proxy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÊÜÖÚ
+ * å—ä¼—
  */
 public class Idolater {
 	
 	public static void main(String[] args) {
-		//³ç°İµÄÃ÷ĞÇÊÇË­
+		//å´‡æ‹œçš„æ˜æ˜Ÿæ˜¯è°
 		IStar star = new Singer();
-		//ÕÒµ½Ã÷ĞÇµÄ´úÀíÈË
+		//æ‰¾åˆ°æ˜æ˜Ÿçš„ä»£ç†äºº
 		IStar agent = new Agent(star);
-		System.out.println("×·ĞÇ×å£ºÎÒÊÇÄãµÄ³ç°İÕß£¬ÇëÇ©Ãû£¡");
-		//Ç©×Ö
+		System.out.println("è¿½æ˜Ÿæ—ï¼šæˆ‘æ˜¯ä½ çš„å´‡æ‹œè€…ï¼Œè¯·ç­¾åï¼");
+		//ç­¾å­—
 		agent.sign();
 	}
 }

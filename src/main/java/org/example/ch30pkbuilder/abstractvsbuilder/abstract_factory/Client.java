@@ -1,4 +1,4 @@
-package com.company.abstract_factory;
+package org.example.ch30pkbuilder.abstractvsbuilder.abstract_factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,17 +7,17 @@ package com.company.abstract_factory;
 public class Client {
 
 	public static void main(String[] args) {
-		//¸øÎÒÉú²úÒ»Á¾±¼³ÛSUV
-		System.out.println("===ÒªÇóÉú²úÒ»Á¾±¼³ÛSUV===");
-		//Ê×ÏÈÕÒµ½Éú²ú±¼³Û³µµÄ¹¤³§
-		System.out.println("A¡¢ÕÒµ½±¼³Û³µ¹¤³§");
+		//ç»™æˆ‘ç”Ÿäº§ä¸€è¾†å¥”é©°SUV
+		System.out.println("===è¦æ±‚ç”Ÿäº§ä¸€è¾†å¥”é©°SUV===");
+		//é¦–å…ˆæ‰¾åˆ°ç”Ÿäº§å¥”é©°è½¦çš„å·¥å‚
+		System.out.println("Aã€æ‰¾åˆ°å¥”é©°è½¦å·¥å‚");
 		CarFactory carFactory= new BenzFactory();
-		//¿ªÊ¼Éú²ú±¼³ÛSUV
-		System.out.println("B¡¢¿ªÊ¼Éú²ú±¼³ÛSUV");
+		//å¼€å§‹ç”Ÿäº§å¥”é©°SUV
+		System.out.println("Bã€å¼€å§‹ç”Ÿäº§å¥”é©°SUV");
 		ICar benzSuv = carFactory.createSuv();
-		//Éú²úÍê±Ï£¬Õ¹Ê¾Ò»ÏÂ³µÁ¾ĞÅÏ¢
-		System.out.println("C¡¢Éú²ú³öµÄÆû³µÈçÏÂ£º");
-		System.out.println("Æû³µÆ·ÅÆ£º"+benzSuv.getBand());
-		System.out.println("Æû³µĞÍºÅ£º" + benzSuv.getModel());		
+		//ç”Ÿäº§å®Œæ¯•ï¼Œå±•ç¤ºä¸€ä¸‹è½¦è¾†ä¿¡æ¯
+		System.out.println("Cã€ç”Ÿäº§å‡ºçš„æ±½è½¦å¦‚ä¸‹ï¼š");
+		System.out.println("æ±½è½¦å“ç‰Œï¼š"+benzSuv.getBand());
+		System.out.println("æ±½è½¦å‹å·ï¼š" + benzSuv.getModel());		
 	}
 }

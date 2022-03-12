@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch29bridge.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,16 +6,16 @@ package com.company.section5;
  */
 public class RefinedAbstraction extends Abstraction {
 	
-	//¸²Ğ´¹¹Ôìº¯Êı
+	//è¦†å†™æ„é€ å‡½æ•°
 	public RefinedAbstraction(Implementor _imp){
 		super(_imp);
 	}
 	
-	//ĞŞÕı¸¸ÀàµÄĞĞÎÄ
+	//ä¿®æ­£çˆ¶ç±»çš„è¡Œæ–‡
 	@Override
 	public void request(){
 		/*
-		 * ÒµÎñ´¦Àí....
+		 * ä¸šåŠ¡å¤„ç†....
 		 */
 		super.request();
 		

@@ -1,11 +1,11 @@
-package com.company.section7;
+package org.example.ch25visitor.section7;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class IdiotRole implements Role {
-	//Ò»¸öÈõÖÇ½ÇÉ«,È»Ë­À´°çÑİ
+	//ä¸€ä¸ªå¼±æ™ºè§’è‰²,ç„¶è°æ¥æ‰®æ¼”
 	public void accept(AbsActor actor){
 		actor.act(this);
 	}

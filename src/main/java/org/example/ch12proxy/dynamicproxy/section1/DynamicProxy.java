@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch12proxy.dynamicproxy.section1;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -8,30 +8,30 @@ import java.lang.reflect.Proxy;
  * I'm glad to share my knowledge with you all.
  */
 public class DynamicProxy {
-	//¶¨ÒåÒª´úÀíÄÄ¸öÀà
+	//å®šä¹‰è¦ä»£ç†å“ªä¸ªç±»
 	private Object obj =null;
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ±»´úÀí¶ÔÏó	
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’è¢«ä»£ç†å¯¹è±¡	
 	public DynamicProxy(Object _obj){
 		Class c = _obj.getClass();
-		//Éú³É±»´úÀíÀàµÄ´úÀíÀà
+		//ç”Ÿæˆè¢«ä»£ç†ç±»çš„ä»£ç†ç±»
 		this.obj = Proxy.newProxyInstance(c.getClassLoader(), c.getInterfaces(), new MyInvocationHandler(_obj));
 	}
-	//Ö´ĞĞ´úÀíÀàµÄ·½·¨
+	//æ‰§è¡Œä»£ç†ç±»çš„æ–¹æ³•
 	public Object exec(String methodName,Object...args){
-		//·µ»ØÖµ
+		//è¿”å›å€¼
 		Object result = null;
-		//·½·¨ÖĞµÄ²ÎÊıÀàĞÍ
+		//æ–¹æ³•ä¸­çš„å‚æ•°ç±»å‹
 		Class[] c= new Class[args.length];
 		int i=0;
-		//»ñµÃ²ÎÊıµÄÀàĞÍ
+		//è·å¾—å‚æ•°çš„ç±»å‹
 		for(Object o:args){
 			c[i] = o.getClass();
 			i++;
 		}
 		try {
-			//¸ù¾İ·½·¨Ãû³ÆºÍ²ÎÊıÀàĞÍ²éÕÒµ½Î¨Ò»Ò»¸ö·½·¨
+			//æ ¹æ®æ–¹æ³•åç§°å’Œå‚æ•°ç±»å‹æŸ¥æ‰¾åˆ°å”¯ä¸€ä¸€ä¸ªæ–¹æ³•
 			Method method=this.obj.getClass().getMethod(methodName, c);
-			//Ö´ĞĞ¸Ã·½·¨
+			//æ‰§è¡Œè¯¥æ–¹æ³•
 			result = method.invoke(this.obj, args);
 		} catch (Exception e) {
 			e.printStackTrace();

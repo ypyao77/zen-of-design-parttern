@@ -1,4 +1,4 @@
-package com.company.state;
+package org.example.ch32pkaction.strategy_vs_state.state;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.state;
  */
 public class AdultState extends HumanState {
 
-	//³ÉÄêÈËµÄ¹¤×÷¾ÍÊÇÕõÇ®
+	//æˆå¹´äººçš„å·¥ä½œå°±æ˜¯æŒ£é’±
 	@Override
 	public void work() {
-		System.out.println("³ÉÄêÈËµÄ¹¤×÷¾ÍÊÇÕõÇ®£¡");
+		System.out.println("æˆå¹´äººçš„å·¥ä½œå°±æ˜¯æŒ£é’±ï¼");
 		super.human.setState(Human.OLD_STATE);
 	}
 

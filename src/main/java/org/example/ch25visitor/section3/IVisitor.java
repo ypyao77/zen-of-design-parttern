@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch25visitor.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section3;
  */
 public interface IVisitor {
 	
-	//可以访问哪些对象
+	//鍙互璁块棶鍝簺瀵硅薄
 	public void visit(ConcreteElement1 el1);
 	
 	public void visit(ConcreteElement2 el2);

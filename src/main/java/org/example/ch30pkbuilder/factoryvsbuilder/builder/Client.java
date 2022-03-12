@@ -1,4 +1,4 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.factoryvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,9 +7,9 @@ package com.company.builder;
 public class Client {
 	
 	public static void main(String[] args) {
-		//½¨ÔìÒ»¸ö³ÉÄê³¬ÈË
+		//å»ºé€ ä¸€ä¸ªæˆå¹´è¶…äºº
 		SuperMan adultSuperMan = Director.getAdultSuperMan();
-		//Õ¹Ê¾Ò»ÏÂ³¬ÈËµÄĞÅÏ¢
+		//å±•ç¤ºä¸€ä¸‹è¶…äººçš„ä¿¡æ¯
 		adultSuperMan.getSpecialTalent();
 	}
 }

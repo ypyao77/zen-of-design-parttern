@@ -1,42 +1,42 @@
 /**
  * 
  */
-package com.company.section1;
+package org.example.ch18strategy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class ZhaoYun {
-	 //ÕÔÔÆ³ö³¡ÁË£¬Ëû¸ù¾İÖî¸ğÁÁ¸øËûµÄ½»´ú£¬ÒÀ´Î²ğ¿ªÃî¼Æ
+	 //èµµäº‘å‡ºåœºäº†ï¼Œä»–æ ¹æ®è¯¸è‘›äº®ç»™ä»–çš„äº¤ä»£ï¼Œä¾æ¬¡æ‹†å¼€å¦™è®¡
 	public static void main(String[] args) {
 		Context context;
 		
-		//¸Õ¸Õµ½Îâ¹úµÄÊ±ºò²ğµÚÒ»¸ö
-		System.out.println("---¸Õ¸Õµ½Îâ¹úµÄÊ±ºò²ğµÚÒ»¸ö---");
-		context = new Context(new BackDoor()); //ÄÃµ½Ãî¼Æ
-		context.operate();  //²ğ¿ªÖ´ĞĞ
+		//åˆšåˆšåˆ°å´å›½çš„æ—¶å€™æ‹†ç¬¬ä¸€ä¸ª
+		System.out.println("---åˆšåˆšåˆ°å´å›½çš„æ—¶å€™æ‹†ç¬¬ä¸€ä¸ª---");
+		context = new Context(new BackDoor()); //æ‹¿åˆ°å¦™è®¡
+		context.operate();  //æ‹†å¼€æ‰§è¡Œ
 		System.out.println("\n\n\n\n\n\n\n\n");
 		
-		//Áõ±¸ÀÖ²»Ë¼ÊñÁË£¬²ğµÚ¶ş¸öÁË
-		System.out.println("---Áõ±¸ÀÖ²»Ë¼ÊñÁË£¬²ğµÚ¶ş¸öÁË---");
+		//åˆ˜å¤‡ä¹ä¸æ€èœ€äº†ï¼Œæ‹†ç¬¬äºŒä¸ªäº†
+		System.out.println("---åˆ˜å¤‡ä¹ä¸æ€èœ€äº†ï¼Œæ‹†ç¬¬äºŒä¸ªäº†---");
 		context = new Context(new GivenGreenLight());
-		context.operate();  //Ö´ĞĞÁËµÚ¶ş¸ö½õÄÒÁË
+		context.operate();  //æ‰§è¡Œäº†ç¬¬äºŒä¸ªé”¦å›Šäº†
 		System.out.println("\n\n\n\n\n\n\n\n");
 		
-		//ËïÈ¨µÄĞ¡±ø×·ÁË£¬Õ¦°ì£¿²ğµÚÈı¸ö
-		System.out.println("---ËïÈ¨µÄĞ¡±ø×·ÁË£¬Õ¦°ì£¿²ğµÚÈı¸ö---");
+		//å­™æƒçš„å°å…µè¿½äº†ï¼Œå’‹åŠï¼Ÿæ‹†ç¬¬ä¸‰ä¸ª
+		System.out.println("---å­™æƒçš„å°å…µè¿½äº†ï¼Œå’‹åŠï¼Ÿæ‹†ç¬¬ä¸‰ä¸ª---");
 		context = new Context(new BlockEnemy());
-		context.operate();  //Ëï·òÈËÍË±ø
+		context.operate();  //å­™å¤«äººé€€å…µ
 		System.out.println("\n\n\n\n\n\n\n\n");
 		
 		/*
-		 *ÎÊÌâÀ´ÁË£ºÕÔÔÆÊµ¼Ê²»ÖªµÀÊÇÄÇ¸ö²ßÂÔÑ½£¬ËûÖ»ÖªµÀ²ğµÚÒ»¸ö½õÄÒ£¬
-		 *¶ø²»ÖªµÀÊÇBackDoorÕâ¸öÃî¼Æ£¬Õ¦°ì£¿  ËÆºõÕâ¸ö²ßÂÔÄ£Ê½ÒÑ¾­°Ñ¼ÆÄ±Ãû³ÆĞ´³öÀ´ÁË
+		 *é—®é¢˜æ¥äº†ï¼šèµµäº‘å®é™…ä¸çŸ¥é“æ˜¯é‚£ä¸ªç­–ç•¥å‘€ï¼Œä»–åªçŸ¥é“æ‹†ç¬¬ä¸€ä¸ªé”¦å›Šï¼Œ
+		 *è€Œä¸çŸ¥é“æ˜¯BackDoorè¿™ä¸ªå¦™è®¡ï¼Œå’‹åŠï¼Ÿ  ä¼¼ä¹è¿™ä¸ªç­–ç•¥æ¨¡å¼å·²ç»æŠŠè®¡è°‹åç§°å†™å‡ºæ¥äº†
 		 *
-		 * ´í£¡BackDoor¡¢GivenGreenLight¡¢BlockEnemyÖ»ÊÇÒ»¸ö´úÂë£¬ÄãĞ´³Éfirst¡¢second¡¢third£¬Ã»ÈË»áËµÄã´í!
+		 * é”™ï¼BackDoorã€GivenGreenLightã€BlockEnemyåªæ˜¯ä¸€ä¸ªä»£ç ï¼Œä½ å†™æˆfirstã€secondã€thirdï¼Œæ²¡äººä¼šè¯´ä½ é”™!
 		 * 
-		 * ²ßÂÔÄ£Ê½µÄºÃ´¦¾ÍÊÇ£ºÌåÏÖÁË¸ßÄÚ¾ÛµÍñîºÏµÄÌØĞÔÑ½£¬È±µãÂï£¬Õâ¸öÄÇ¸ö£¬ÎÒ»ØÈ¥ÔÙ²é²é
+		 * ç­–ç•¥æ¨¡å¼çš„å¥½å¤„å°±æ˜¯ï¼šä½“ç°äº†é«˜å†…èšä½è€¦åˆçš„ç‰¹æ€§å‘€ï¼Œç¼ºç‚¹å˜›ï¼Œè¿™ä¸ªé‚£ä¸ªï¼Œæˆ‘å›å»å†æŸ¥æŸ¥
 		 */
 		
 	

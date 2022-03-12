@@ -1,9 +1,9 @@
-package com.company.section2;
+package org.example.ch05isp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ĞÇÌ½
+ * æ˜Ÿæ¢
  */
 public class Searcher extends AbstractSearcher{
 	public Searcher(IGoodBodyGirl _goodBodyGirl){
@@ -13,10 +13,10 @@ public class Searcher extends AbstractSearcher{
 		super(_greatTemperamentGirl);
 	}
 	
-	//Õ¹Ê¾ÃÀÅ®µÄĞÅÏ¢
+	//å±•ç¤ºç¾å¥³çš„ä¿¡æ¯
 	public void show(){
-		System.out.println("--------ÃÀÅ®µÄĞÅÏ¢ÈçÏÂ£º---------------");
-		if(super.goodBodyGirl != null){ //Õ¹Ê¾ÍâĞÎÃÀµÄÃÀÅ®
+		System.out.println("--------ç¾å¥³çš„ä¿¡æ¯å¦‚ä¸‹ï¼š---------------");
+		if(super.goodBodyGirl != null){ //å±•ç¤ºå¤–å½¢ç¾çš„ç¾å¥³
 			super.goodBodyGirl.goodLooking();
 			super.goodBodyGirl.niceFigure();
 		}

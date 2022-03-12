@@ -1,17 +1,17 @@
-package com.company.section2;
+package org.example.ch04lod.section2;
 
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÀÏÊ¦Àà
+ * è€å¸ˆç±»
  */
 public class Teacher {
 	
-	//ÀÏÊ¦¶ÔÑ§Éú·¢²¼ÃüÁî,ÇåÒ»ÏÂÅ®Éú
+	//è€å¸ˆå¯¹å­¦ç”Ÿå‘å¸ƒå‘½ä»¤,æ¸…ä¸€ä¸‹å¥³ç”Ÿ
 	public void commond(GroupLeader groupLeader){
 
-		//¸æËßÌåÓıÎ¯Ô±¿ªÊ¼Ö´ĞĞÇå²éÈÎÎñ
+		//å‘Šè¯‰ä½“è‚²å§”å‘˜å¼€å§‹æ‰§è¡Œæ¸…æŸ¥ä»»åŠ¡
 		groupLeader.countGirls();
 	}
 }

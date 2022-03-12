@@ -1,21 +1,21 @@
-package com.company.section4;
+package org.example.ch15command.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class ConcreteCommand2 extends Command {	
-	//ÉùÃ÷×Ô¼ºµÄÄ¬ÈÏ½ÓÊÕÕß
+	//å£°æ˜è‡ªå·±çš„é»˜è®¤æ¥æ”¶è€…
 	public ConcreteCommand2(){
 		super(new ConcreteReciver2());
 	}	
-	//ÉèÖÃĞÂµÄ½ÓÊÕÕß
+	//è®¾ç½®æ–°çš„æ¥æ”¶è€…
 	public ConcreteCommand2(Receiver _receiver){
 		super(_receiver);
 	}	
-	//Ã¿¸ö¾ßÌåµÄÃüÁî¶¼±ØĞëÊµÏÖÒ»¸öÃüÁî
+	//æ¯ä¸ªå…·ä½“çš„å‘½ä»¤éƒ½å¿…é¡»å®ç°ä¸€ä¸ªå‘½ä»¤
 	public void execute() {
-		//ÒµÎñ´¦Àí
+		//ä¸šåŠ¡å¤„ç†
 		super.receiver.doSomething();
 	}
 }

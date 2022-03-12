@@ -1,18 +1,18 @@
 /**
  * 
  */
-package com.company.section1;
+package org.example.ch18strategy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÇóÎâ¹úÌ«¿ª¸öÂÌµÆ
+ * æ±‚å´å›½å¤ªå¼€ä¸ªç»¿ç¯
  */
 public class GivenGreenLight implements IStrategy {
 
 
 	public void operate() {
-		System.out.println("ÇóÎâ¹úÌ«¿ª¸öÂÌµÆ,·ÅĞĞ£¡");
+		System.out.println("æ±‚å´å›½å¤ªå¼€ä¸ªç»¿ç¯,æ”¾è¡Œï¼");
 	}
 
 }

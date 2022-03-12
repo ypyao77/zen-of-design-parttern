@@ -1,14 +1,14 @@
-package com.company.section7;
+package org.example.ch23facade.section7;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Context {
-	//Î¯ÍĞ´¦Àí
+	//å§”æ‰˜å¤„ç†
 	private ClassA a = new ClassA();
 	private ClassC c = new ClassC();
-	//¸´ÔÓµÄ¼ÆËã
+	//å¤æ‚çš„è®¡ç®—
 	public void complexMethod(){
 		this.a.doSomethingA();
 		this.c.doSomethingC();

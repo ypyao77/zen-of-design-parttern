@@ -1,9 +1,9 @@
-package com.company.section1;
+package org.example.ch04lod.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Å®Éú
+ * å¥³ç”Ÿ
  */
 public class Girl {
 

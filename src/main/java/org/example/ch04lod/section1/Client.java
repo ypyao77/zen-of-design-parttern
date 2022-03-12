@@ -1,16 +1,16 @@
-package com.company.section1;
+package org.example.ch04lod.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÎÒÃÇÊ¹ÓÃClientÀ´Ãè»æÒ»ÏÂÕâ¸ö³¡¾°
+ * æˆ‘ä»¬ä½¿ç”¨Clientæ¥æç»˜ä¸€ä¸‹è¿™ä¸ªåœºæ™¯
  */
 public class Client {
 
 	public static void main(String[] args) {
 		Teacher teacher= new Teacher();
 		
-		//ÀÏÊ¦·¢²¼ÃüÁî
+		//è€å¸ˆå‘å¸ƒå‘½ä»¤
 		teacher.commond(new GroupLeader());
 	}
 	

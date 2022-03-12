@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch13prototype.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -8,15 +8,15 @@ public class Client {
 
 
 	public static void main(String[] args) {
-		//²úÉúÒ»¸ö¶ÔÏó
+		//äº§ç”Ÿä¸€ä¸ªå¯¹è±¡
 		Thing thing = new Thing();
-		//ÉèÖÃÒ»¸öÖµ
-		thing.setValue("ÕÅÈı");
+		//è®¾ç½®ä¸€ä¸ªå€¼
+		thing.setValue("å¼ ä¸‰");
 		thing.setValue("abcd");
 		
-		//¿½±´Ò»¸ö¶ÔÏó
+		//æ‹·è´ä¸€ä¸ªå¯¹è±¡
 		Thing cloneThing = thing.clone();
-		cloneThing.setValue("ÀîËÄ");
+		cloneThing.setValue("æå››");
 		
 		System.out.println(thing.getValue());
 

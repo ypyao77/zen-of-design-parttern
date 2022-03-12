@@ -1,13 +1,13 @@
-package com.company.section6;
+package org.example.ch06ocp.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´òÕÛ¹æÔò
+ * æ‰“æŠ˜è§„åˆ™
  */
 public abstract class AbstractOffRole {
-	//´«µİ½øÀ´Ò»¸ö¶ÔÏó
+	//ä¼ é€’è¿›æ¥ä¸€ä¸ªå¯¹è±¡
 	public abstract int getOffPoint();
 	
-	//¶ÁÈ¡ÅäÖÃÎÄ¼ş£¬²¢ĞÎ³É¹æÔò
+	//è¯»å–é…ç½®æ–‡ä»¶ï¼Œå¹¶å½¢æˆè§„åˆ™
 }

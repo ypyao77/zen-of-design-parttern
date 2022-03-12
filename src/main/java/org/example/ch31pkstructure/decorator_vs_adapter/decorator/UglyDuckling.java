@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.decorator_vs_adapter.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,19 +6,19 @@ package com.company.decorator;
  */
 public class UglyDuckling implements Swan {
 
-	//³óĞ¡Ñ¼µÄ½ĞÉù
+	//ä¸‘å°é¸­çš„å«å£°
 	public void cry() {
-		System.out.println("½ĞÉùÊÇ¿Ëàà¡ª¡ª¿Ëàà¡ª¡ª¿Ëàà");
+		System.out.println("å«å£°æ˜¯å…‹å™œâ€”â€”å…‹å™œâ€”â€”å…‹å™œ");
 	}
 	
-	//³óĞ¡Ñ¼µÄÍâĞÎ
+	//ä¸‘å°é¸­çš„å¤–å½¢
 	public void desAppaearance() {
-		System.out.println("ÍâĞÎÊÇÔàÙâÙâµÄ°×É«£¬Ã«È×È×µÄ´óÄÔ´ü");
+		System.out.println("å¤–å½¢æ˜¯è„å…®å…®çš„ç™½è‰²ï¼Œæ¯›èŒ¸èŒ¸çš„å¤§è„‘è¢‹");
 	}
 
-	//³óĞ¡Ñ¼»¹±È½ÏĞ¡£¬²»ÄÜ·É
+	//ä¸‘å°é¸­è¿˜æ¯”è¾ƒå°ï¼Œä¸èƒ½é£
 	public void fly() {
-		System.out.println("²»ÄÜ·ÉĞĞ");
+		System.out.println("ä¸èƒ½é£è¡Œ");
 	}
 
 }

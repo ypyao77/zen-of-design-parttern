@@ -1,4 +1,4 @@
-package com.company.section11;
+package org.example.ch12proxy.proxy.section11;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -7,26 +7,26 @@ import java.lang.reflect.Proxy;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´úÁ·Õß
+ * ä»£ç»ƒè€…
  */
 public class MyIvocationHandler implements InvocationHandler {
-	//±»´úÀíÕß
+	//è¢«ä»£ç†è€…
 	Class cls =null;
-	//±»´úÀíµÄÊµÀı
+	//è¢«ä»£ç†çš„å®ä¾‹
 	Object obj = null;
 	
-	//ÎÒÒª´úÀíË­
+	//æˆ‘è¦ä»£ç†è°
 	public MyIvocationHandler(Object _obj){
 		this.obj = _obj;
 	}
 	
-	//µ÷ÓÃ±»´úÀíµÄ·½·¨
+	//è°ƒç”¨è¢«ä»£ç†çš„æ–¹æ³•
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
 		Object result = method.invoke(this.obj, args);
-		//Èç¹ûÊÇµÇÂ¼·½·¨£¬Ôò·¢ËÍĞÅÏ¢
+		//å¦‚æœæ˜¯ç™»å½•æ–¹æ³•ï¼Œåˆ™å‘é€ä¿¡æ¯
 		if(method.getName().equalsIgnoreCase("login")){
-			System.out.println("ÓĞÈËÔÚÓÃÎÒµÄÕËºÅµÇÂ½£¡");
+			System.out.println("æœ‰äººåœ¨ç”¨æˆ‘çš„è´¦å·ç™»é™†ï¼");
 		}
 		return result;
 	}

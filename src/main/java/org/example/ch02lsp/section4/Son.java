@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch02lsp.section4;
 
 import java.util.Collection;
 import java.util.Map;
@@ -6,13 +6,13 @@ import java.util.Map;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ×ÓÀà
+ * å­ç±»
  */
 public class Son extends Father {
 
-	//·Å´óÊäÈë²ÎÊıÀàĞÍ
+	//æ”¾å¤§è¾“å…¥å‚æ•°ç±»å‹
 	public Collection doSomething(Map map){
-		System.out.println("×ÓÀà±»Ö´ĞĞ...");
+		System.out.println("å­ç±»è¢«æ‰§è¡Œ...");
 		return map.values();
 	}
 }

@@ -1,24 +1,24 @@
-package com.company.strategy;
+package org.example.ch32pkaction.command_vs_strategy.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Context {
-	//Ö¸Ïò³éÏóËã·¨
+	//æŒ‡å‘æŠ½è±¡ç®—æ³•
 	private Algorithm al;
 	
-	//¹¹Ôìº¯Êı´«µİ¾ßÌåµÄËã·¨
+	//æ„é€ å‡½æ•°ä¼ é€’å…·ä½“çš„ç®—æ³•
 	public Context(Algorithm _al){
 		this.al = _al;
 	}
 	
-	//Ö´ĞĞÑ¹ËõËã·¨
+	//æ‰§è¡Œå‹ç¼©ç®—æ³•
 	public boolean compress(String source,String to){
 		return al.compress(source, to);
 	}
 	
-	//Ö´ĞĞ½âÑ¹ËõËã·¨
+	//æ‰§è¡Œè§£å‹ç¼©ç®—æ³•
 	public boolean uncompress(String source,String to){
 		return al.uncompress(source, to);
 	}

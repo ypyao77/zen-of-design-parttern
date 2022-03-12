@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.strategy_vs_bridge.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -11,10 +11,10 @@ public class Postfix extends MailServer {
 
 	}
 	
-	//ĞŞÕıÓÊ¼ş·¢ËÍ³ÌĞò
+	//ä¿®æ­£é‚®ä»¶å‘é€ç¨‹åº
 	@Override
 	public void sendMail(){
-		//Ôö¼ÓÓÊ¼ş·şÎñÆ÷ĞÅÏ¢
+		//å¢åŠ é‚®ä»¶æœåŠ¡å™¨ä¿¡æ¯
 		String context ="Received: from XXXX (unknown [xxx.xxx.xxx.xxx]) by aaa.aaa.com (Postfix) with ESMTP id 8DBCD172B8\n" ;		
 		super.m.add(context);
 		super.sendMail();

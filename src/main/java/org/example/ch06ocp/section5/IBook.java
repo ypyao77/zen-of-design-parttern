@@ -1,18 +1,18 @@
-package com.company.section5;
+package org.example.ch06ocp.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼ÆÊé¼®½Ó¿Ú
+ * è®¡ä¹¦ç±æ¥å£
  */
 public interface IBook {
 	
-	//Êé¼®ÓĞÃû³Æ
+	//ä¹¦ç±æœ‰åç§°
 	public String getName();
 	
-	//Êé¼®ÓĞÊÛ¼Û
+	//ä¹¦ç±æœ‰å”®ä»·
 	public int getPrice();
 	
-	//Êé¼®ÓĞ×÷Õß
+	//ä¹¦ç±æœ‰ä½œè€…
 	public String getAuthor();
 }

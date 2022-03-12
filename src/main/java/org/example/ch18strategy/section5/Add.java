@@ -1,11 +1,11 @@
-package com.company.section5;
+package org.example.ch18strategy.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Add implements Calculator {
-	//¼Ó·¨ÔËËã
+	//åŠ æ³•è¿ç®—
 	public int exec(int a, int b) {
 		return a+b;
 	}

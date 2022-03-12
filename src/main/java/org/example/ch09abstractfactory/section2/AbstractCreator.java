@@ -1,15 +1,15 @@
-package com.company.section2;
+package org.example.ch09abstractfactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 抽象的产品类
+ * 鎶借薄鐨勪骇鍝佺被
  */
 public abstract class AbstractCreator {
 
-	//创建A产品家族
+	//鍒涘缓A浜у搧瀹舵棌
 	public abstract AbstractProductA createProductA();
 	
-	//创建B产品家族
+	//鍒涘缓B浜у搧瀹舵棌
 	public abstract AbstractProductB createProductB();
 }

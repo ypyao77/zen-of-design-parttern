@@ -1,4 +1,4 @@
-package com.company.section7;
+package org.example.ch25visitor.section7;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,11 +7,11 @@ package com.company.section7;
 public class Client {
 
 	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÑİÔ±
+		//å®šä¹‰ä¸€ä¸ªæ¼”å‘˜
 		AbsActor actor = new OldActor();
-		//¶¨ÒåÒ»¸ö½ÇÉ«
+		//å®šä¹‰ä¸€ä¸ªè§’è‰²
 		Role role = new KungFuRole();
-		//¿ªÊ¼ÑİÏ·
+		//å¼€å§‹æ¼”æˆ
 		role.accept(actor);
 	}
 }

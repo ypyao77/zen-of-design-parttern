@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class ParamMapping<T> {
 	
-	//½ÓÊÕÒ»¸öreq²ÎÊı
+	//æ¥æ”¶ä¸€ä¸ªreqå‚æ•°
 	
-	//°Ñ´ÓHTTP´«µİ¹ıÀ´µÄÊı¾İÓ³ÉäÎªÒ»¸ö¶ÔÏó
+	//æŠŠä»HTTPä¼ é€’è¿‡æ¥çš„æ•°æ®æ˜ å°„ä¸ºä¸€ä¸ªå¯¹è±¡
 	public <T> Object getBO(){
 		return null;
 	}

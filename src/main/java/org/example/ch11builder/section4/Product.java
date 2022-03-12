@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch11builder.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,6 +7,6 @@ package com.company.section4;
 public class Product {
 	
 	public void doSomething(){
-		//独立业务处理
+		//鐙珛涓氬姟澶勭悊
 	}
 }

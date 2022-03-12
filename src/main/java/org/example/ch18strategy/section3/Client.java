@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch18strategy.section3;
 
 import java.util.Arrays;
 
@@ -9,15 +9,15 @@ import java.util.Arrays;
 public class Client {
 	
 	public static void main(String[] args) {
-		//ÊäÈëµÄÁ½¸ö²ÎÊıÊÇÊı×Ö
+		//è¾“å…¥çš„ä¸¤ä¸ªå‚æ•°æ˜¯æ•°å­—
 		int a = Integer.parseInt(args[0]);
-		String symbol = args[1];  //·ûºÅ
+		String symbol = args[1];  //ç¬¦å·
 		int b = Integer.parseInt(args[2]);
-		System.out.println("ÊäÈëµÄ²ÎÊıÎª£º"+Arrays.toString(args));
+		System.out.println("è¾“å…¥çš„å‚æ•°ä¸ºï¼š"+Arrays.toString(args));
 		
-		//Éú³ÉÒ»¸öÔËËãÆ÷
+		//ç”Ÿæˆä¸€ä¸ªè¿ç®—å™¨
 		Calculator cal = new Calculator();
-		System.out.println("ÔËĞĞ½á¹ûÎª£º"+a + symbol + b + "=" + cal.exec(a, b, symbol));
+		System.out.println("è¿è¡Œç»“æœä¸ºï¼š"+a + symbol + b + "=" + cal.exec(a, b, symbol));
 		
 		
 	}

@@ -1,9 +1,9 @@
-package com.company.section2;
+package org.example.ch03dip.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÒµÎñ³¡¾°Àà
+ * ä¸šåŠ¡åœºæ™¯ç±»
  */
 public class Client {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Client {
 		//ICar benz = new Benz();
 		ICar bmw = new BMW();
 		
-		//ÕÅÈý¿ª±¼³Û³µ
+		//å¼ ä¸‰å¼€å¥”é©°è½¦
 		zhangSan.drive(bmw);
 	}
 }

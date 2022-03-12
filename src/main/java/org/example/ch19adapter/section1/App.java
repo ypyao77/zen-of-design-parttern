@@ -1,20 +1,20 @@
-package com.company.section1;
+package org.example.ch19adapter.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Õâ¾ÍÊÇÎÒÃÇ¾ßÌåµÄÓ¦ÓÃÁË£¬±ÈÈçÀÏ°åÒª²éËùÓĞµÄ20-30µÄÅ®ĞÔĞÅÏ¢
+ * è¿™å°±æ˜¯æˆ‘ä»¬å…·ä½“çš„åº”ç”¨äº†ï¼Œæ¯”å¦‚è€æ¿è¦æŸ¥æ‰€æœ‰çš„20-30çš„å¥³æ€§ä¿¡æ¯
  */
 public class App {
 
 
 	public static void main(String[] args) {
-		//Ã»ÓĞÓëÍâÏµÍ³Á¬½ÓµÄÊ±ºò£¬ÊÇÕâÑùĞ´µÄ
+		//æ²¡æœ‰ä¸å¤–ç³»ç»Ÿè¿æ¥çš„æ—¶å€™ï¼Œæ˜¯è¿™æ ·å†™çš„
 		//IUserInfo youngGirl = new UserInfo();
 		
-		//ÀÏ°åÒ»Ïë²»¶ÔÑ½£¬ÍÃ×Ó²»³ÔÎÑ±ß²İ£¬»¹ÊÇÕÒÈËÁ¦×ÊÔ´µÄÔ±¹¤ºÃµã
-		IUserInfo youngGirl = new OuterUserInfo();  //ÎÒÃÇÖ»ĞŞ¸ÄÁËÕâÒ»¾äºÃ
-		//´ÓÊı¾İ¿âÖĞ²éµ½101¸ö
+		//è€æ¿ä¸€æƒ³ä¸å¯¹å‘€ï¼Œå…”å­ä¸åƒçªè¾¹è‰ï¼Œè¿˜æ˜¯æ‰¾äººåŠ›èµ„æºçš„å‘˜å·¥å¥½ç‚¹
+		IUserInfo youngGirl = new OuterUserInfo();  //æˆ‘ä»¬åªä¿®æ”¹äº†è¿™ä¸€å¥å¥½
+		//ä»æ•°æ®åº“ä¸­æŸ¥åˆ°101ä¸ª
 		for(int i=0;i<101;i++){
 			youngGirl.getMobileNumber();
 		}

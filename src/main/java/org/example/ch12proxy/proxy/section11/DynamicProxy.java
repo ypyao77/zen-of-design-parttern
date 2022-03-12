@@ -1,4 +1,4 @@
-package com.company.section11;
+package org.example.ch12proxy.proxy.section11;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

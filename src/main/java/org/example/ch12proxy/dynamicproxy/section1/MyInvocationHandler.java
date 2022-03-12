@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch12proxy.dynamicproxy.section1;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -9,36 +9,36 @@ import java.lang.reflect.Proxy;
  * I'm glad to share my knowledge with you all.
  */
 public class MyInvocationHandler implements InvocationHandler {
-	//±»´úÀíµÄ¶ÔÏó
+	//è¢«ä»£ç†çš„å¯¹è±¡
 	private Object target = null;
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİÒ»¸ö¶ÔÏó
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’ä¸€ä¸ªå¯¹è±¡
 	public MyInvocationHandler(Object _obj){
 		this.target = _obj;
 	}
-	//´úÀí·½·¨	
+	//ä»£ç†æ–¹æ³•	
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
-		//ÉèÖÃ·µ»ØÖµ
+		//è®¾ç½®è¿”å›å€¼
 		Object result = null;
-		//Ç°ÖÃÍ¨Öª
+		//å‰ç½®é€šçŸ¥
 		this.before();
-		//Ö´ĞĞ±»´úÀíµÄ·½·¨
+		//æ‰§è¡Œè¢«ä»£ç†çš„æ–¹æ³•
 		result = method.invoke(this.target, args);
-		//ºóÖÃÍ¨Öª
+		//åç½®é€šçŸ¥
 		this.after();
 		
-		//·µ»ØÖµ
+		//è¿”å›å€¼
 		return result;
 	}
 	
-	//Ç°ÖÃÍ¨Öª
+	//å‰ç½®é€šçŸ¥
 	public void before(){
-		System.out.println("Ö´ĞĞbefore·½·¨");
+		System.out.println("æ‰§è¡Œbeforeæ–¹æ³•");
 	}
 	
-	//ºóÖÃÍ¨Öª
+	//åç½®é€šçŸ¥
 	public void after(){
-		System.out.println("Ö´ĞĞafter·½·¨");
+		System.out.println("æ‰§è¡Œafteræ–¹æ³•");
 	}
 
 }

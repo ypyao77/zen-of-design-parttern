@@ -1,4 +1,4 @@
-package com.company.section8;
+package org.example.ch24memento.section8;
 
 import java.util.HashMap;
 
@@ -7,7 +7,7 @@ import java.util.HashMap;
  * I'm glad to share my knowledge with you all.
  */
 public class Caretaker {
-	//ÈÝÄÉ±¸ÍüÂ¼µÄÈÝÆ÷
+	//å®¹çº³å¤‡å¿˜å½•çš„å®¹å™¨
 	private HashMap<String,Memento> memMap = new HashMap<String,Memento>();
 
 	public Memento getMemento(String idx) {

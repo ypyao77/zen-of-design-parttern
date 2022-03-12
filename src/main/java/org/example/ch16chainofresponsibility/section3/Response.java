@@ -1,9 +1,9 @@
-package com.company.section3;
+package org.example.ch16chainofresponsibility.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Response {
-	//处理者返回的数据
+	//澶勭悊鑰呰繑鍥炵殑鏁版嵁
 }

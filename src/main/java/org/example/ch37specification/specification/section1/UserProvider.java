@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch37specification.specification.section1;
 
 import java.util.ArrayList;
 
@@ -7,30 +7,30 @@ import java.util.ArrayList;
  * I'm glad to share my knowledge with you all.
  */
 public class UserProvider implements IUserProvider {
-	//ÓÃ»§ÁĞ±í
+	//ç”¨æˆ·åˆ—è¡¨
 	private ArrayList<User> userList;
 	
-	//¹¹Ôìº¯Êı´«µİÓÃ»§ÁĞ±í
+	//æ„é€ å‡½æ•°ä¼ é€’ç”¨æˆ·åˆ—è¡¨
 	public UserProvider(ArrayList<User> _userList){
 		this.userList = _userList;
 	}
 	
-	//ÄêÁä´óÓÚÖ¸¶¨ÄêÁäµÄÓÃ»§
+	//å¹´é¾„å¤§äºæŒ‡å®šå¹´é¾„çš„ç”¨æˆ·
 	public ArrayList<User> findUserByAgeThan(int age) {
 		ArrayList<User> result = new ArrayList<User>();
 		for(User u:userList){
-			if(u.getAge()>age){ //·ûºÏÌõ¼şµÄÓÃ»§
+			if(u.getAge()>age){ //ç¬¦åˆæ¡ä»¶çš„ç”¨æˆ·
 				result.add(u);
 			}
 		}
 		return result;
 	}
 
-	//ĞÕÃûµÈÓÚÖ¸¶¨ĞÕÃûµÄÓÃ»§
+	//å§“åç­‰äºæŒ‡å®šå§“åçš„ç”¨æˆ·
 	public ArrayList<User> findUserByNameEqual(String name) {
 		ArrayList<User> result = new ArrayList<User>();
 		for(User u:userList){
-			if(u.getName().equals(name)){//·ûºÏÌõ¼ş
+			if(u.getName().equals(name)){//ç¬¦åˆæ¡ä»¶
 				result.add(u);
 			}
 		}

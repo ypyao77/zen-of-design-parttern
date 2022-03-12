@@ -1,17 +1,17 @@
-package com.company.command;
+package org.example.ch33pkoverzone.command_vs_strategy.command;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Invoker {
-	//³éÏóÃüÁîµÄÒıÓÃ
+	//æŠ½è±¡å‘½ä»¤çš„å¼•ç”¨
 	private AbstractCmd cmd;
 	public Invoker(AbstractCmd _cmd){
 		this.cmd = _cmd;
 	}
 	
-	//Ö´ĞĞÃüÁî
+	//æ‰§è¡Œå‘½ä»¤
 	public boolean execute(String source,String to){
 		return cmd.execute(source, to);
 	}

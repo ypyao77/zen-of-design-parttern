@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.proxy_vs_decorator.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,12 +7,12 @@ package com.company.decorator;
 public class Client {
 	
 	public static void main(String[] args) {
-		//定义出运动员
+		//瀹氫箟鍑鸿繍鍔ㄥ憳
 		IRunner liu = new Runner();
-		//对其功能加强
+		//瀵瑰叾鍔熻兘鍔犲己
 		liu = new RunnerWithJet(liu);
-		//看看它的跑步情况如何
-		System.out.println("===增强后的运动员的功能===");
+		//鐪嬬湅瀹冪殑璺戞鎯呭喌濡備綍
+		System.out.println("===澧炲己鍚庣殑杩愬姩鍛樼殑鍔熻兘===");
 		liu.run();
 	}
 }

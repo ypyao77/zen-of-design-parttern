@@ -1,15 +1,15 @@
-package com.company.chain;
+package org.example.ch32pkaction.observer_vs_chain.chain;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Recorder {
-	//ÓòÃû
+	//åŸŸå
 	private String domain;
-	//IPµØÖ·
+	//IPåœ°å€
 	private String ip;
-	//ÊôÖ÷
+	//å±ä¸»
 	private String owner;
 	
 	public String getDomain() {
@@ -31,12 +31,12 @@ public class Recorder {
 		this.owner = owner;
 	}
 	
-	//Êä³ö¼ÇÂ¼ĞÅÏ¢
+	//è¾“å‡ºè®°å½•ä¿¡æ¯
 	@Override
 	public String toString(){
-		String str= "ÓòÃû£º" + this.domain;
-		str = str + "\nIPµØÖ·£º" + this.ip;
-		str = str + "\n½âÎöÕß£º" + this.owner;
+		String str= "åŸŸåï¼š" + this.domain;
+		str = str + "\nIPåœ°å€ï¼š" + this.ip;
+		str = str + "\nè§£æè€…ï¼š" + this.owner;
 		
 		return str;
 	}

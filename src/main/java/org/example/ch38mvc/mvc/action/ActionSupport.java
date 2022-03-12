@@ -1,4 +1,4 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -8,7 +8,7 @@ public abstract class ActionSupport {
 	public final static String SUCCESS = "success";
 	public final static String FAIL = "fail";
 	
-	//Ä¬ÈÏµÄÖ´ÐÐ·½·¨
+	//é»˜è®¤çš„æ‰§è¡Œæ–¹æ³•
 	public String execute(){
 		return SUCCESS;
 	}

@@ -1,12 +1,12 @@
-package com.company.section3;
+package org.example.ch02lsp.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 枪的总称
+ * 鏋殑鎬荤О
  */
 public abstract class AbstractGun {
 	
-	//枪用来干什么的？射击杀戮！
+	//鏋敤鏉ュ共浠�涔堢殑锛熷皠鍑绘潃鎴紒
 	public abstract void shoot();
 }

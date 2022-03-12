@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch18strategy.section5;
 
 import java.util.Arrays;
 
@@ -7,26 +7,26 @@ import java.util.Arrays;
  * I'm glad to share my knowledge with you all.
  */
 public class Client {
-	//¼Ó·ûºÅ
+	//åŠ ç¬¦å·
 	public final static String ADD_SYMBOL = "+";
-	//¼õ·ûºÅ
+	//å‡ç¬¦å·
 	public final static String SUB_SYMBOL = "-";
 	
 	public static void main(String[] args) {
-		//ÊäÈëµÄÁ½¸ö²ÎÊıÊÇÊı×Ö
+		//è¾“å…¥çš„ä¸¤ä¸ªå‚æ•°æ˜¯æ•°å­—
 		int a = Integer.parseInt(args[0]);
-		String symbol = args[1];  //·ûºÅ
+		String symbol = args[1];  //ç¬¦å·
 		int b = Integer.parseInt(args[2]);
 		
-		System.out.println("ÊäÈëµÄ²ÎÊıÎª£º"+Arrays.toString(args));
-		//ÉÏÏÂÎÄ
+		System.out.println("è¾“å…¥çš„å‚æ•°ä¸ºï¼š"+Arrays.toString(args));
+		//ä¸Šä¸‹æ–‡
 		Context context = null;
-		//ÅĞ¶Ï³õÊ¼»¯ÄÄÒ»¸ö²ßÂÔ
+		//åˆ¤æ–­åˆå§‹åŒ–å“ªä¸€ä¸ªç­–ç•¥
 		if(symbol.equals(ADD_SYMBOL)){
 			context = new Context(new Add());
 		}else if(symbol.equals(SUB_SYMBOL)){
 			context = new Context(new Sub());
 		}
-		System.out.println("ÔËĞĞ½á¹ûÎª£º"+a + symbol + b + "=" + context.exec(a, b, symbol));
+		System.out.println("è¿è¡Œç»“æœä¸ºï¼š"+a + symbol + b + "=" + context.exec(a, b, symbol));
 	}
 }

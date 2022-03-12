@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -8,19 +8,19 @@ import java.util.Observer;
  * I'm glad to share my knowledge with you all.
  */
 public class Checker implements Observer{
-	//Ê¹ÓÃÄÄÒ»¸ö²ßÂÔ
+	//ä½¿ç”¨å“ªä¸€ä¸ªç­–ç•¥
 	private IXmlValidate validate;
 	
-	//xmlÅäÖÃÎÄ¼şµÄÂ·¾¶
+	//xmlé…ç½®æ–‡ä»¶çš„è·¯å¾„
 	String xmlPath;
 	
-	//ÎŞ²Î¹¹Ôì
+	//æ— å‚æ„é€ 
 	public Checker(){
-		//¶ÁÈ¡web.xmlÅäÖÃÎÄ¼ş£¬»ñµÃÊ¹ÓÃÄÄÒ»¸ö¼ìÑé²ßÂÔ
+		//è¯»å–web.xmlé…ç½®æ–‡ä»¶ï¼Œè·å¾—ä½¿ç”¨å“ªä¸€ä¸ªæ£€éªŒç­–ç•¥
 		this(null);
 	}
 	
-	//¹¹Ôìº¯Êı´«µİ
+	//æ„é€ å‡½æ•°ä¼ é€’
 	public Checker(IXmlValidate _validate){
 		this.validate = _validate;	
 	}
@@ -29,14 +29,14 @@ public class Checker implements Observer{
 		this.xmlPath = _xmlPath;
 	}
 	
-	//¼ì²é
+	//æ£€æŸ¥
 	public boolean check(){
 		return validate.validate(xmlPath);
 	}
 
 	
 	public void update(Observable arg0, Object arg1) {
-		//¼ì²éÊÇ·ñ·ûºÏÌõ¼ş
+		//æ£€æŸ¥æ˜¯å¦ç¬¦åˆæ¡ä»¶
 		arg1 = check();
 	}
 		

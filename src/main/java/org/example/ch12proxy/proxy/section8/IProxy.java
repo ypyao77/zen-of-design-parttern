@@ -1,11 +1,11 @@
-package com.company.section8;
+package org.example.ch12proxy.proxy.section8;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´úÀíÈËÔ±µÄ½Ó¿Ú
+ * ä»£ç†äººå‘˜çš„æ¥å£
  */
 public interface IProxy {
-	//¼ÆËã·ÑÓÃ
+	//è®¡ç®—è´¹ç”¨
 	public void count();
 }

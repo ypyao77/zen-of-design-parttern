@@ -1,17 +1,17 @@
-package com.company.section2;
+package org.example.ch09abstractfactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ²úÆ·A
+ * äº§å“A
  */
 public abstract class AbstractProductA {
 	
-	//Ã¿¸ö²úÆ·¹²ÓĞµÄ·½·¨
+	//æ¯ä¸ªäº§å“å…±æœ‰çš„æ–¹æ³•
 	public void shareMethod(){
 		
 	}
 	
-	//Ã¿¸ö²úÆ·ÏàÍ¬·½·¨£¬²»Í¬ÊµÏÖ
+	//æ¯ä¸ªäº§å“ç›¸åŒæ–¹æ³•ï¼Œä¸åŒå®ç°
 	public abstract void doSomething();
 }

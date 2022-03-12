@@ -1,4 +1,4 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.abstractvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,34 +6,34 @@ package com.company.builder;
  */
 public class Director {
 	
-	//ÉùÃ÷¶Ô½¨ÔìÕßµÄÒıÓÃ
+	//å£°æ˜å¯¹å»ºé€ è€…çš„å¼•ç”¨
 	private CarBuilder benzBuilder = new BenzBuilder();
 	private CarBuilder bmwBuilder = new BMWBuilder();
 	
-	//Éú²ú±¼³ÛSUV³µĞÍ	
+	//ç”Ÿäº§å¥”é©°SUVè½¦å‹	
 	public ICar createBenzSuv(){
-		//ÖÆÔì³öÆû³µ
-		return createCar(benzBuilder, "benzµÄÒıÇæ", "benzµÄÂÖÌ¥");
+		//åˆ¶é€ å‡ºæ±½è½¦
+		return createCar(benzBuilder, "benzçš„å¼•æ“", "benzçš„è½®èƒ");
 	}
 	
-	//Éú²ú³öÒ»Á¾±¦ÂíµÄÉÌÎñ³µ
+	//ç”Ÿäº§å‡ºä¸€è¾†å®é©¬çš„å•†åŠ¡è½¦
 	public ICar createBMWVan(){
-		return createCar(benzBuilder, "BMWµÄÒıÇæ", "BMWµÄÂÖÌ¥");		
+		return createCar(benzBuilder, "BMWçš„å¼•æ“", "BMWçš„è½®èƒ");		
 	}
 	
-	//Éú²ú³öÒ»¸ö»ìºÏ³µĞÍ
+	//ç”Ÿäº§å‡ºä¸€ä¸ªæ··åˆè½¦å‹
 	public ICar createComplexCar(){		
-		return createCar(bmwBuilder, "BMWµÄÒıÇæ", "benzµÄÂÖÌ¥");
+		return createCar(bmwBuilder, "BMWçš„å¼•æ“", "benzçš„è½®èƒ");
 	}
 	
-	//Éú²ú³µÁ¾
+	//ç”Ÿäº§è½¦è¾†
 	private ICar createCar(CarBuilder _carBuilder,String engine,String wheel){
-		//µ¼Ñİ»³´§À¶Í¼
+		//å¯¼æ¼”æ€€æ£è“å›¾
 		Blueprint bp = new Blueprint();
 		bp.setEngine(engine);
 		bp.setWheel(wheel);
 		
-		System.out.println("»ñµÃÉú²úÀ¶Í¼");
+		System.out.println("è·å¾—ç”Ÿäº§è“å›¾");
 		_carBuilder.receiveBlueprint(bp);
 		return _carBuilder.buildCar();
 	}

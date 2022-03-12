@@ -1,4 +1,4 @@
-package com.cbf4life.common5;
+package org.example.ch37specification.common5;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.cbf4life.common5;
  */
 public interface IUserSpecification {
 	
-	//ºòÑ¡ÕßÊÇ·ñÂú×ãÒªÇó
+	//å€™é€‰è€…æ˜¯å¦æ»¡è¶³è¦æ±‚
 	public boolean IsSatisfiedBy(User user);	
 }
 

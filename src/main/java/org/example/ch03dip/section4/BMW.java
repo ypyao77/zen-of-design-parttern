@@ -1,14 +1,14 @@
-package com.company.section4;
+package org.example.ch03dip.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ±¦Âí³µ
+ * å®é©¬è½¦
  */
 public class BMW  implements ICar{
 	
-	//±¦Âí³µµ±È»Ò²¿ÉÒÔ¿ª¶¯ÁË
+	//å®é©¬è½¦å½“ç„¶ä¹Ÿå¯ä»¥å¼€åŠ¨äº†
 	public void run(){
-		System.out.println("±¦ÂíÆû³µ¿ªÊ¼ÔËĞĞ...");
+		System.out.println("å®é©¬æ±½è½¦å¼€å§‹è¿è¡Œ...");
 	}
 }

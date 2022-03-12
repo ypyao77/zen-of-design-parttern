@@ -1,4 +1,4 @@
-package com.company.command;
+package org.example.ch33pkoverzone.command_vs_strategy.command;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,15 +6,15 @@ package com.company.command;
  */
 public class CompressReceiver implements IReceiver {
 
-	//执行gzip压缩命令
+	//鎵цgzip鍘嬬缉鍛戒护
 	public boolean gzipExec(String source, String to) {
-		System.out.println(source + " --> " +to + " GZIP压缩成功!");
+		System.out.println(source + " --> " +to + " GZIP鍘嬬缉鎴愬姛!");
 		return true;
 	}
 
-	//执行zip压缩命令
+	//鎵цzip鍘嬬缉鍛戒护
 	public boolean zipExec(String source, String to) {
-		System.out.println(source + " --> " +to + " ZIP压缩成功!");
+		System.out.println(source + " --> " +to + " ZIP鍘嬬缉鎴愬姛!");
 		return true;
 	}
 

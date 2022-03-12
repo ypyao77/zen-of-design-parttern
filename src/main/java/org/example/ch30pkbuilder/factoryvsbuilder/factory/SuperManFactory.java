@@ -1,4 +1,4 @@
-package com.company.factory;
+package org.example.ch30pkbuilder.factoryvsbuilder.factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,11 +6,11 @@ package com.company.factory;
  */
 public class SuperManFactory {
 	
-	//¶¨ÒåÒ»¸öÉú²ú³¬ÈËµÄ¹¤³§
+	//å®šä¹‰ä¸€ä¸ªç”Ÿäº§è¶…äººçš„å·¥å‚
 	public static ISuperMan createSuperMan(String type){
-		//¸ù¾İÊäÈë²ÎÊı²úÉú²»Í¬µÄ³¬ÈË
+		//æ ¹æ®è¾“å…¥å‚æ•°äº§ç”Ÿä¸åŒçš„è¶…äºº
 		if(type.equalsIgnoreCase("adult")){
-			//Éú²ú³ÉÈË³¬ÈË
+			//ç”Ÿäº§æˆäººè¶…äºº
 			return new AdultSuperMan();
 		}else if(type.equalsIgnoreCase("child")){
 			//

@@ -1,11 +1,11 @@
-package com.company.decorator;
+package org.example.ch33pkoverzone.wrapper.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Decorator implements IStar {
-	//·ÛÊÎµÄÊÇË­
+	//ç²‰é¥°çš„æ˜¯è°
 	private IStar star;
 	
 	public Decorator(IStar _star){

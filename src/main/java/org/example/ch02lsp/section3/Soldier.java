@@ -1,14 +1,14 @@
-package com.company.section3;
+package org.example.ch02lsp.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ê¿±øÊ¹ÓÃÇ¹À´É±ÈË
+ * å£«å…µä½¿ç”¨æªæ¥æ€äºº
  */
 public class Soldier {
 	
 	public void killEnemy(AbstractGun gun){
-		System.out.println("Ê¿±ø¿ªÊ¼É±ÈË...");
+		System.out.println("å£«å…µå¼€å§‹æ€äºº...");
 		gun.shoot();
 	}
 }

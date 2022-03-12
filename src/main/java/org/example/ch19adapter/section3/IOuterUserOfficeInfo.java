@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch19adapter.section3;
 
 import java.util.Map;
 
@@ -7,6 +7,6 @@ import java.util.Map;
  * I'm glad to share my knowledge with you all.
  */
 public interface IOuterUserOfficeInfo {
-	//工作区域信息
+	//宸ヤ綔鍖哄煙淇℃伅
 	public Map getUserOfficeInfo();
 }

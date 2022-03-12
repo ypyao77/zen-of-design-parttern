@@ -1,11 +1,11 @@
-package com.company.abstract_factory;
+package org.example.ch30pkbuilder.abstractvsbuilder.abstract_factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class BMWSuv extends AbsBMW {
-	private final static String X_SEARIES = "X系列车型SUV";
+	private final static String X_SEARIES = "X绯诲垪杞﹀瀷SUV";
 	
 	@Override
 	public String getModel() {

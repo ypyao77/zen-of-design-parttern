@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch32pkaction.strategy_vs_state.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.strategy;
  */
 public abstract class WorkAlgorithm {
 	
-	//Ã¿¸öÄêÁä¶Î¶¼±ØĞëÍê³ÉµÄ¹¤×÷
+	//æ¯ä¸ªå¹´é¾„æ®µéƒ½å¿…é¡»å®Œæˆçš„å·¥ä½œ
 	public abstract void work();
 }

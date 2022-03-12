@@ -1,23 +1,23 @@
-package com.company.section1;
+package org.example.ch05isp.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ĞÇÌ½
+ * æ˜Ÿæ¢
  */
 public class Searcher extends AbstractSearcher{
 	public Searcher(IPettyGirl _pettyGirl){
 		super(_pettyGirl);
 	}
 	
-	//Õ¹Ê¾ÃÀÅ®µÄĞÅÏ¢
+	//å±•ç¤ºç¾å¥³çš„ä¿¡æ¯
 	public void show(){
-		System.out.println("--------ÃÀÅ®µÄĞÅÏ¢ÈçÏÂ£º---------------");
-		//Õ¹Ê¾ÃæÈİ
+		System.out.println("--------ç¾å¥³çš„ä¿¡æ¯å¦‚ä¸‹ï¼š---------------");
+		//å±•ç¤ºé¢å®¹
 		super.pettyGirl.goodLooking();
-		//Õ¹Ê¾Éí²Ä
+		//å±•ç¤ºèº«æ
 		super.pettyGirl.niceFigure();
-		//Õ¹Ê¾ÆøÖÊ
+		//å±•ç¤ºæ°”è´¨
 		super.pettyGirl.greatTemperament();
 	}
 }

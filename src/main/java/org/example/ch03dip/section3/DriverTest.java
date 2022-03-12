@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch03dip.section3;
 
 import junit.framework.TestCase;
 
@@ -10,13 +10,13 @@ import org.junit.Test;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ²âÊÔÀà
+ * æµ‹è¯•ç±»
  */
 public class DriverTest extends TestCase{
     Mockery context = new JUnit4Mockery();
 	@Test
 	public void testDriver() {
-		//¸ù¾İ½Ó¿ÚĞéÄâÒ»¸ö¶ÔÏó
+		//æ ¹æ®æ¥å£è™šæ‹Ÿä¸€ä¸ªå¯¹è±¡
 		final ICar car = context.mock(ICar.class);
 		IDriver driver = new Driver();
 		context.checking(new Expectations(){{

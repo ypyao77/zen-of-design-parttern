@@ -1,13 +1,13 @@
-package com.company.section5;
+package org.example.ch28flyweight.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class ExtrinsicState {
-	//考试科目
+	//鑰冭瘯绉戠洰
 	private String subject;
-	//考试地点
+	//鑰冭瘯鍦扮偣
 	private String location;
 	
 	

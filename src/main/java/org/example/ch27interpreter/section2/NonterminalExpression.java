@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch27interpreter.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,13 +6,13 @@ package com.company.section2;
  */
 public class NonterminalExpression extends Expression {
 	
-	//Ã¿¸ö·ÇÖÕ½á·û±í´ïÊ½¶¼»á¶ÔÆäËû±í´ïÊ½²úÉúÒÀÀµ
+	//æ¯ä¸ªéç»ˆç»“ç¬¦è¡¨è¾¾å¼éƒ½ä¼šå¯¹å…¶ä»–è¡¨è¾¾å¼äº§ç”Ÿä¾èµ–
 	public NonterminalExpression(Expression... expression){
 		
 	}
 	
 	public Object interpreter(Context ctx) {
-		//½øĞĞÎÄ·¨´¦Àí
+		//è¿›è¡Œæ–‡æ³•å¤„ç†
 		return null;
 	}
 

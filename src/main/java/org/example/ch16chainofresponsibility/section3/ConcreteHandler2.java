@@ -1,19 +1,19 @@
-package com.company.section3;
+package org.example.ch16chainofresponsibility.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class ConcreteHandler2 extends Handler {
-	//¶¨Òå×Ô¼ºµÄ´¦ÀíÂß¼­
+	//å®šä¹‰è‡ªå·±çš„å¤„ç†é€»è¾‘
 	protected Response echo(Request request) {
-		//Íê³É´¦ÀíÂß¼­
+		//å®Œæˆå¤„ç†é€»è¾‘
 		return null;
 	}
 
-	//ÉèÖÃ×Ô¼ºµÄ´¦Àí¼¶±ğ
+	//è®¾ç½®è‡ªå·±çš„å¤„ç†çº§åˆ«
 	protected Level getHandlerLevel() {
-		//ÉèÖÃ×Ô¼ºµÄ´¦Àí¼¶±ğ
+		//è®¾ç½®è‡ªå·±çš„å¤„ç†çº§åˆ«
 		return null;
 	}
 

@@ -1,23 +1,19 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.company.valuestack.ValueStack;
+import org.example.ch38mvc.mvc.valuestack.ValueStack;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class ValueStackHelper {
-	
-	
-
-	
-	//接受从HTTP传递过来的值，并放入堆栈中
+	//鎺ュ彈浠嶩TTP浼犻�掕繃鏉ョ殑鍊硷紝骞舵斁鍏ュ爢鏍堜腑
 	public ValueStack putIntoStack(HttpServletRequest req){
 		return null;
 	}
-	//得到当前的值栈
+	//寰楀埌褰撳墠鐨勫�兼爤
 	public static ValueStack getValueStack(){
 		return null;
 	}

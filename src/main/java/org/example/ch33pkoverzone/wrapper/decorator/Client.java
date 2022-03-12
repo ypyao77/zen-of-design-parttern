@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch33pkoverzone.wrapper.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,15 +7,15 @@ package com.company.decorator;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨Òå³öÕâ¸öËùÎ½µÄÃ÷ĞÇ
+		//å®šä¹‰å‡ºè¿™ä¸ªæ‰€è°“çš„æ˜æ˜Ÿ
 		IStar freakStar = new FreakStar();
-		//¿´¿´ËûÊÇÔõÃ´·ÛÊÎ×Ô¼ºµÄ
-		//¿ªÑİÇ°´µĞê×Ô¼ºÎŞËù²»ÄÜ
+		//çœ‹çœ‹ä»–æ˜¯æ€ä¹ˆç²‰é¥°è‡ªå·±çš„
+		//å¼€æ¼”å‰å¹å˜˜è‡ªå·±æ— æ‰€ä¸èƒ½
 		freakStar = new HotAir(freakStar);
-		//ÑİÍê±Ïºó£¬ËÀ²»³ĞÈÏ×Ô¼ºÑİµÄÀÃ
+		//æ¼”å®Œæ¯•åï¼Œæ­»ä¸æ‰¿è®¤è‡ªå·±æ¼”çš„çƒ‚
 		freakStar = new Deny(freakStar);
-		//¿´¿´ËûÕâ¸±×ìÁ³
-		System.out.println("====¿´¿´Ò»Ğ©Ğé¼ÙÃ÷ĞÇµÄ×ìÁ³====");
+		//çœ‹çœ‹ä»–è¿™å‰¯å˜´è„¸
+		System.out.println("====çœ‹çœ‹ä¸€äº›è™šå‡æ˜æ˜Ÿçš„å˜´è„¸====");
 		freakStar.act();
 	}
 }

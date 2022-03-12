@@ -1,17 +1,17 @@
 /**
  * 
  */
-package com.company.section1;
+package org.example.ch18strategy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ê×ÏÈ¶¨Ò»¸ö²ßÂÔ½Ó¿Ú£¬ÕâÊÇÖî¸ğÁÁÀÏÈË¼Ò¸øÕÔÔÆµÄÈı¸ö½õÄÒÃî¼ÆµÄ½Ó¿Ú
+ * é¦–å…ˆå®šä¸€ä¸ªç­–ç•¥æ¥å£ï¼Œè¿™æ˜¯è¯¸è‘›äº®è€äººå®¶ç»™èµµäº‘çš„ä¸‰ä¸ªé”¦å›Šå¦™è®¡çš„æ¥å£
  * 
  */
 public interface IStrategy {
 	
-	//Ã¿¸ö½õÄÒÃî¼Æ¶¼ÊÇÒ»¸ö¿ÉÖ´ĞĞµÄËã·¨
+	//æ¯ä¸ªé”¦å›Šå¦™è®¡éƒ½æ˜¯ä¸€ä¸ªå¯æ‰§è¡Œçš„ç®—æ³•
 	public void operate();
 
 }

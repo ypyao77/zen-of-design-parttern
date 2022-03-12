@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch17decorator.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -9,13 +9,13 @@ public class Client {
 	public static void main(String[] args) {
 		Component component = new ConcreteComponent();
 		
-		//µÚÒ»´ÎĞŞÊÎ
+		//ç¬¬ä¸€æ¬¡ä¿®é¥°
 		component = new ConcreteDecorator1(component);
 		
-		//µÚ¶ş´ÎĞŞÊÎ
+		//ç¬¬äºŒæ¬¡ä¿®é¥°
 		component = new ConcreteDecorator2(component);
 		
-		//ĞŞÊÎºóÔËĞĞ
+		//ä¿®é¥°åè¿è¡Œ
 		component.operate();
 		
 	}

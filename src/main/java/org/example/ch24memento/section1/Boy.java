@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch24memento.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,12 +6,12 @@ package com.company.section1;
  */
 public class Boy {
 	
-	//ÄĞº¢µÄ×´Ì¬
+	//ç”·å­©çš„çŠ¶æ€
 	private String state = "";
 	
-	//ÈÎºÎÅ®º¢×Óºó×´Ì¬¿Ï¶¨¸Ä±ä£¬±ÈÈçĞÄÇé¡¢ÊÖÖĞµÄ»¨¶äµÈµÈ
+	//ä»»ä½•å¥³å­©å­åçŠ¶æ€è‚¯å®šæ”¹å˜ï¼Œæ¯”å¦‚å¿ƒæƒ…ã€æ‰‹ä¸­çš„èŠ±æœµç­‰ç­‰
 	public void changeState(){
-		this.state = "ĞÄÇé¿ÉÄÜºÜ²»ºÃ";
+		this.state = "å¿ƒæƒ…å¯èƒ½å¾ˆä¸å¥½";
 	}
 
 	public String getState() {

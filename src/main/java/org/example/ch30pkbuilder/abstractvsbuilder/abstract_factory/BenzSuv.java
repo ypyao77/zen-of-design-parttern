@@ -1,11 +1,11 @@
-package com.company.abstract_factory;
+package org.example.ch30pkbuilder.abstractvsbuilder.abstract_factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class BenzSuv extends AbsBenz {
-	private final static String G_SERIES = "GÏµÁÐSUV";
+	private final static String G_SERIES = "Gç³»åˆ—SUV";
 	
 	@Override
 	public String getModel() {

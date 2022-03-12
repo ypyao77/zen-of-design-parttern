@@ -1,18 +1,18 @@
-package com.company.section5;
+package org.example.ch37specification.specification.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class UserByNameEqual extends CompositeSpecification {
-	//»ù×¼ĞÕÃû
+	//åŸºå‡†å§“å
 	private String name;
-	//¹¹Ôìº¯Êı´«µİ»ù×¼ĞÕÃû
+	//æ„é€ å‡½æ•°ä¼ é€’åŸºå‡†å§“å
 	public UserByNameEqual(String _name){
 		this.name = _name;
 	}
 	
-	//¼ìÑéÓÃ»§ÊÇ·ñÂú×ãÌõ¼ş
+	//æ£€éªŒç”¨æˆ·æ˜¯å¦æ»¡è¶³æ¡ä»¶
 	public boolean isSatisfiedBy(User user) {
 		return user.getName().equals(name);
 	}

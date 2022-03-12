@@ -1,4 +1,4 @@
-package com.company.observer;
+package org.example.ch32pkaction.observer_vs_chain.observer;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -9,13 +9,13 @@ public class TopDnsServer extends DnsServer {
 
 	@Override
 	protected void sign(Recorder recorder) {
-		recorder.setOwner("È«Çò¶¥¼¶DNS·şÎñÆ÷");
+		recorder.setOwner("å…¨çƒé¡¶çº§DNSæœåŠ¡å™¨");
 	}
 
 	
 	@Override
 	protected boolean isLocal(Recorder recorder) {
-		//ËùÓĞµÄÓòÃû×îÖÕµÄ½âÎöµØµã
+		//æ‰€æœ‰çš„åŸŸåæœ€ç»ˆçš„è§£æåœ°ç‚¹
 		return true;
 	}
 

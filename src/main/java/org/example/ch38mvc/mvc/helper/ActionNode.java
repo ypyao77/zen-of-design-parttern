@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,13 +6,13 @@ package com.company.helper;
  */
 public abstract class ActionNode {
 	
-	//actionµÄÃû³Æ
+	//actionçš„åç§°
 	private String actionName;
-	//actionµÄÀàÃû
+	//actionçš„ç±»å
 	private String actionClass;
-	//·½·¨Ãû, Ä¬ÈÏÊÇexecute
+	//æ–¹æ³•å, é»˜è®¤æ˜¯execute
 	private String methodName = "excuete";
-	//ÊÓÍ¼Â·¾¶
+	//è§†å›¾è·¯å¾„
 	private String view;
 	
 	

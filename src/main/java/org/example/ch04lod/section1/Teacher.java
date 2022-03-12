@@ -1,4 +1,4 @@
-package com.company.section1;
+package org.example.ch04lod.section1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,19 +6,19 @@ import java.util.List;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÀÏÊ¦Àà
+ * è€å¸ˆç±»
  */
 public class Teacher {
 	
-	//ÀÏÊ¦¶ÔÑ§Éú·¢²¼ÃüÁî,ÇåÒ»ÏÂÅ®Éú
+	//è€å¸ˆå¯¹å­¦ç”Ÿå‘å¸ƒå‘½ä»¤,æ¸…ä¸€ä¸‹å¥³ç”Ÿ
 	public void commond(GroupLeader groupLeader){
 		List<Girl> listGirls = new ArrayList();
-		//³õÊ¼»¯Å®Éú
+		//åˆå§‹åŒ–å¥³ç”Ÿ
 		for(int i=0;i<20;i++){
 			listGirls.add(new Girl());
 		}
 		
-		//¸æËßÌåÓıÎ¯Ô±¿ªÊ¼Ö´ĞĞÇå²éÈÎÎñ
+		//å‘Šè¯‰ä½“è‚²å§”å‘˜å¼€å§‹æ‰§è¡Œæ¸…æŸ¥ä»»åŠ¡
 		groupLeader.countGirls(listGirls);
 	}
 }

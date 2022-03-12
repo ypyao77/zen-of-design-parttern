@@ -1,25 +1,25 @@
-package com.company.state;
+package org.example.ch32pkaction.strategy_vs_state.state;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Human {
-	//¶¨ÒåÈËÀà¶¼¾ß±¸ÄÄĞ©×´Ì¬
+	//å®šä¹‰äººç±»éƒ½å…·å¤‡å“ªäº›çŠ¶æ€
 	public static final HumanState CHIILD_STATE = new ChildState();
 	public static final HumanState ADULT_STATE = new AdultState();
 	public static final HumanState OLD_STATE = new OldState();
 	
-	//¶¨ÒåÒ»¸öÈËµÄ×´Ì¬
+	//å®šä¹‰ä¸€ä¸ªäººçš„çŠ¶æ€
 	private HumanState state;
 	
-	//ÉèÖÃÒ»¸ö×´Ì¬
+	//è®¾ç½®ä¸€ä¸ªçŠ¶æ€
 	public void setState(HumanState _state){
 		this.state = _state;
 		this.state.setHuman(this);
 	}
 	
-	//ÈËÀàµÄ¹¤×÷
+	//äººç±»çš„å·¥ä½œ
 	public void work(){
 		this.state.work();
 	}

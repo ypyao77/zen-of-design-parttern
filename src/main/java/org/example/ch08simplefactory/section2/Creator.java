@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch08simplefactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,8 +7,8 @@ package com.company.section2;
 public abstract class Creator {
 	
 	/*
-	 * ´´½¨Ò»¸ö²úÆ·¶ÔÏó,ÆäÊäÈë²ÎÊıÀàĞÍ¿ÉÒÔ×ÔĞĞÉèÖÃ
-	 * Í¨³£ÎªString¡¢Enum¡¢ClassµÈ£¬µ±È»Ò²¿ÉÒÔÎª¿Õ
+	 * åˆ›å»ºä¸€ä¸ªäº§å“å¯¹è±¡,å…¶è¾“å…¥å‚æ•°ç±»å‹å¯ä»¥è‡ªè¡Œè®¾ç½®
+	 * é€šå¸¸ä¸ºStringã€Enumã€Classç­‰ï¼Œå½“ç„¶ä¹Ÿå¯ä»¥ä¸ºç©º
 	 */
 	public abstract <T extends Product> T createProduct(Class<T> c);
 }

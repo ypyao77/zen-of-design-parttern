@@ -1,12 +1,12 @@
-package com.company.proxy;
+package org.example.ch33pkoverzone.wrapper.proxy;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ã÷ĞÇÀà
+ * æ˜æ˜Ÿç±»
  */
 public interface IStar {
 	
-	//Ã÷ĞÇ¶¼»áÇ©Ãû
+	//æ˜æ˜Ÿéƒ½ä¼šç­¾å
 	public void sign();
 }

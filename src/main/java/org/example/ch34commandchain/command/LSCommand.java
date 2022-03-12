@@ -1,8 +1,8 @@
-package com.company.command;
+package org.example.ch34commandchain.command;
 
-import com.company.CommandVO;
-import com.company.command_name.CommandName;
-import com.company.command_name.ls.AbstractLS;
+import org.example.ch34commandchain.CommandVO;
+import org.example.ch34commandchain.command_name.CommandName;
+import org.example.ch34commandchain.command_name.ls.AbstractLS;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -11,7 +11,7 @@ import com.company.command_name.ls.AbstractLS;
 public class LSCommand extends Command{
 	
 	public String execute(CommandVO vo){
-		//返回链表的首节点
+		//杩斿洖閾捐〃鐨勯鑺傜偣
 		CommandName firstNode = super.buildChain(AbstractLS.class).get(0);
 		return firstNode.handleMessage(vo);
 	}

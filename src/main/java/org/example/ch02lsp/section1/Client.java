@@ -1,16 +1,16 @@
-package com.company.section1;
+package org.example.ch02lsp.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÒµÎñ³¡¾°Ä£ÄâÀà
+ * ä¸šåŠ¡åœºæ™¯æ¨¡æ‹Ÿç±»
  */
 public class Client {
 	
 	public static void main(String[] args) {
-		//²úÉúÈıÃ«Õâ¸öÊ¿±ø
+		//äº§ç”Ÿä¸‰æ¯›è¿™ä¸ªå£«å…µ
 		Soldier sanMao = new Soldier();
-		//¸øÈıÃ«Ò»Ö§Ç¹
+		//ç»™ä¸‰æ¯›ä¸€æ”¯æª
 		sanMao.setGun(new Rifle());
 		sanMao.killEnemy();
 	}

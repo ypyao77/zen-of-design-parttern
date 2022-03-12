@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch11builder.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.section4;
  */
 public abstract class Builder {
 	
-	//ÉèÖÃ²úÆ·µÄ²»Í¬²¿·Ö£¬ÒÔ»ñµÃ²»Í¬µÄ²úÆ·
+	//è®¾ç½®äº§å“çš„ä¸åŒéƒ¨åˆ†ï¼Œä»¥è·å¾—ä¸åŒçš„äº§å“
 	public abstract void setPart();
 	
 	
-	//½¨Ôì²úÆ·
+	//å»ºé€ äº§å“
 	public abstract Product buildProduct();
 }

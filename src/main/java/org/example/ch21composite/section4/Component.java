@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch21composite.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,8 +6,8 @@ package com.company.section4;
  */
 public abstract class Component {
 	
-	//¸öÌåºÍÕûÌå¶¼¾ßÓĞµÄ¹²Ïí
+	//ä¸ªä½“å’Œæ•´ä½“éƒ½å…·æœ‰çš„å…±äº«
 	public void doSomething(){
-		//±àĞ´ÒµÎñÂß¼­
+		//ç¼–å†™ä¸šåŠ¡é€»è¾‘
 	}
 }

@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch37specification.specification.section3;
 
 import java.util.ArrayList;
 
@@ -9,25 +9,25 @@ import java.util.ArrayList;
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ê×ÏÈ³õÊ¼»¯Ò»ÅúÓÃ»§
+		//é¦–å…ˆåˆå§‹åŒ–ä¸€æ‰¹ç”¨æˆ·
 		ArrayList<User> userList = new ArrayList<User>();
-		userList.add(new User("ËÕ´ó",3));
-		userList.add(new User("Å£¶ş",8));		
-		userList.add(new User("ÕÅÈı",10));
-		userList.add(new User("ÀîËÄ",15));
-		userList.add(new User("ÍõÎå",18));
-		userList.add(new User("ÕÔÁù",20));
-		userList.add(new User("ÂíÆß",25));
-		userList.add(new User("Ñî°Ë",30));
-		userList.add(new User("ºî¾Å",35));
-		userList.add(new User("²¼Ê®",40));
+		userList.add(new User("è‹å¤§",3));
+		userList.add(new User("ç‰›äºŒ",8));		
+		userList.add(new User("å¼ ä¸‰",10));
+		userList.add(new User("æå››",15));
+		userList.add(new User("ç‹äº”",18));
+		userList.add(new User("èµµå…­",20));
+		userList.add(new User("é©¬ä¸ƒ",25));
+		userList.add(new User("æ¨å…«",30));
+		userList.add(new User("ä¾¯ä¹",35));
+		userList.add(new User("å¸ƒå",40));
 		
-		//¶¨ÒåÒ»¸öÓÃ»§²éÑ¯Àà
+		//å®šä¹‰ä¸€ä¸ªç”¨æˆ·æŸ¥è¯¢ç±»
 		IUserProvider userProvider = new UserProvider(userList);
 		
-		//´òÓ¡³öÄêÁä´óÓÚ20ËêµÄÓÃ»§
-		System.out.println("===ÄêÁä´óÓÚ20ËêµÄÓÃ»§===");
-		//¶¨ÒåÒ»¸ö¹æ¸ñ
+		//æ‰“å°å‡ºå¹´é¾„å¤§äº20å²çš„ç”¨æˆ·
+		System.out.println("===å¹´é¾„å¤§äº20å²çš„ç”¨æˆ·===");
+		//å®šä¹‰ä¸€ä¸ªè§„æ ¼
 		IUserSpecification userSpec = new UserByAgeThan(20);
 		for(User u:userProvider.findUser(userSpec)){
 			System.out.println(u);

@@ -1,4 +1,4 @@
-package com.company.section6;
+package org.example.ch08simplefactory.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,7 +7,7 @@ package com.company.section6;
 public class ConcreteProduct2 extends Product {
 
 	public void doSomething() {
-		//Âß¼­´¦Àí
+		//é€»è¾‘å¤„ç†
 	}
 
 }

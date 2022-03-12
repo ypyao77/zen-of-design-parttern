@@ -1,25 +1,25 @@
-package com.company.section5;
+package org.example.ch12proxy.proxy.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³¡¾°Àà
+ * åœºæ™¯ç±»
  */
 public class Client {
 
 	public static void main(String[] args) {
-		//¶¨Òå¸öÓÎÏ·µÄ½ÇÉ«
-		IGamePlayer player = new GamePlayer("ÕÅÈı");
+		//å®šä¹‰ä¸ªæ¸¸æˆçš„è§’è‰²
+		IGamePlayer player = new GamePlayer("å¼ ä¸‰");
 		
-		//¿ªÊ¼´òÓÎÏ·£¬¼ÇÏÂÊ±¼ä´Á
-		System.out.println("¿ªÊ¼Ê±¼äÊÇ£º2009-8-25 10:45");
+		//å¼€å§‹æ‰“æ¸¸æˆï¼Œè®°ä¸‹æ—¶é—´æˆ³
+		System.out.println("å¼€å§‹æ—¶é—´æ˜¯ï¼š2009-8-25 10:45");
 		player.login("zhangSan", "password");
-		//¿ªÊ¼É±¹Ö
+		//å¼€å§‹æ€æ€ª
 		player.killBoss();
-		//Éı¼¶
+		//å‡çº§
 		player.upgrade();
-		//¼ÇÂ¼½áÊøÓÎÏ·Ê±¼ä
-		System.out.println("½áÊøÊ±¼äÊÇ£º2009-8-26 03:40");
+		//è®°å½•ç»“æŸæ¸¸æˆæ—¶é—´
+		System.out.println("ç»“æŸæ—¶é—´æ˜¯ï¼š2009-8-26 03:40");
 		
 	}
 

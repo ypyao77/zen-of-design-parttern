@@ -1,4 +1,4 @@
-package com.company.state;
+package org.example.ch32pkaction.strategy_vs_state.state;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.state;
  */
 public class ChildState extends HumanState{
 	
-	//¶ùÍ¯µÄ¹¤×÷¾ÍÊÇÍæË£
+	//å„¿ç«¥çš„å·¥ä½œå°±æ˜¯ç©è€
 	public void work(){
-		System.out.println("¶ùÍ¯µÄ¹¤×÷ÊÇÍæË££¡");
+		System.out.println("å„¿ç«¥çš„å·¥ä½œæ˜¯ç©è€ï¼");
 		super.human.setState(Human.ADULT_STATE);
 	}
 }

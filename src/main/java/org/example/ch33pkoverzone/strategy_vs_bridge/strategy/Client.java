@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch33pkoverzone.strategy_vs_bridge.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -8,12 +8,12 @@ public class Client {
 	
 	public static void main(String[] args) {
 		
-		//´´½¨Ò»·âTEXT¸ñÊ½µÄÓÊ¼ş
-		MailTemplate m = new TextMail("a@a.com","b@b.com","ÍâĞÇÈË¹¥»÷µØÇòÁË","½á¾ÖÊÇÍâĞÇÈË±»ÖĞ¹úÈË°¾ÌÀìÀ×Å³ÔÁË£¡");
+		//åˆ›å»ºä¸€å°TEXTæ ¼å¼çš„é‚®ä»¶
+		MailTemplate m = new TextMail("a@a.com","b@b.com","å¤–æ˜Ÿäººæ”»å‡»åœ°çƒäº†","ç»“å±€æ˜¯å¤–æ˜Ÿäººè¢«ä¸­å›½äººç†¬æ±¤ç‚–ç€åƒäº†ï¼");
 		
-		//´´½¨Ò»¸öMail·¢ËÍ³ÌĞò
+		//åˆ›å»ºä¸€ä¸ªMailå‘é€ç¨‹åº
 		MailServer mail = new MailServer(m);
-		//·¢ËÍÓÊ¼ş
+		//å‘é€é‚®ä»¶
 		mail.sendMail();
 	}
 }

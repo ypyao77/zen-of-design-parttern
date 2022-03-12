@@ -1,16 +1,16 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.abstractvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Car implements ICar {
-	//汽车引擎
+	//姹借溅寮曟搸
 	private String engine;
-	//汽车轮子
+	//姹借溅杞瓙
 	private String wheel;
 	
-	//一次性传递汽车需要的信息
+	//涓�娆℃�т紶閫掓苯杞﹂渶瑕佺殑淇℃伅
 	public Car(String _engine,String _wheel){
 		this.engine = _engine;
 		this.wheel = _wheel;
@@ -28,6 +28,6 @@ public class Car implements ICar {
 	
 	@Override
 	public String toString(){
-		return "车的轮子是：" + wheel + "\n车的引擎是：" + engine;		
+		return "杞︾殑杞瓙鏄細" + wheel + "\n杞︾殑寮曟搸鏄細" + engine;		
 	}
 }

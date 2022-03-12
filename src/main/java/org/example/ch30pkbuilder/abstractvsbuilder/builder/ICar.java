@@ -1,14 +1,14 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.abstractvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
-//Æû³µ½Ó¿Ú
+//æ±½è½¦æ¥å£
 public interface ICar {
-	//Æû³µµÄ³µÂÖ
+	//æ±½è½¦çš„è½¦è½®
 	public String getWheel();
-	//Æû³µÒıÇæ
+	//æ±½è½¦å¼•æ“
 	public String getEngine();
 }
 

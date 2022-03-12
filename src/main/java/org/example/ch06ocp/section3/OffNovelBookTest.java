@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch06ocp.section3;
 
 import junit.framework.TestCase;
 
@@ -8,15 +8,15 @@ import junit.framework.TestCase;
  */
 public class OffNovelBookTest extends TestCase {
 	
-	private IBook below40NovelBook = new OffNovelBook("Æ½·²µÄÊÀ½ç",3000,"Â·Ò£");
-	private IBook above40NovelBook = new OffNovelBook("Æ½·²µÄÊÀ½ç",6000,"Â·Ò£");
+	private IBook below40NovelBook = new OffNovelBook("å¹³å‡¡çš„ä¸–ç•Œ",3000,"è·¯é¥");
+	private IBook above40NovelBook = new OffNovelBook("å¹³å‡¡çš„ä¸–ç•Œ",6000,"è·¯é¥");
 	
-	//²âÊÔµÍÓÚ40ÔªµÄÊı¾İÊÇ·ñÊÇ´ò8ÕÛ
+	//æµ‹è¯•ä½äº40å…ƒçš„æ•°æ®æ˜¯å¦æ˜¯æ‰“8æŠ˜
 	public void testGetPriceBelow40() {
 		super.assertEquals(2400, this.below40NovelBook.getPrice());
 	}
 	
-	//²âÊÔ´óÓÚ40µÄÊé¼®ÊÇ·ñÊÇ´ò9ÕÛ
+	//æµ‹è¯•å¤§äº40çš„ä¹¦ç±æ˜¯å¦æ˜¯æ‰“9æŠ˜
 	public void testGetPriceAbove40(){
 		super.assertEquals(5400, this.above40NovelBook.getPrice());
 	}

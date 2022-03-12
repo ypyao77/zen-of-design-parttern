@@ -1,18 +1,18 @@
-package com.company.section2;
+package org.example.ch08simplefactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³éÏó²úÆ·Àà
+ * æŠ½è±¡äº§å“ç±»
  */
 public abstract class Product {
 	
-	//²úÆ·ÀàµÄ¹«¹²·½·¨
+	//äº§å“ç±»çš„å…¬å…±æ–¹æ³•
 	public void method1(){
-		//ÒµÎñÂß¼­´¦Àí
+		//ä¸šåŠ¡é€»è¾‘å¤„ç†
 	}
 	
-	//³éÏó·½·¨1
+	//æŠ½è±¡æ–¹æ³•1
 	public abstract void method2();
 	
 }

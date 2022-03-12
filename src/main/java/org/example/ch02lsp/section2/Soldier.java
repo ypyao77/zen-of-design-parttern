@@ -1,19 +1,19 @@
-package com.company.section2;
+package org.example.ch02lsp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ê¿±øÊ¹ÓÃÇ¹À´É±ÈË
+ * å£«å…µä½¿ç”¨æªæ¥æ€äºº
  */
 public class Soldier {
-	//¶¨ÒåÊ¿±øµÄÇ¹Ö§
+	//å®šä¹‰å£«å…µçš„æªæ”¯
 	private AbstractGun gun;
-	//¸øÊ¿±øÒ»Ö§Ç¹
+	//ç»™å£«å…µä¸€æ”¯æª
 	public void setGun(AbstractGun _gun){
 		this.gun = _gun; 
 	}
 	public void killEnemy(){
-		System.out.println("Ê¿±ø¿ªÊ¼É±ÈË...");
+		System.out.println("å£«å…µå¼€å§‹æ€äºº...");
 		gun.shoot();
 	}
 }

@@ -1,12 +1,12 @@
-package com.company.section5;
+package org.example.ch37specification.specification.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
-//实现and操作
+//瀹炵幇and鎿嶄綔
 public class AndSpecification extends CompositeSpecification {
-	//传递两个规格书进行and操作
+	//浼犻�掍袱涓鏍间功杩涜and鎿嶄綔
 	private IUserSpecification left;
 	private IUserSpecification right;
 	
@@ -15,7 +15,7 @@ public class AndSpecification extends CompositeSpecification {
 		this.right = _right;
 	}
 	
-	//进行and运算
+	//杩涜and杩愮畻
 	@Override
 	public boolean isSatisfiedBy(User user) {
 		return left.isSatisfiedBy(user) && right.isSatisfiedBy(user);

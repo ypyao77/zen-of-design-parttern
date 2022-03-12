@@ -1,19 +1,19 @@
-package com.company.section4;
+package org.example.ch03dip.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ë¾»ú
+ * å¸æœº
  */
 public class Driver implements IDriver{
 	private ICar car;
 	
-	//¹¹Ôìº¯Êı×¢Èë
+	//æ„é€ å‡½æ•°æ³¨å…¥
 	public Driver(ICar _car){
 		this.car = _car;
 	}
 	
-	//Ë¾»úµÄÖ÷ÒªÖ°Ôğ¾ÍÊÇ¼İÊ»Æû³µ
+	//å¸æœºçš„ä¸»è¦èŒè´£å°±æ˜¯é©¾é©¶æ±½è½¦
 	public void drive(){
 		this.car.run();
 	}

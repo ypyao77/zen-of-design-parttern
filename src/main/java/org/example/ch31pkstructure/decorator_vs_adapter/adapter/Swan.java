@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch31pkstructure.decorator_vs_adapter.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,13 +6,13 @@ package com.company.adapter;
  */
 public interface Swan {
 	
-	//Ìì¶ì»á·É
+	//å¤©é¹…ä¼šé£
 	public void fly();
 	
-	//Ìì¶ì»á½Ğ
+	//å¤©é¹…ä¼šå«
 	public void cry();
 	
-	//Ìì¶ì¶¼ÓĞÆ¯ÁÁµÄÍâ±í
+	//å¤©é¹…éƒ½æœ‰æ¼‚äº®çš„å¤–è¡¨
 	public void desAppaearance();
 }
 

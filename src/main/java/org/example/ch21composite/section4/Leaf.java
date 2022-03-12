@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch21composite.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section4;
  */
 public class Leaf extends Component {
 	/*
-	 * 可以覆写父类方法
+	 * 鍙互瑕嗗啓鐖剁被鏂规硶
 	 * public void doSomething(){
 	 * 
 	 * }

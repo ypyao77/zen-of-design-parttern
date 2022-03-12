@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.wrapper.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.bridge;
  */
 public abstract class AbstractAction {
 	
-	//每个活动都有描述
+	//姣忎釜娲诲姩閮芥湁鎻忚堪
 	public abstract void desc();
 }

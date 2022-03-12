@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch31pkstructure.decorator_vs_adapter.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,19 +6,19 @@ package com.company.adapter;
  */
 public class WhiteSwan implements Swan {
 	
-	//°×Ìì¶ìµÄÍâĞÎµÄ½ĞÉù
+	//ç™½å¤©é¹…çš„å¤–å½¢çš„å«å£°
 	public void cry() {
-		System.out.println("½ĞÉùÊÇ¿Ëàà¡ª¡ª¿Ëàà¡ª¡ª¿Ëàà");
+		System.out.println("å«å£°æ˜¯å…‹å™œâ€”â€”å…‹å™œâ€”â€”å…‹å™œ");
 	}
 	
-	//°×Ìì¶ìµÄÍâĞÎ
+	//ç™½å¤©é¹…çš„å¤–å½¢
 	public void desAppaearance() {
-		System.out.println("ÍâĞÎÊÇ´¿°×É«£¬ÈÇÈËÏ²°®");
+		System.out.println("å¤–å½¢æ˜¯çº¯ç™½è‰²ï¼Œæƒ¹äººå–œçˆ±");
 	}
 
-	//Ìì¶ìÊÇÄÜ¹»·ÉĞĞµÄ
+	//å¤©é¹…æ˜¯èƒ½å¤Ÿé£è¡Œçš„
 	public void fly() {
-		System.out.println("ÄÜ¹»·ÉĞĞ");
+		System.out.println("èƒ½å¤Ÿé£è¡Œ");
 	}
 
 

@@ -1,4 +1,4 @@
-package com.company.section9;
+package org.example.ch12proxy.proxy.section9;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -7,20 +7,20 @@ import java.lang.reflect.Proxy;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´úÁ·Õß
+ * ä»£ç»ƒè€…
  */
 public class GamePlayIH implements InvocationHandler {
-	//±»´úÀíÕß
+	//è¢«ä»£ç†è€…
 	Class cls =null;
-	//±»´úÀíµÄÊµÀı
+	//è¢«ä»£ç†çš„å®ä¾‹
 	Object obj = null;
 	
-	//ÎÒÒª´úÀíË­
+	//æˆ‘è¦ä»£ç†è°
 	public GamePlayIH(Object _obj){
 		this.obj = _obj;
 	}
 	
-	//µ÷ÓÃ±»´úÀíµÄ·½·¨
+	//è°ƒç”¨è¢«ä»£ç†çš„æ–¹æ³•
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
 		Object result = method.invoke(this.obj, args);

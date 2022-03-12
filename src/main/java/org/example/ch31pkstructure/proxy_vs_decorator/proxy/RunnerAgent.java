@@ -1,4 +1,4 @@
-package com.company.proxy;
+package org.example.ch31pkstructure.proxy_vs_decorator.proxy;
 
 import java.util.Random;
 
@@ -13,14 +13,14 @@ public class RunnerAgent implements IRunner {
 		this.runner = _runner;
 	}
 	
-	//代理人是不会跑的
+	//浠ｇ悊浜烘槸涓嶄細璺戠殑
 	public void run() {
 		Random rand = new Random();
 		if(rand.nextBoolean()){
-			System.out.println("代理人同意安排运动员跑步");
+			System.out.println("浠ｇ悊浜哄悓鎰忓畨鎺掕繍鍔ㄥ憳璺戞");
 			runner.run();
 		}else{
-			System.out.println("代理人心情不好，不安排运动品跑步");
+			System.out.println("浠ｇ悊浜哄績鎯呬笉濂斤紝涓嶅畨鎺掕繍鍔ㄥ搧璺戞");
 		}
 	}
 

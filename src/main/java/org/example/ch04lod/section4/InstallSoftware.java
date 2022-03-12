@@ -1,15 +1,15 @@
-package com.company.section4;
+package org.example.ch04lod.section4;
 
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 业务组装类，负责调用各个步骤
+ * 涓氬姟缁勮绫伙紝璐熻矗璋冪敤鍚勪釜姝ラ
  */
 public class InstallSoftware {
 	
 	public void installWizard(Wizard wizard){
-		//不废话，直接调用
+		//涓嶅簾璇濓紝鐩存帴璋冪敤
 		wizard.installWizard();
 	}
 	void abc(){

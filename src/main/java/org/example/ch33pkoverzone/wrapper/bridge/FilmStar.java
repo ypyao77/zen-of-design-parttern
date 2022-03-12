@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.wrapper.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,20 +6,20 @@ package com.company.bridge;
  */
 public class FilmStar extends AbstractStar {
 	
-	//Ä¬ÈÏµÄµçÓ°Ã÷ĞÇÓ¦¸ÃÊÇÅÄµçÓ°
+	//é»˜è®¤çš„ç”µå½±æ˜æ˜Ÿåº”è¯¥æ˜¯æ‹ç”µå½±
 	public FilmStar(){
 		super(new ActFilm());
 	}
 	
-	//Ò²¿ÉÒÔÖØĞÂÉèÖÃÒ»¸öĞÂÖ°Òµ£¬¾ı²»¼ûÃ÷ĞÇÅÜÑ¨µÄÇé¿öÊ±ÓĞ·¢ÉúÂğ
+	//ä¹Ÿå¯ä»¥é‡æ–°è®¾ç½®ä¸€ä¸ªæ–°èŒä¸šï¼Œå›ä¸è§æ˜æ˜Ÿè·‘ç©´çš„æƒ…å†µæ—¶æœ‰å‘ç”Ÿå—
 	public FilmStar(AbstractAction _action){
 		super(_action);
 	}
 	
-	//Ï¸»¯µçÓ°Ã÷ĞÇµÄÖ°Ôğ
+	//ç»†åŒ–ç”µå½±æ˜æ˜Ÿçš„èŒè´£
 	@Override
 	public void doJob(){
-		System.out.println("\n======µçÓ°Ã÷ĞÇµÄÖ÷Òª¹¤×÷=====");
+		System.out.println("\n======ç”µå½±æ˜æ˜Ÿçš„ä¸»è¦å·¥ä½œ=====");
 		super.doJob();
 	}
 }

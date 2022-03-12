@@ -1,11 +1,11 @@
-package com.company.section6;
+package org.example.ch37specification.specification.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class BizSpecification extends CompositeSpecification {
-	//基准对象
+	//鍩哄噯瀵硅薄
 	private Object obj;
 	public BizSpecification(Object _obj){
 		this.obj = _obj;
@@ -13,7 +13,7 @@ public class BizSpecification extends CompositeSpecification {
 	
 	@Override
 	public boolean isSatisfiedBy(Object candidate) {
-		//根据基准对象和候选对象，进行业务判断，返回boolean
+		//鏍规嵁鍩哄噯瀵硅薄鍜屽�欓�夊璞★紝杩涜涓氬姟鍒ゆ柇锛岃繑鍥瀊oolean
 		return false;
 	}
 

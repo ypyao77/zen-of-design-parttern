@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch18strategy.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,11 +7,11 @@ package com.company.section4;
 public class Client {
 	
 	public static void main(String[] args) {
-		//输入的两个参数是数字
+		//杈撳叆鐨勪袱涓弬鏁版槸鏁板瓧
 		int a = Integer.parseInt(args[0]);
-		String symbol = args[1];  //符号
+		String symbol = args[1];  //绗﹀彿
 		int b = Integer.parseInt(args[2]);
-		//生成一个运算器
+		//鐢熸垚涓�涓繍绠楀櫒
 		Calculator cal = new Calculator();
 		System.out.println(a + symbol + b + "=" + cal.exec(a, b, symbol));
 		

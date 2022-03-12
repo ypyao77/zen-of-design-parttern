@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch13prototype.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -8,10 +8,10 @@ public class Client {
 
 
 	public static void main(String[] args) {
-		//²úÉúÒ»¸ö¶ÔÏó
+		//äº§ç”Ÿä¸€ä¸ªå¯¹è±¡
 		Thing thing = new Thing();
 		
-		//¿½±´Ò»¸ö¶ÔÏó
+		//æ‹·è´ä¸€ä¸ªå¯¹è±¡
 		Thing cloneThing = thing.clone();
 
 	}

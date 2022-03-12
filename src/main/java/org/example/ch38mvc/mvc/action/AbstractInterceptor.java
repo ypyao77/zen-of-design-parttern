@@ -1,34 +1,34 @@
-package com.company.action;
+package org.example.ch38mvc.mvc.action;
 
-import com.company.helper.ValueStackHelper;
-import com.company.valuestack.ValueStack;
+import org.example.ch38mvc.mvc.helper.ValueStackHelper;
+import org.example.ch38mvc.mvc.valuestack.ValueStack;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³éÏóÀ¹½ØÆ÷
+ * æŠ½è±¡æ‹¦æˆªå™¨
  */
 public abstract class AbstractInterceptor {
-	//»ñµÃµ±Ç°µÄÖµÕ»
+	//è·å¾—å½“å‰çš„å€¼æ ˆ
 	private ValueStack valueStack = ValueStackHelper.getValueStack();
-	//À¹½ØÆ÷ÀàĞÍ£ºÇ°ÖÃ¡¢ºóÖÃ¡¢»·ÈÆ
+	//æ‹¦æˆªå™¨ç±»å‹ï¼šå‰ç½®ã€åç½®ã€ç¯ç»•
 	private int type =0;
 	
 	
-	//µ±Ç°µÄÖµÕ» 
+	//å½“å‰çš„å€¼æ ˆ 
 	protected ValueStack getValueStack(){
 		return valueStack;
 	}
 	
-	//À¹½Ø´¦Àí
+	//æ‹¦æˆªå¤„ç†
 	public final void exec(){
-		//¸ù¾İtype²»Í¬£¬´¦Àí·½Ê½Ò²²»Í¬
+		//æ ¹æ®typeä¸åŒï¼Œå¤„ç†æ–¹å¼ä¹Ÿä¸åŒ
 	}
 	
-	//À¹½ØÆ÷ÀàĞÍ
+	//æ‹¦æˆªå™¨ç±»å‹
 	protected abstract void setType(int type);
 	
-	//×ÓÀàÊµÏÖµÄÀ¹½ØÆ÷
+	//å­ç±»å®ç°çš„æ‹¦æˆªå™¨
 	protected abstract void intercept();
 	
 }

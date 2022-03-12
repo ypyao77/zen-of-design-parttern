@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.proxy_vs_decorator.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -11,7 +11,7 @@ public class RunnerWithJet implements IRunner {
 		this.runner = _runner;
 	}
 	public void run() {
-		System.out.println("¼Ó¿ìÔË¶¯Ô±µÄËÙ¶È£ºÎªÔË¶¯Ô±Ôö¼ÓÅçÆø×°ÖÃ");
+		System.out.println("åŠ å¿«è¿åŠ¨å‘˜çš„é€Ÿåº¦ï¼šä¸ºè¿åŠ¨å‘˜å¢åŠ å–·æ°”è£…ç½®");
 		runner.run();
 	}
 

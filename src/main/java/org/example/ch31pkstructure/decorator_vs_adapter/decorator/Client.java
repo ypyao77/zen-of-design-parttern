@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.decorator_vs_adapter.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,22 +7,22 @@ package com.company.decorator;
 public class Client {
 	
 	public static void main(String[] args) {
-		//ºÜ¾ÃºÜ¾ÃÒÔÇ°£¬ÕâÀïÓĞÒ»¸ö³óÂªµÄĞ¡Ñ¼×Ó
-		System.out.println("===ºÜ¾ÃºÜ¾ÃÒÔÇ°£¬ÕâÀïÓĞÒ»Ö»³óÂªµÄĞ¡Ñ¼×Ó===");
+		//å¾ˆä¹…å¾ˆä¹…ä»¥å‰ï¼Œè¿™é‡Œæœ‰ä¸€ä¸ªä¸‘é™‹çš„å°é¸­å­
+		System.out.println("===å¾ˆä¹…å¾ˆä¹…ä»¥å‰ï¼Œè¿™é‡Œæœ‰ä¸€åªä¸‘é™‹çš„å°é¸­å­===");
 		Swan duckling = new UglyDuckling();
-		//Õ¹Ê¾Ò»ÏÂĞ¡Ñ¼
-		duckling.desAppaearance();  //Ğ¡Ñ¼×ÓµÄÍâĞÎ
-		duckling.cry();  //Ğ¡Ñ¼×ÓµÄ½ĞÉù
-		duckling.fly();  //Ğ¡Ñ¼×ÓµÄĞĞÎª
+		//å±•ç¤ºä¸€ä¸‹å°é¸­
+		duckling.desAppaearance();  //å°é¸­å­çš„å¤–å½¢
+		duckling.cry();  //å°é¸­å­çš„å«å£°
+		duckling.fly();  //å°é¸­å­çš„è¡Œä¸º
 		
-		System.out.println("\n===Ğ¡Ñ¼×ÓÖÕÓÚ·¢ÏÖ×Ô¼ºÊÇÒ»Ö»Ìì¶ì====");
-		//Ê×ÏÈÍâĞÎ±ä»¯ÁË
+		System.out.println("\n===å°é¸­å­ç»ˆäºå‘ç°è‡ªå·±æ˜¯ä¸€åªå¤©é¹…====");
+		//é¦–å…ˆå¤–å½¢å˜åŒ–äº†
 		duckling = new BeautifyAppearance(duckling);
-		//Æä´ÎĞĞÎªÒ²·¢ÉúÁË¸Ä±ä
+		//å…¶æ¬¡è¡Œä¸ºä¹Ÿå‘ç”Ÿäº†æ”¹å˜
 		duckling = new StrongBehavior(duckling); 
-		//ËäÈ»»¹ÊÇ½Ğ³óĞ¡Ñ¼£¬µ«ÊÇÒÑ¾­·¢ÉúÁËºÜ´ó±ä»¯
-		duckling.desAppaearance();  //Ğ¡Ñ¼×ÓµÄĞÂÍâĞÎ
-		duckling.cry();  //Ğ¡Ñ¼×ÓµÄ½ĞÉù
-		duckling.fly();  //Ğ¡Ñ¼×ÓµÄĞÂĞĞÎª
+		//è™½ç„¶è¿˜æ˜¯å«ä¸‘å°é¸­ï¼Œä½†æ˜¯å·²ç»å‘ç”Ÿäº†å¾ˆå¤§å˜åŒ–
+		duckling.desAppaearance();  //å°é¸­å­çš„æ–°å¤–å½¢
+		duckling.cry();  //å°é¸­å­çš„å«å£°
+		duckling.fly();  //å°é¸­å­çš„æ–°è¡Œä¸º
 	}
 }

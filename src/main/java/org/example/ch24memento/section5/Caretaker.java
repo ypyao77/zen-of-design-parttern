@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch24memento.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section5;
  */
 public class Caretaker {
 	
-	//·¢ÆğÈË¶ÔÏó
+	//å‘èµ·äººå¯¹è±¡
 	private Originator originator;
 
 	public Originator getOriginator() {

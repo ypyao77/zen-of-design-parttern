@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 import java.util.Observable;
 
@@ -7,12 +7,12 @@ import java.util.Observable;
  * I'm glad to share my knowledge with you all.
  */
 public class FileWatcher extends Observable implements Watchable{
-	//ÊÇ·ñÒªÖØĞÂ¼ÓÔØXMLÎÄ¼ş
+	//æ˜¯å¦è¦é‡æ–°åŠ è½½XMLæ–‡ä»¶
 	private boolean isReload = false;
 	
-	//Æô¶¯¼àÊÓ
+	//å¯åŠ¨ç›‘è§†
 	public void watch(){
-		//Æô¶¯Ò»¸öÏß³Ì£¬Ã¿¸ö15ÃëÉ¨ÃèÒ»ÏÂÎÄ¼ş£¬·¢ÏÖÎÄ¼şÈÕÆÚ±»ĞŞ¸Ä£¬Á¢¿ÌÍ¨Öª¹Û²ìÕß
+		//å¯åŠ¨ä¸€ä¸ªçº¿ç¨‹ï¼Œæ¯ä¸ª15ç§’æ‰«æä¸€ä¸‹æ–‡ä»¶ï¼Œå‘ç°æ–‡ä»¶æ—¥æœŸè¢«ä¿®æ”¹ï¼Œç«‹åˆ»é€šçŸ¥è§‚å¯Ÿè€…
 		super.addObserver(new Checker());
 		super.setChanged();
 		super.notifyObservers(isReload);

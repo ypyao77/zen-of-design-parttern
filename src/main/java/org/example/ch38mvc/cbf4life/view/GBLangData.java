@@ -1,20 +1,20 @@
-package com.cbf4life.view;
+package org.example.ch38mvc.cbf4life.view;
 
 import java.util.Map;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÖĞÎÄ×Ö·û
+ * ä¸­æ–‡å­—ç¬¦
  */
 public class GBLangData extends AbsLangData {
 
 	@Override
 	public Map<String, String> getItems() {
 		/*
-		 * map µÄ½á¹¹Îª£º
-		 * key='title', value='±êÌâ'
-		 * key='menu',  value='²Ëµ¥'
+		 * map çš„ç»“æ„ä¸ºï¼š
+		 * key='title', value='æ ‡é¢˜'
+		 * key='menu',  value='èœå•'
 		 */
 		return null;
 	}

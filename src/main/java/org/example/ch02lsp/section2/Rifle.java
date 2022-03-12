@@ -1,14 +1,14 @@
-package com.company.section2;
+package org.example.ch02lsp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ²½Ç¹£¬ÎÒ×îĞÀÉÍµÄÊÇ¾Ñ»÷²½Ç¹
+ * æ­¥æªï¼Œæˆ‘æœ€æ¬£èµçš„æ˜¯ç‹™å‡»æ­¥æª
  */
 public class Rifle extends AbstractGun{
 	
-	//²½Ç¹µÄÌØµãÊÇÉä³ÌÔ¶£¬ÍşÁ¦´ó
+	//æ­¥æªçš„ç‰¹ç‚¹æ˜¯å°„ç¨‹è¿œï¼Œå¨åŠ›å¤§
 	public void shoot(){
-		System.out.println("²½Ç¹Éä»÷...");
+		System.out.println("æ­¥æªå°„å‡»...");
 	}
 }

@@ -1,18 +1,18 @@
-package com.company.section5;
+package org.example.ch37specification.specification.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class UserByAgeThan extends CompositeSpecification {
-	//»ù×¼ÄêÁä
+	//åŸºå‡†å¹´é¾„
 	private int age;
-	//¹¹Ôìº¯Êı´«µİ»ù×¼ÄêÁä
+	//æ„é€ å‡½æ•°ä¼ é€’åŸºå‡†å¹´é¾„
 	public UserByAgeThan(int _age){
 		this.age = _age;
 	}
 	
-	//¼ìÑéÓÃ»§ÊÇ·ñÂú×ãÌõ¼ş
+	//æ£€éªŒç”¨æˆ·æ˜¯å¦æ»¡è¶³æ¡ä»¶
 	public boolean isSatisfiedBy(User user) {
 		return user.getAge() > age;
 	}

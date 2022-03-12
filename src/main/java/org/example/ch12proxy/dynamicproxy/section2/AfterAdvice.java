@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch12proxy.dynamicproxy.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,7 +7,7 @@ package com.company.section2;
 public class AfterAdvice implements IAdvice {
 	
 	public void exec() {
-		System.out.println("ÎÒÊÇºóĞøÍ¨Öª£¬ÎÒ±»Ö´ĞĞÁË£¡");
+		System.out.println("æˆ‘æ˜¯åç»­é€šçŸ¥ï¼Œæˆ‘è¢«æ‰§è¡Œäº†ï¼");
 	}
 
 }

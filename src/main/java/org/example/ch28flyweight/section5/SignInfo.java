@@ -1,4 +1,4 @@
-package com.company.section5;
+package org.example.ch28flyweight.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,11 +6,11 @@ package com.company.section5;
  */
 public class SignInfo {
 	
-	//±¨ÃûÈËÔ±µÄID
+	//æŠ¥åäººå‘˜çš„ID
 	private String id;
-	//ÓÊ¼ÄµØÖ·
+	//é‚®å¯„åœ°å€
 	private String postAddress;
-	//Íâ²¿×´Ì¬
+	//å¤–éƒ¨çŠ¶æ€
 	private ExtrinsicState state;
 	
 	public String getId() {

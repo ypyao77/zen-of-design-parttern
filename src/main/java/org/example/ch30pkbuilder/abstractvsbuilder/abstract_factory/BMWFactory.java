@@ -1,4 +1,4 @@
-package com.company.abstract_factory;
+package org.example.ch30pkbuilder.abstractvsbuilder.abstract_factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,12 +6,12 @@ package com.company.abstract_factory;
  */
 public class BMWFactory implements CarFactory {
 	
-	//Éú²úSUV
+	//ç”Ÿäº§SUV
 	public ICar createSuv() {
 		return new BMWSuv();
 	}
 	
-	//Éú²úÉÌÎñ³µ
+	//ç”Ÿäº§å•†åŠ¡è½¦
 	public ICar createVan(){
 		return new BMWVan();
 	}

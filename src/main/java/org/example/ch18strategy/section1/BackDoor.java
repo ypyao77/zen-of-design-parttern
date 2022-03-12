@@ -1,17 +1,17 @@
 /**
  * 
  */
-package com.company.section1;
+package org.example.ch18strategy.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÕÒÇÇ¹úÀÏ°ïÃ¦£¬Ê¹ËïÈ¨²»ÄÜÉ±Áõ±¸
+ * æ‰¾ä¹”å›½è€å¸®å¿™ï¼Œä½¿å­™æƒä¸èƒ½æ€åˆ˜å¤‡
  */
 public class BackDoor implements IStrategy {
 
 	public void operate() {
-		System.out.println("ÕÒÇÇ¹úÀÏ°ïÃ¦£¬ÈÃÎâ¹úÌ«¸øËïÈ¨Ê©¼ÓÑ¹Á¦");
+		System.out.println("æ‰¾ä¹”å›½è€å¸®å¿™ï¼Œè®©å´å›½å¤ªç»™å­™æƒæ–½åŠ å‹åŠ›");
 	}
 
 }

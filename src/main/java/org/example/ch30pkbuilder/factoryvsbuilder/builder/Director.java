@@ -1,20 +1,20 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.factoryvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Director {
-	//Á½¸ö½¨ÔìÕßµÄÓ¦ÓÃ
+	//ä¸¤ä¸ªå»ºé€ è€…çš„åº”ç”¨
 	private static Builder  adultBuilder = new AdultSuperManBuilder();
-	//Î´³ÉÄê³¬ÈËµÄ½¨ÔìÕß
+	//æœªæˆå¹´è¶…äººçš„å»ºé€ è€…
 	private static Builder childBuilder = new ChildSuperManBuilder();
 	
-	//½¨ÔìÒ»¸ö³ÉÄê¡¢»á·ÉĞĞµÄ³¬ÈË
+	//å»ºé€ ä¸€ä¸ªæˆå¹´ã€ä¼šé£è¡Œçš„è¶…äºº
 	public static SuperMan getAdultSuperMan(){
 		return adultBuilder.getSuperMan();
 	}
-	//½¨ÔìÒ»¸öÎ´³ÉÄê¡¢µ¶Ç¹²»ÈëµÄ³¬ÈË
+	//å»ºé€ ä¸€ä¸ªæœªæˆå¹´ã€åˆ€æªä¸å…¥çš„è¶…äºº
 	public static SuperMan getChildSuperMan(){
 		return childBuilder.getSuperMan();
 	}

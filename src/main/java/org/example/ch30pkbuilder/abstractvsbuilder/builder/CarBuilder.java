@@ -1,33 +1,33 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.abstractvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class CarBuilder {
-	//´ı½¨ÔìµÄÆû³µ
+	//å¾…å»ºé€ çš„æ±½è½¦
 	private ICar car;
-	//Éè¼ÆÀ¶Í¼
+	//è®¾è®¡è“å›¾
 	private Blueprint bp;
 	
 	public Car buildCar(){
-		//°´ÕÕË³ĞòÉú²úÒ»Á¾³µ
+		//æŒ‰ç…§é¡ºåºç”Ÿäº§ä¸€è¾†è½¦
 		return new Car(buildEngine(),buildWheel());
 	}
 	
-	//½ÓÊÕÒ»·İÉè¼ÆÀ¶Í¼
+	//æ¥æ”¶ä¸€ä»½è®¾è®¡è“å›¾
 	public void receiveBlueprint(Blueprint _bp){
 		this.bp = _bp;
 	}
 	
-	//²é¿´À¶Í¼£¬Ö»ÓĞÕæÕıµÄ½¨ÔìÕß²Å¿ÉÒÔ²é¿´À¶Í¼
+	//æŸ¥çœ‹è“å›¾ï¼Œåªæœ‰çœŸæ­£çš„å»ºé€ è€…æ‰å¯ä»¥æŸ¥çœ‹è“å›¾
 	protected Blueprint getBlueprint(){
 		return bp;
 	}
 	
-	//½¨ÔìÂÖ×Ó
+	//å»ºé€ è½®å­
 	protected abstract String buildWheel();
-	//½¨ÔìÒıÇæ
+	//å»ºé€ å¼•æ“
 	protected abstract String buildEngine();
 	
 }

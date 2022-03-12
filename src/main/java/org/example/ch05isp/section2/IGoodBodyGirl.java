@@ -1,15 +1,15 @@
-package com.company.section2;
+package org.example.ch05isp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÍâÔÚÃÀ
+ * å¤–åœ¨ç¾
  */
 public interface IGoodBodyGirl {
-	//ÒªÓĞæ¯ºÃµÄÃæ¿×
+	//è¦æœ‰å§£å¥½çš„é¢å­”
 	public void goodLooking();
 	
-	//ÒªÓĞºÃÉí²Ä
+	//è¦æœ‰å¥½èº«æ
 	public void niceFigure();
 	
 }

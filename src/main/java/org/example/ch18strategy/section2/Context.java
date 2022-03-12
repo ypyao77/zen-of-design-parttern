@@ -1,19 +1,19 @@
-package com.company.section2;
+package org.example.ch18strategy.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class Context {
-	//³éÏó²ßÂÔ
+	//æŠ½è±¡ç­–ç•¥
 	private Strategy strategy = null;
 	
-	//¹¹Ôìº¯ÊıÉèÖÃ¾ßÌå²ßÂÔ
+	//æ„é€ å‡½æ•°è®¾ç½®å…·ä½“ç­–ç•¥
 	public Context(Strategy _strategy){
 		this.strategy = _strategy;
 	}
 	
-	//·â×°ºóµÄ²ßÂÔ·½·¨
+	//å°è£…åçš„ç­–ç•¥æ–¹æ³•
 	public void doAnythinig(){
 		this.strategy.doSomething();
 	}

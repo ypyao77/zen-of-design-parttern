@@ -1,4 +1,4 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.strategy_vs_bridge.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -13,10 +13,10 @@ public class TextMail extends MailTemplate {
 
 	@Override
 	public String getContext() {
-		//文本类型则设置邮件的格式为：text/plain
+		//鏂囨湰绫诲瀷鍒欒缃偖浠剁殑鏍煎紡涓猴細text/plain
 		String context = "\nContent-Type: text/plain;charset=GB2312\n" +super.getContext();
-		//同时对邮件进行base64编码处理,这里用一句话代替
-		context = context + "\n邮件格式为：文本格式";
+		//鍚屾椂瀵归偖浠惰繘琛宐ase64缂栫爜澶勭悊,杩欓噷鐢ㄤ竴鍙ヨ瘽浠ｆ浛
+		context = context + "\n閭欢鏍煎紡涓猴細鏂囨湰鏍煎紡";
 		return context;
 	}
 

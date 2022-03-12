@@ -1,19 +1,19 @@
-package com.company.bridge;
+package org.example.ch33pkoverzone.strategy_vs_bridge.bridge;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class SendMail extends MailServer {
-	//´«µİÒ»·İÓÊ¼ş
+	//ä¼ é€’ä¸€ä»½é‚®ä»¶
 	public SendMail(MailTemplate _m) {
 		super(_m);
 	}
 
-	//ĞŞÕıÓÊ¼ş·¢ËÍ³ÌĞò
+	//ä¿®æ­£é‚®ä»¶å‘é€ç¨‹åº
 	@Override
 	public void sendMail(){
-		//Ôö¼ÓÓÊ¼ş·şÎñÆ÷ĞÅÏ¢
+		//å¢åŠ é‚®ä»¶æœåŠ¡å™¨ä¿¡æ¯
 		super.m.add("Received: (sendmail); 7 Nov 2009 04:14:44 +0100");
 		super.sendMail();
 	}

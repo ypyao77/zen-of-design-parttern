@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch33pkoverzone.strategy_vs_bridge.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,23 +6,23 @@ package com.company.strategy;
  */
 public class MailServer {
 	
-	//·¢ËÍµÄÊÇÄÄ·âÓÊ¼ş
+	//å‘é€çš„æ˜¯å“ªå°é‚®ä»¶
 	private MailTemplate m;
 	
 	public MailServer(MailTemplate _m){
 		this.m  = _m;
 	}
 	
-	//·¢ËÍÓÊ¼ş
+	//å‘é€é‚®ä»¶
 	public void sendMail(){
-		System.out.println("====ÕıÔÚ·¢ËÍµÄÓÊ¼şĞÅÏ¢====");
-		//·¢¼şÈË
-		System.out.println("·¢¼şÈË£º" + m.getFrom());
-		//ÊÕ¼şÈË
-		System.out.println("ÊÕ¼şÈË£º" + m.getTo());
-		//±êÌâ
-		System.out.println("ÓÊ¼ş±êÌâ£º" + m.getSubject() );
-		//ÓÊ¼şÄÚÈİ
-		System.out.println("ÓÊ¼şÄÚÈİ£º" + m.getContext());
+		System.out.println("====æ­£åœ¨å‘é€çš„é‚®ä»¶ä¿¡æ¯====");
+		//å‘ä»¶äºº
+		System.out.println("å‘ä»¶äººï¼š" + m.getFrom());
+		//æ”¶ä»¶äºº
+		System.out.println("æ”¶ä»¶äººï¼š" + m.getTo());
+		//æ ‡é¢˜
+		System.out.println("é‚®ä»¶æ ‡é¢˜ï¼š" + m.getSubject() );
+		//é‚®ä»¶å†…å®¹
+		System.out.println("é‚®ä»¶å†…å®¹ï¼š" + m.getContext());
 	}
 }

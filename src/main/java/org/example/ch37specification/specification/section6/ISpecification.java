@@ -1,4 +1,4 @@
-package com.company.section6;
+package org.example.ch37specification.specification.section6;
 
 
 /**
@@ -7,15 +7,15 @@ package com.company.section6;
  */
 public interface ISpecification {
 	
-	//ºòÑ¡ÕßÊÇ·ñÂú×ãÒªÇó
+	//å€™é€‰è€…æ˜¯å¦æ»¡è¶³è¦æ±‚
 	public boolean isSatisfiedBy(Object candidate);	
 	
-	//and²Ù×÷
+	//andæ“ä½œ
 	public ISpecification and(ISpecification spec);
 	
-	//or²Ù×÷
+	//oræ“ä½œ
 	public ISpecification or(ISpecification spec);
 	
-	//not²Ù×÷
+	//notæ“ä½œ
 	public ISpecification not();
 }

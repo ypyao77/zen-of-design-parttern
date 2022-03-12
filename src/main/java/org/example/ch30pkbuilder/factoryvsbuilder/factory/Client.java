@@ -1,4 +1,4 @@
-package com.company.factory;
+package org.example.ch30pkbuilder.factoryvsbuilder.factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,11 +6,11 @@ package com.company.factory;
  */
 public class Client {
 
-	//Ä£ÄâÉú²ú³¬ÈË
+	//æ¨¡æ‹Ÿç”Ÿäº§è¶…äºº
 	public static void main(String[] args) {
-		//Éú²úÒ»¸ö³ÉÄê³¬ÈË
+		//ç”Ÿäº§ä¸€ä¸ªæˆå¹´è¶…äºº
 		ISuperMan adultSuperMan = SuperManFactory.createSuperMan("adult");
-		//Õ¹Ê¾Ò»ÏÂ³¬ÈËµÄ¼¼ÄÜ
+		//å±•ç¤ºä¸€ä¸‹è¶…äººçš„æŠ€èƒ½
 		adultSuperMan.specialTalent();
 	}
 }

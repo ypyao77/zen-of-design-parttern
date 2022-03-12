@@ -1,18 +1,18 @@
-package com.company.section2;
+package org.example.ch09abstractfactory.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¹¤³§1£¬Ö»Éú²úÌøÏßÎª1µÄ²úÆ·
+ * å·¥å‚1ï¼Œåªç”Ÿäº§è·³çº¿ä¸º1çš„äº§å“
  */
 public class Creator1 extends AbstractCreator {
 	
-	//Ö»Éú²ú²úÆ·µÈ¼¶Îª1µÄA²úÆ·
+	//åªç”Ÿäº§äº§å“ç­‰çº§ä¸º1çš„Aäº§å“
 	public AbstractProductA createProductA() {	
 		return new ProductA1();
 	}
 
-	//Ö»Éú²ú²ùÆ½µÈ¼¶Îª1µÄB²úÆ·
+	//åªç”Ÿäº§é“²å¹³ç­‰çº§ä¸º1çš„Bäº§å“
 	public AbstractProductB createProductB() {
 		return new ProductB1();
 	}

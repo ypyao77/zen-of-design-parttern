@@ -1,20 +1,20 @@
-package com.company.command_name.ls;
+package org.example.ch34commandchain.command_name.ls;
 
-import com.company.command_name.CommandName;
+import org.example.ch34commandchain.command_name.CommandName;
 
 
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 充当Handler
+ * 鍏呭綋Handler
  */
 public abstract class AbstractLS extends CommandName{
-	//默认参数
+	//榛樿鍙傛暟
 	public final static String DEFAULT_PARAM = "";
-	//参数a
+	//鍙傛暟a
 	public final static String A_PARAM ="a";
-	//参数l
+	//鍙傛暟l
 	public final static String L_PARAM = "l";
 	
 	

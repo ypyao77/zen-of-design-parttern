@@ -1,4 +1,4 @@
-package com.company.proxy;
+package org.example.ch31pkstructure.proxy_vs_decorator.proxy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,12 +7,12 @@ package com.company.proxy;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸ö¶ÌÅÜÔË¶¯Ô±
+		//å®šä¹‰ä¸€ä¸ªçŸ­è·‘è¿åŠ¨å‘˜
 		IRunner liu = new Runner();
-		//¶¨ÒåliuµÄ´úÀíÈË
+		//å®šä¹‰liuçš„ä»£ç†äºº
 		IRunner agent = new RunnerAgent(liu);
-		//ÒªÇóÔË¶¯Ô±ÅÜ²½
-		System.out.println("====¿ÍÈËÕÒµ½ÔË¶¯Ô±µÄ´úÀíÒªÇóÆäÈ¥ÅÜ²½===");
+		//è¦æ±‚è¿åŠ¨å‘˜è·‘æ­¥
+		System.out.println("====å®¢äººæ‰¾åˆ°è¿åŠ¨å‘˜çš„ä»£ç†è¦æ±‚å…¶å»è·‘æ­¥===");
 		agent.run();
 	}
 }

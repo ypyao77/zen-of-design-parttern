@@ -1,4 +1,4 @@
-package com.company;
+package org.example.ch35factorystrategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,23 +6,23 @@ package com.company;
  */
 public class DeductionFacade {
 	
-	//¶ÔÍâ¹«²¼µÄ¿Û¿îĞÅÏ¢
+	//å¯¹å¤–å…¬å¸ƒçš„æ‰£æ¬¾ä¿¡æ¯
 	public static Card deduct(Card card,Trade trade){
-		//»ñµÃÏû·Ñ²ßÂÔ
+		//è·å¾—æ¶ˆè´¹ç­–ç•¥
 		StrategyMan reg = getDeductionType(trade);
-		//³õÊ¼»¯Ò»¸öÏû·Ñ²ßÂÔ¶ÔÏó
+		//åˆå§‹åŒ–ä¸€ä¸ªæ¶ˆè´¹ç­–ç•¥å¯¹è±¡
 		IDeduction deduction = StrategyFactory.getDeduction(reg);
-		//²úÉúÒ»¸ö²ßÂÔÉÏÏÂÎÊ
+		//äº§ç”Ÿä¸€ä¸ªç­–ç•¥ä¸Šä¸‹é—®
 		DeductionContext context = new DeductionContext(deduction);
-		//½øĞĞ¿Û¿î´¦Àí
+		//è¿›è¡Œæ‰£æ¬¾å¤„ç†
 		context.exec(card, trade);
-		//·µ»Ø¿Û¿î´¦ÀíÍê±ÏºóµÄÊı¾İ
+		//è¿”å›æ‰£æ¬¾å¤„ç†å®Œæ¯•åçš„æ•°æ®
 		return card;
 	}
 	
-	//»ñµÃ¶ÔÓ¦µÄÉÌ»§Ïû·Ñ²ßÂÔ
+	//è·å¾—å¯¹åº”çš„å•†æˆ·æ¶ˆè´¹ç­–ç•¥
 	private static StrategyMan getDeductionType(Trade trade){
-		//Ä£Äâ²Ù×÷
+		//æ¨¡æ‹Ÿæ“ä½œ
 		if(trade.getTradeNo().contains("abc")){
 			return StrategyMan.FreeDeduction;
 		}else{

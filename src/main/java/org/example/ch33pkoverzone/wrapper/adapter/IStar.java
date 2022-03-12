@@ -1,12 +1,12 @@
-package com.company.adapter;
+package org.example.ch33pkoverzone.wrapper.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ã÷ĞÇÀà
+ * æ˜æ˜Ÿç±»
  */
 public interface IStar {
 	
-	//Ã÷ĞÇ¶¼ÒªÑİÏ·
+	//æ˜æ˜Ÿéƒ½è¦æ¼”æˆ
 	public void act(String context);
 }

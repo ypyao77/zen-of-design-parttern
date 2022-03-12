@@ -1,10 +1,10 @@
-package com.company.section3;
+package org.example.ch17decorator.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Component {
-	//³éÏóµÄ·½·¨
+	//æŠ½è±¡çš„æ–¹æ³•
 	public abstract void operate();
 }

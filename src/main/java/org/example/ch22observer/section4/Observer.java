@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch22observer.section4;
 
 
 /**
@@ -7,6 +7,6 @@ package com.company.section4;
  */
 public interface Observer {
 	
-	//更新方法
+	//鏇存柊鏂规硶
 	public void update();
 }

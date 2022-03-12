@@ -1,4 +1,4 @@
-package com.company.state;
+package org.example.ch32pkaction.strategy_vs_state.state;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.state;
  */
 public class OldState extends HumanState {
 
-	//老年人的工作就是回忆
+	//鑰佸勾浜虹殑宸ヤ綔灏辨槸鍥炲繂
 	@Override
 	public void work() {
-		System.out.println("老年人的工作就是回忆以前的生活！");
+		System.out.println("鑰佸勾浜虹殑宸ヤ綔灏辨槸鍥炲繂浠ュ墠鐨勭敓娲伙紒");
 	}
 
 }

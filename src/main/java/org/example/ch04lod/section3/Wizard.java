@@ -1,29 +1,29 @@
-package com.company.section3;
+package org.example.ch04lod.section3;
 
 import java.util.Random;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * °´ÕÕ²½ÖèÖ´ÐÐµÄÒµÎñÂß¼­Àà
+ * æŒ‰ç…§æ­¥éª¤æ‰§è¡Œçš„ä¸šåŠ¡é€»è¾‘ç±»
  */
 public class Wizard {
 	private Random rand = new Random(System.currentTimeMillis());
-	//µÚÒ»²½
+	//ç¬¬ä¸€æ­¥
 	public int first(){
-		System.out.println("Ö´ÐÐµÚÒ»¸ö·½·¨...");
+		System.out.println("æ‰§è¡Œç¬¬ä¸€ä¸ªæ–¹æ³•...");
 		return rand.nextInt(100);
 	}
 	
-	//µÚ¶þ²½
+	//ç¬¬äºŒæ­¥
 	public int second(){
-		System.out.println("Ö´ÐÐµÚ¶þ¸ö·½·¨...");
+		System.out.println("æ‰§è¡Œç¬¬äºŒä¸ªæ–¹æ³•...");
 		return rand.nextInt(100);
 	}
 	
-	//µÚÈý¸ö·½·¨
+	//ç¬¬ä¸‰ä¸ªæ–¹æ³•
 	public int third(){
-		System.out.println("Ö´ÐÐµÚÈý¸ö·½·¨...");
+		System.out.println("æ‰§è¡Œç¬¬ä¸‰ä¸ªæ–¹æ³•...");
 		return rand.nextInt(100);
 	}
 	

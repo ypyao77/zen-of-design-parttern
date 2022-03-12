@@ -1,18 +1,18 @@
-package com.company.section3;
+package org.example.ch08simplefactory.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ºÚÉ«ÈËÖÖ£¬¼ÇµÃÖĞÑ§Ñ§Ó¢Óï£¬ÀÏÊ¦Ëµblack manÊÇÎêÈèÈËµÄÒâË¼£¬²»¶®£¬Ã»¸úÀÏÍâËµ»°
+ * é»‘è‰²äººç§ï¼Œè®°å¾—ä¸­å­¦å­¦è‹±è¯­ï¼Œè€å¸ˆè¯´black manæ˜¯ä¾®è¾±äººçš„æ„æ€ï¼Œä¸æ‡‚ï¼Œæ²¡è·Ÿè€å¤–è¯´è¯
  */
 public class BlackHuman implements Human {
 
 	public void getColor(){
-		System.out.println("ºÚÉ«ÈËÖÖµÄÆ¤·ôÑÕÉ«ÊÇºÚÉ«µÄ£¡");
+		System.out.println("é»‘è‰²äººç§çš„çš®è‚¤é¢œè‰²æ˜¯é»‘è‰²çš„ï¼");
 	}
 
 	public void talk() {
-		System.out.println("ºÚÈË»áËµ»°£¬Ò»°ãÈËÌı²»¶®¡£");
+		System.out.println("é»‘äººä¼šè¯´è¯ï¼Œä¸€èˆ¬äººå¬ä¸æ‡‚ã€‚");
 
 	}
 

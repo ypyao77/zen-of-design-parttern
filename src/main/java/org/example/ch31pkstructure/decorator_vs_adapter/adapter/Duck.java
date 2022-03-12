@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch31pkstructure.decorator_vs_adapter.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,13 +6,13 @@ package com.company.adapter;
  */
 public interface Duck {
 	
-	//»á½Ğ
+	//ä¼šå«
 	public void cry();
 	
-	//Ñ¼×ÓµÄÍâĞÎ
+	//é¸­å­çš„å¤–å½¢
 	public void desAppearance();
 	
-	//ÃèÊöÑ¼×ÓµÄÆäËûĞĞÎª
+	//æè¿°é¸­å­çš„å…¶ä»–è¡Œä¸º
 	public void desBehavior();
 }
 

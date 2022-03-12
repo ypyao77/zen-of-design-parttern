@@ -1,22 +1,22 @@
-package com.company.section1;
+package org.example.ch09abstractfactory.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Å®ÐÔ¹¤³§
+ * å¥³æ€§å·¥åŽ‚
  */
 public class FemaleFactory implements HumanFactory {
-	//Éú²ú³öºÚÈËÅ®ÐÔ
+	//ç”Ÿäº§å‡ºé»‘äººå¥³æ€§
 	public Human createBlackHuman() {
 		return new FemaleBlackHuman();
 	}
 
-	//Éú²ú³ö°×ÈËÅ®ÐÔ
+	//ç”Ÿäº§å‡ºç™½äººå¥³æ€§
 	public Human createWhiteHuman() {	
 		return new FemaleWhiteHuman();
 	}
 
-	//Éú²ú³ö»ÆÈËÅ®ÐÔ
+	//ç”Ÿäº§å‡ºé»„äººå¥³æ€§
 	public Human createYellowHuman() {
 		return new FemaleYellowHuman();
 	}

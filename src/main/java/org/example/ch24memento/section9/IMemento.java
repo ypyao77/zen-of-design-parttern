@@ -1,4 +1,4 @@
-package com.company.section9;
+package org.example.ch24memento.section9;
 
 /**
  * @author cbf4Life cbf4life@126.com

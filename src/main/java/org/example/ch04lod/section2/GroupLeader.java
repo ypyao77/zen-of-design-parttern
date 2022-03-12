@@ -1,22 +1,22 @@
-package com.company.section2;
+package org.example.ch04lod.section2;
 
 import java.util.List;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÌåÓıÎ¯Ô±£¬Õâ¸öÌ«ÄÑ·­ÒëÁË¶¼ÊÇÖĞ¹úµÄÌØÉ«´Ê»ã
+ * ä½“è‚²å§”å‘˜ï¼Œè¿™ä¸ªå¤ªéš¾ç¿»è¯‘äº†éƒ½æ˜¯ä¸­å›½çš„ç‰¹è‰²è¯æ±‡
  */
 public class GroupLeader {
 	private List<Girl> listGirls;
-	//´«µİÈ«°àµÄÅ®Éú½øÀ´
+	//ä¼ é€’å…¨ç­çš„å¥³ç”Ÿè¿›æ¥
 	public GroupLeader(List<Girl> _listGirls){
 		this.listGirls = _listGirls;
 	}
 	
-	//ÓĞÇå²éÅ®ÉúµÄ¹¤×÷
+	//æœ‰æ¸…æŸ¥å¥³ç”Ÿçš„å·¥ä½œ
 	public void countGirls(){
 
-		System.out.println("Å®ÉúÊıÁ¿ÊÇ£º"+this.listGirls.size());
+		System.out.println("å¥³ç”Ÿæ•°é‡æ˜¯ï¼š"+this.listGirls.size());
 	}
 }

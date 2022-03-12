@@ -1,9 +1,9 @@
-package com.company.section1;
+package org.example.ch01srp.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 用户管理的实现类
+ * 鐢ㄦ埛绠＄悊鐨勫疄鐜扮被
  */
 public class UserInfo implements IUserInfo {
 	private String userName;
@@ -34,20 +34,20 @@ public class UserInfo implements IUserInfo {
 		this.password = password;
 	}
 	
-	//修改用户密码
+	//淇敼鐢ㄦ埛瀵嗙爜
 	public boolean changePassword(String oldPassword){
-		System.out.println("密码修改成功...");
+		System.out.println("瀵嗙爜淇敼鎴愬姛...");
 		return true;
 	}
 	
-	//删除用户
+	//鍒犻櫎鐢ㄦ埛
 	public boolean deleteUser(){
-		System.out.println("删除用户成功...");
+		System.out.println("鍒犻櫎鐢ㄦ埛鎴愬姛...");
 		return true;
 	}
 	
-	//用户映射
+	//鐢ㄦ埛鏄犲皠
 	public void mapUser(){
-		System.out.println("用户映射成功...");
+		System.out.println("鐢ㄦ埛鏄犲皠鎴愬姛...");
 	}
 }

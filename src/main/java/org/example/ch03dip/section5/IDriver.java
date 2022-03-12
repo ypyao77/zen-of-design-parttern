@@ -1,15 +1,15 @@
-package com.company.section5;
+package org.example.ch03dip.section5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ë¾»úµÄ½Ó¿Ú
+ * å¸æœºçš„æ¥å£
  */
 public interface IDriver {
 
-	//³µÁ¾ĞÍºÅ
+	//è½¦è¾†å‹å·
 	public void setCar(ICar car);
 	
-	//ÊÇË¾»ú¾ÍÓ¦¸Ã»á¼İÊ»Æû³µ
+	//æ˜¯å¸æœºå°±åº”è¯¥ä¼šé©¾é©¶æ±½è½¦
 	public void drive();
 }

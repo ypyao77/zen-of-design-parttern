@@ -1,36 +1,36 @@
-package com.company.section1;
+package org.example.ch01srp.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÓÃ»§ĞÅÏ¢¹ÜÀí
+ * ç”¨æˆ·ä¿¡æ¯ç®¡ç†
  */
 public interface IUserInfo {
 	
-	//ÉèÖÃÓÃ»§µÄID
+	//è®¾ç½®ç”¨æˆ·çš„ID
 	public void setUserID(String userID);
 	
-	//»ñµÃÓÃ»§µÄID
+	//è·å¾—ç”¨æˆ·çš„ID
 	public String getUserID();
 	
-	//ÉèÖÃÓÃ»§µÄÃÜÂë
+	//è®¾ç½®ç”¨æˆ·çš„å¯†ç 
 	public void setPassword(String password);
 	
-	//»ñµÃÓÃ»§µÄÃÜÂë
+	//è·å¾—ç”¨æˆ·çš„å¯†ç 
 	public String getPassword();
 	
-	//ÉèÖÃÓÃ»§µÄÃû×Ö
+	//è®¾ç½®ç”¨æˆ·çš„åå­—
 	public void setUserName(String userName);
 	
-	//»ñµÃÓÃ»§µÄÃû×Ö
+	//è·å¾—ç”¨æˆ·çš„åå­—
 	public String getUserName();
 	
-	//ĞŞ¸ÄÓÃ»§µÄÃÜÂë
+	//ä¿®æ”¹ç”¨æˆ·çš„å¯†ç 
 	public boolean changePassword(String oldPassword);
 	
-	//É¾³ıÓÃ»§
+	//åˆ é™¤ç”¨æˆ·
 	public boolean deleteUser();
 	
-	//ÓÃ»§Ó³Éä
+	//ç”¨æˆ·æ˜ å°„
 	public void mapUser();
 }

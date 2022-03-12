@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch32pkaction.command_vs_strategy.strategy;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -11,15 +11,15 @@ import java.util.zip.GZIPOutputStream;
  */
 public class Gzip implements Algorithm {
 
-	//gzipµÄÑ¹ËõËã·¨
+	//gzipçš„å‹ç¼©ç®—æ³•
 	public boolean compress(String source, String to) {
-		System.out.println(source + " --> " +to + " GZIPÑ¹Ëõ³É¹¦!");
+		System.out.println(source + " --> " +to + " GZIPå‹ç¼©æˆåŠŸ!");
 		return true;		
 	}
 	
-	//gzip½âÑ¹ËõËã·¨
+	//gzipè§£å‹ç¼©ç®—æ³•
 	public boolean uncompress(String source,String to){
-		System.out.println(source + " --> " +to + " GZIP½âÑ¹Ëõ³É¹¦!");
+		System.out.println(source + " --> " +to + " GZIPè§£å‹ç¼©æˆåŠŸ!");
 		return true;
 	}
 }

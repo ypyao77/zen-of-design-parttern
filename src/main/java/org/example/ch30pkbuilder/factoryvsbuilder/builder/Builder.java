@@ -1,28 +1,28 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.factoryvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Builder {
-	//¶¨ÒåÒ»¸ö³¬ÈËµÄÓ¦ÓÃ
+	//å®šä¹‰ä¸€ä¸ªè¶…äººçš„åº”ç”¨
 	protected final SuperMan superMan = new SuperMan();
 	
-	//¹¹½¨³ö³¬ÈËµÄÇûÌå
+	//æ„å»ºå‡ºè¶…äººçš„èº¯ä½“
 	public void setBody(String body){
 		this.superMan.setBody(body);
 	}
 	
-	//¹¹½¨³ö³¬ÈËµÄÌØÊâ¼¼ÄÜ
+	//æ„å»ºå‡ºè¶…äººçš„ç‰¹æ®ŠæŠ€èƒ½
 	public void setSpecialTalent(String st){
 		this.superMan.setSpecialTalent(st);
 	}
 	
-	//¹¹½¨³ö³¬ÈËµÄÌØÊâ±ê¼Ç
+	//æ„å»ºå‡ºè¶…äººçš„ç‰¹æ®Šæ ‡è®°
 	public void setSpecialSymbol(String ss){
 		this.superMan.setSpecialSymbol(ss);
 	}
 	
-	//¹¹½¨³öÍêÕûµÄÒ»¸ö³¬ÈË
+	//æ„å»ºå‡ºå®Œæ•´çš„ä¸€ä¸ªè¶…äºº
 	public abstract SuperMan getSuperMan();
 }

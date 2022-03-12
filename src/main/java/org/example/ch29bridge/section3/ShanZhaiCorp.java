@@ -1,18 +1,18 @@
-package com.company.section3;
+package org.example.ch29bridge.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class ShanZhaiCorp extends Corp {
-	 //²úÊ²Ã´²úÆ·£¬²»ÖªµÀ£¬µÈ±»µ÷ÓÃµÄ²ÅÖªµÀ
+	 //äº§ä»€ä¹ˆäº§å“ï¼Œä¸çŸ¥é“ï¼Œç­‰è¢«è°ƒç”¨çš„æ‰çŸ¥é“
 	public ShanZhaiCorp(Product product){
 		super(product);
 	}
-	//¿ñ×¬Ç®
+	//ç‹‚èµšé’±
 	public void makeMoney(){
 		super.makeMoney();
-		System.out.println("ÎÒ×¬Ç®Ñ½...");
+		System.out.println("æˆ‘èµšé’±å‘€...");
 	}
 }
 

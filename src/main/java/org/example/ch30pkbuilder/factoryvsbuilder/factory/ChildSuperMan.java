@@ -1,4 +1,4 @@
-package com.company.factory;
+package org.example.ch30pkbuilder.factoryvsbuilder.factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,9 +6,9 @@ package com.company.factory;
  */
 public class ChildSuperMan implements ISuperMan {
 
-	//³¬ÄÜÏÈÉúµÄÈı¸öº¢×Ó
+	//è¶…èƒ½å…ˆç”Ÿçš„ä¸‰ä¸ªå­©å­
 	public void specialTalent() {
-		System.out.println("Ğ¡³¬ÈËµÄÄÜÁ¦ÊÇµ¶Ç¹²»Èë¡¢¿ìËÙÔË¶¯");
+		System.out.println("å°è¶…äººçš„èƒ½åŠ›æ˜¯åˆ€æªä¸å…¥ã€å¿«é€Ÿè¿åŠ¨");
 	}
 
 }

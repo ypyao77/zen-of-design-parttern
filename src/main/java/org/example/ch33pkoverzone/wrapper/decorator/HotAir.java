@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch33pkoverzone.wrapper.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -11,7 +11,7 @@ public class HotAir extends Decorator {
 	
 	@Override
 	public void act(){
-		System.out.println("ÅÅÑİÇ°£º¿ä¿äÆäÌ¸£¬Ã»ÓĞ×Ô¼º²»ÄÜÑİµÄ½ÇÉ«");
+		System.out.println("æ’æ¼”å‰ï¼šå¤¸å¤¸å…¶è°ˆï¼Œæ²¡æœ‰è‡ªå·±ä¸èƒ½æ¼”çš„è§’è‰²");
 		super.act();
 	}
 }

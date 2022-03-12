@@ -1,4 +1,4 @@
-package com.company.command;
+package org.example.ch32pkaction.command_vs_strategy.command;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,16 +7,16 @@ package com.company.command;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÃüÁî,Ñ¹ËõÒ»¸öÎÄ¼ş
+		//å®šä¹‰ä¸€ä¸ªå‘½ä»¤,å‹ç¼©ä¸€ä¸ªæ–‡ä»¶
 		AbstractCmd cmd = new ZipCompressCmd();
 		/*
-		 * Ïë»»Ò»¸ö£¿Ö´ĞĞ½âÑ¹ÃüÁî
+		 * æƒ³æ¢ä¸€ä¸ªï¼Ÿæ‰§è¡Œè§£å‹å‘½ä»¤
 		 * AbstractCmd cmd = new ZipUncompressCmd();
 		 */
-		//¶¨Òåµ÷ÓÃÕß
+		//å®šä¹‰è°ƒç”¨è€…
 		Invoker invoker = new Invoker(cmd);
-		//ÎÒÃüÁîÄã¶ÔÕâ¸öÎÄ¼ş½øĞĞÑ¹Ëõ
-		System.out.println("========Ö´ĞĞÑ¹ËõÃüÁî========");
+		//æˆ‘å‘½ä»¤ä½ å¯¹è¿™ä¸ªæ–‡ä»¶è¿›è¡Œå‹ç¼©
+		System.out.println("========æ‰§è¡Œå‹ç¼©å‘½ä»¤========");
 		invoker.execute("c:\\windows", "d:\\windows.zip");
 	}
 }

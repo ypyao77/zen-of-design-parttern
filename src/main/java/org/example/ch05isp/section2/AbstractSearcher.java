@@ -1,24 +1,24 @@
-package com.company.section2;
+package org.example.ch05isp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ĞÇÌ½£¬ËÑË÷ÃÀÅ®
+ * æ˜Ÿæ¢ï¼Œæœç´¢ç¾å¥³
  */
 public abstract class AbstractSearcher {
 	protected IGoodBodyGirl goodBodyGirl;
 	protected IGreatTemperamentGirl greatTemperamentGirl;
 	
-	//ÍâĞÎÃÀµÄÃÀÅ®
+	//å¤–å½¢ç¾çš„ç¾å¥³
 	public AbstractSearcher(IGoodBodyGirl _goodBodyGirl){
 		this.goodBodyGirl = _goodBodyGirl;
 	}
 	
-	//ÆøÖÊÃÀµÄÃÀÅ®
+	//æ°”è´¨ç¾çš„ç¾å¥³
 	public AbstractSearcher(IGreatTemperamentGirl _gretTemperamentGirl){
 		this.greatTemperamentGirl = _gretTemperamentGirl;
 	}
 	
-	//ËÑË÷ÃÀÅ®£¬ÁĞ³öÃÀÅ®ĞÅÏ¢
+	//æœç´¢ç¾å¥³ï¼Œåˆ—å‡ºç¾å¥³ä¿¡æ¯
 	public abstract void show();
 }

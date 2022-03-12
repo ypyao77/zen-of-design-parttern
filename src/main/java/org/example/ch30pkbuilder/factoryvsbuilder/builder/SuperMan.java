@@ -1,4 +1,4 @@
-package com.company.builder;
+package org.example.ch30pkbuilder.factoryvsbuilder.builder;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,11 +6,11 @@ package com.company.builder;
  */
 public class SuperMan {
 	
-	//³¬ÈËµÄÇûÌå
+	//è¶…äººçš„èº¯ä½“
 	private String body;
-	//³¬ÈËµÄÌØÊâ¼¼ÄÜ
+	//è¶…äººçš„ç‰¹æ®ŠæŠ€èƒ½
 	private String specialTalent;
-	//³¬ÈËµÄ±êÖ¾
+	//è¶…äººçš„æ ‡å¿—
 	private String specialSymbol;
 	
 	public String getBody() {

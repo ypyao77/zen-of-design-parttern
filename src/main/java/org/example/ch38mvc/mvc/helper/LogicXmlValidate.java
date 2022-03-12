@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.helper;
  */
 public class LogicXmlValidate implements IXmlValidate {
 
-	//检查xmlPath是否符合逻辑，比如不会出现一个类中没有的方法
+	//妫�鏌mlPath鏄惁绗﹀悎閫昏緫锛屾瘮濡備笉浼氬嚭鐜颁竴涓被涓病鏈夌殑鏂规硶
 	public boolean validate(String xmlPath) {
 		return false;
 	}

@@ -1,7 +1,7 @@
 /**
- * 
+ *
  */
-package com.company.section2;
+package org.example.ch07singleton.section2;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -9,53 +9,53 @@ import java.util.Random;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÖĞ¹úµÄÀúÊ·ÉÏÒ»°ã¶¼ÊÇÒ»¸ö³¯´úÒ»¸ö»ÊµÛ£¬ÓĞÁ½¸ö»ÊµÛµÄ»°£¬±ØÈ»ÒªPK³öÒ»¸ö»ÊµÛ³öÀ´¡£
- * ÎÊÌâ³öÀ´ÁË£ºÈç¹ûÕæÔÚÒ»¸öÊ±¼ä£¬ÖĞ¹ú³öÏÖÁËÁ½¸ö»ÊµÛÔõÃ´°ì£¿±ÈÈçÃ÷³¯ÍÁÄ¾±¤Ö®±äºó£¬
- * Ã÷Ó¢×Ú±»·ıÂ²£¬Ã÷¾°µÛ¼´Î»£¬µ«ÊÇÃ÷¾°µÛµ±ÉÏ»ÊµÛºóÀÖ·èÁË£¬¾¹È»Íü¼Ç°ÑËûÀÏ¸çÃ÷Ó¢×ÚÏ÷ÎªÌ«ÉÏ»Ê£¬
- * Ò²¾ÍÊÇÔÚÕâÒ»¸ö¶àÔÂµÄÊ±¼äÄÚ£¬ÖĞ¹ú¾¹È»ÓĞÁ½¸ö»ÊµÛ£¡
- * 
+ * ä¸­å›½çš„å†å²ä¸Šä¸€èˆ¬éƒ½æ˜¯ä¸€ä¸ªæœä»£ä¸€ä¸ªçš‡å¸ï¼Œæœ‰ä¸¤ä¸ªçš‡å¸çš„è¯ï¼Œå¿…ç„¶è¦PKå‡ºä¸€ä¸ªçš‡å¸å‡ºæ¥ã€‚
+ * é—®é¢˜å‡ºæ¥äº†ï¼šå¦‚æœçœŸåœ¨ä¸€ä¸ªæ—¶é—´ï¼Œä¸­å›½å‡ºç°äº†ä¸¤ä¸ªçš‡å¸æ€ä¹ˆåŠï¼Ÿæ¯”å¦‚æ˜æœåœŸæœ¨å ¡ä¹‹å˜åï¼Œ
+ * æ˜è‹±å®—è¢«ä¿˜è™ï¼Œæ˜æ™¯å¸å³ä½ï¼Œä½†æ˜¯æ˜æ™¯å¸å½“ä¸Šçš‡å¸åä¹ç–¯äº†ï¼Œç«Ÿç„¶å¿˜è®°æŠŠä»–è€å“¥æ˜è‹±å®—å‰Šä¸ºå¤ªä¸Šçš‡ï¼Œ
+ * ä¹Ÿå°±æ˜¯åœ¨è¿™ä¸€ä¸ªå¤šæœˆçš„æ—¶é—´å†…ï¼Œä¸­å›½ç«Ÿç„¶æœ‰ä¸¤ä¸ªçš‡å¸ï¼
+ *
  */
 
 public class Emperor {
-	//¶¨Òå×î¶àÄÜ²úÉúµÄÊµÀıÊıÁ¿
-	private static int maxNumOfEmperor = 2;  	
-	//Ã¿¸ö»ÊµÛ¶¼ÓĞÃû×Ö£¬Ê¹ÓÃÒ»¸öArrayListÀ´ÈİÄÉ£¬Ã¿¸ö¶ÔÏóµÄË½ÓĞÊôĞÔ
-	private static ArrayList<String> nameList=new ArrayList<String>(); 
-	//¶¨ÒåÒ»¸öÁĞ±í£¬ÈİÄÉËùÓĞµÄ»ÊµÛÊµÀı
-	private static ArrayList<Emperor> emperorList=new ArrayList<Emperor>();
-	//µ±Ç°»ÊµÛĞòÁĞºÅ
-	private static int countNumOfEmperor =0;  
-	
-	//²úÉúËùÓĞµÄ¶ÔÏó
-	static{
-		for(int i=0;i<maxNumOfEmperor;i++){  
-			emperorList.add(new Emperor("»Ê"+(i+1)+"µÛ"));
-		}
-	}
-	
-	private Emperor(){
-		//ÊÀË×ºÍµÀµÂÔ¼ÊøÄã£¬Ä¿µÄ¾ÍÊÇ²»ÈÃÄã²úÉúµÚ¶ş¸ö»ÊµÛ
-	}
-	
-	//ÊäÈë»ÊµÛÃû³Æ£¬½¨Á¢Ò»¸ö»ÊµÛ¶ÔÏó
-	private Emperor(String name){
-		nameList.add(name);
-	}
-	
-	//Ëæ»ú»ñµÃÒ»¸ö»ÊµÛ¶ÔÏó
-	public static Emperor getInstance(){
-		Random random = new Random();
-		countNumOfEmperor = random.nextInt(maxNumOfEmperor);  //Ëæ»úÀ­³öÒ»¸ö»ÊµÛ£¬Ö»ÒªÊÇ¸ö¾«ÉñÁìĞä¾Í³É
-		return emperorList.get(countNumOfEmperor);		
-	}
-	
-	//»ñµÃÖ¸¶¨µÄ»ÊµÛ
-	public static Emperor getInstance(int i){
-		return emperorList.get(i);
-	}
-	
-	//»ÊµÛ·¢»°ÁË
-	public static void say(){
-		System.out.println(nameList.get(countNumOfEmperor));		
-	}
+    //å®šä¹‰æœ€å¤šèƒ½äº§ç”Ÿçš„å®ä¾‹æ•°é‡
+    private static int maxNumOfEmperor = 2;
+    //æ¯ä¸ªçš‡å¸éƒ½æœ‰åå­—ï¼Œä½¿ç”¨ä¸€ä¸ªArrayListæ¥å®¹çº³ï¼Œæ¯ä¸ªå¯¹è±¡çš„ç§æœ‰å±æ€§
+    private static ArrayList<String> nameList = new ArrayList<String>();
+    //å®šä¹‰ä¸€ä¸ªåˆ—è¡¨ï¼Œå®¹çº³æ‰€æœ‰çš„çš‡å¸å®ä¾‹
+    private static ArrayList<Emperor> emperorList = new ArrayList<Emperor>();
+    //å½“å‰çš‡å¸åºåˆ—å·
+    private static int countNumOfEmperor = 0;
+
+    //äº§ç”Ÿæ‰€æœ‰çš„å¯¹è±¡
+    static {
+        for (int i = 0; i < maxNumOfEmperor; i++) {
+            emperorList.add(new Emperor("çš‡" + (i + 1) + "å¸"));
+        }
+    }
+
+    private Emperor() {
+        //ä¸–ä¿—å’Œé“å¾·çº¦æŸä½ ï¼Œç›®çš„å°±æ˜¯ä¸è®©ä½ äº§ç”Ÿç¬¬äºŒä¸ªçš‡å¸
+    }
+
+    //è¾“å…¥çš‡å¸åç§°ï¼Œå»ºç«‹ä¸€ä¸ªçš‡å¸å¯¹è±¡
+    private Emperor(String name) {
+        nameList.add(name);
+    }
+
+    //éšæœºè·å¾—ä¸€ä¸ªçš‡å¸å¯¹è±¡
+    public static Emperor getInstance() {
+        Random random = new Random();
+        countNumOfEmperor = random.nextInt(maxNumOfEmperor);  //éšæœºæ‹‰å‡ºä¸€ä¸ªçš‡å¸ï¼Œåªè¦æ˜¯ä¸ªç²¾ç¥é¢†è¢–å°±æˆ
+        return emperorList.get(countNumOfEmperor);
+    }
+
+    //è·å¾—æŒ‡å®šçš„çš‡å¸
+    public static Emperor getInstance(int i) {
+        return emperorList.get(i);
+    }
+
+    //çš‡å¸å‘è¯äº†
+    public static void say() {
+        System.out.println(nameList.get(countNumOfEmperor));
+    }
 }

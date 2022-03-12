@@ -1,30 +1,30 @@
-package com.company.section2;
+package org.example.ch05isp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÃÀÅ®µÄÊµÏÖÀà
+ * ç¾å¥³çš„å®ç°ç±»
  */
 public class PettyGirl implements IGoodBodyGirl,IGreatTemperamentGirl {
 	private String name;
-	//ÃÀÅ®¶¼ÓĞÃû×Ö
+	//ç¾å¥³éƒ½æœ‰åå­—
 	public PettyGirl(String _name){
 		this.name=_name;
 	}
 	
-	//Á³µ°Æ¯ÁÁ
+	//è„¸è›‹æ¼‚äº®
 	public void goodLooking() {
-		System.out.println(this.name + "---Á³µ°ºÜÆ¯ÁÁ!");
+		System.out.println(this.name + "---è„¸è›‹å¾ˆæ¼‚äº®!");
 	}
 
-	//ÆøÖÊÒªºÃ
+	//æ°”è´¨è¦å¥½
 	public void greatTemperament() {
-		System.out.println(this.name + "---ÆøÖÊ·Ç³£ºÃ!");
+		System.out.println(this.name + "---æ°”è´¨éå¸¸å¥½!");
 	}
 	
-	//Éí²ÄÒªºÃ
+	//èº«æè¦å¥½
 	public void niceFigure() {
-		System.out.println(this.name + "---Éí²Ä·Ç³£°ô!");
+		System.out.println(this.name + "---èº«æéå¸¸æ£’!");
 	}
 
 }

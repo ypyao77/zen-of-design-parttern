@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch24memento.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section3;
  */
 public class Caretaker {
 	
-	//±¸ÍüÂ¼¶ÔÏó
+	//å¤‡å¿˜å½•å¯¹è±¡
 	private Memento memento;
 
 	public Memento getMemento() {

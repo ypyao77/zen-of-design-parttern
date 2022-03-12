@@ -1,4 +1,4 @@
-package com.cbf4life.view;
+package org.example.ch38mvc.cbf4life.view;
 
 import java.util.Map;
 
@@ -12,7 +12,7 @@ public class ENLangData extends AbsLangData {
 	@Override
 	public Map<String, String> getItems() {
 		/*
-		 * Map�ṹΪ��
+		 * Map结构为：
 		 * key='title',value='title';
 		 * key='menu', value='menu'
 		 */

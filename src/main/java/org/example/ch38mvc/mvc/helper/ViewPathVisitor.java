@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 import org.dom4j.Attribute;
 import org.dom4j.Element;
@@ -9,10 +9,10 @@ import org.dom4j.VisitorSupport;
  * I'm glad to share my knowledge with you all.
  */
 public class ViewPathVisitor extends VisitorSupport {
-	//»ñµÃÖ¸¶¨µÄÂ·¾¶
+	//èŽ·å¾—æŒ‡å®šçš„è·¯å¾„
 	private String viewPath; 
 	private String result;
-	//´«µÝ·µ»Ø½á¹û
+	//ä¼ é€’è¿”å›žç»“æžœ
 	public ViewPathVisitor(String _result){
 		result = _result;
 	}

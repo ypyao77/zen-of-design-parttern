@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch26state.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,17 +6,17 @@ package com.company.section4;
  */
 public abstract class State {
 
-	//定义一个环境角色，提供子类访问
+	//瀹氫箟涓�涓幆澧冭鑹诧紝鎻愪緵瀛愮被璁块棶
 	protected Context context;
 	
-	//设置环境角色
+	//璁剧疆鐜瑙掕壊
 	public void setContext(Context _context){
 		this.context = _context;
 	}
 	
-	//行为1
+	//琛屼负1
 	public abstract void handle1();
 	
-	//行为2
+	//琛屼负2
 	public abstract void handle2();
 }

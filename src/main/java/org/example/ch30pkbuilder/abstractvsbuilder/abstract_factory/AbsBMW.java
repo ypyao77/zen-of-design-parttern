@@ -1,18 +1,18 @@
-package com.company.abstract_factory;
+package org.example.ch30pkbuilder.abstractvsbuilder.abstract_factory;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class AbsBMW implements ICar {
-	private final static String BMW_BAND = "±¦ÂíÆû³µ";
+	private final static String BMW_BAND = "å®é©¬æ±½è½¦";
 	
-	//±¦Âí³µ
+	//å®é©¬è½¦
 	public String getBand() {
 		return BMW_BAND;
 	}
 	
-	//ĞÍºÅÓÉ¾ßÌåµÄÊµÏÖÀàÊµÏÖ
+	//å‹å·ç”±å…·ä½“çš„å®ç°ç±»å®ç°
 	public abstract String getModel();
 
 }

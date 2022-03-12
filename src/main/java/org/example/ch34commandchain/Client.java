@@ -1,4 +1,4 @@
-package com.company;
+package org.example.ch34commandchain;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,11 +12,11 @@ public class Client {
 	public static void main(String[] args) throws IOException {
 		Invoker invoker = new Invoker();
 		while(true){
-			//unixĞ´µÄÄ¬ÈÏÌáÊ¾·ûºÅ
+			//unixå†™çš„é»˜è®¤æç¤ºç¬¦å·
 			System.out.print("#");
-			//²¶»ñÊä³ö
+			//æ•è·è¾“å‡º
 			String input = (new BufferedReader(new InputStreamReader(System.in))).readLine();
-			//ÊäÈëquit»òexitÔòÍË³ö
+			//è¾“å…¥quitæˆ–exitåˆ™é€€å‡º
 			if(input.equals("quit") || input.equals("exit")){
 				return;
 			}

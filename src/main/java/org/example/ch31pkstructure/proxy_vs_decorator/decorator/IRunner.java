@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch31pkstructure.proxy_vs_decorator.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.decorator;
  */
 public interface IRunner {
 	
-	//ÔË¶¯Ô±µÄÖ÷Òª¹¤×÷¾ÍÊÇÅÜ
+	//è¿åŠ¨å‘˜çš„ä¸»è¦å·¥ä½œå°±æ˜¯è·‘
 	public void run();
 }

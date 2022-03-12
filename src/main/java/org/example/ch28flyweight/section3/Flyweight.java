@@ -1,23 +1,23 @@
-package com.company.section3;
+package org.example.ch28flyweight.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Flyweight {
-	//ÄÚ²¿×´Ì¬
+	//å†…éƒ¨çŠ¶æ€
 	private String intrinsic;
-	//Íâ²¿×´Ì¬
+	//å¤–éƒ¨çŠ¶æ€
 	protected final String Extrinsic;
-	//ÒªÇóÏíÔª½ÇÉ«±ØĞë½ÓÊÜÍâ²¿×´Ì¬
+	//è¦æ±‚äº«å…ƒè§’è‰²å¿…é¡»æ¥å—å¤–éƒ¨çŠ¶æ€
 	public Flyweight(String _Extrinsic){
 		this.Extrinsic = _Extrinsic;
 	}
 	
-	//¶¨ÒåÒµÎñ²Ù×÷
+	//å®šä¹‰ä¸šåŠ¡æ“ä½œ
 	public abstract void operate();
 	
-	//ÄÚ²¿×´Ì¬µÄgetter/setter
+	//å†…éƒ¨çŠ¶æ€çš„getter/setter
 	public String getIntrinsic() {
 		return intrinsic;
 	}

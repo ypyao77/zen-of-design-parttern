@@ -1,19 +1,19 @@
-package com.company.section1;
+package org.example.ch09abstractfactory.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Õâ´Î¶¨Ò»¸ö½Ó¿Ú£¬Ó¦¸ÃÒªÔì²»Í¬ĞÔ±ğµÄÈË£¬ĞèÒª²»Í¬µÄÉú²úÏß
- * ÄÇÕâ¸ö°ËØÔÂ¯±ØĞë¿ÉÒÔÖÆÔìÄĞÈËºÍÅ®ÈË
+ * è¿™æ¬¡å®šä¸€ä¸ªæ¥å£ï¼Œåº”è¯¥è¦é€ ä¸åŒæ€§åˆ«çš„äººï¼Œéœ€è¦ä¸åŒçš„ç”Ÿäº§çº¿
+ * é‚£è¿™ä¸ªå…«å¦ç‚‰å¿…é¡»å¯ä»¥åˆ¶é€ ç”·äººå’Œå¥³äºº
  */
 public interface HumanFactory {
 	
-	//ÖÆÔìÒ»¸ö»ÆÉ«ÈËÖÖ
+	//åˆ¶é€ ä¸€ä¸ªé»„è‰²äººç§
 	public Human createYellowHuman(); 
 	
-	//ÖÆÔìÒ»¸ö°×É«ÈËÖÖ
+	//åˆ¶é€ ä¸€ä¸ªç™½è‰²äººç§
 	public Human createWhiteHuman();
 	
-	//ÖÆÔìÒ»¸öºÚÉ«ÈËÖÖ
+	//åˆ¶é€ ä¸€ä¸ªé»‘è‰²äººç§
 	public Human createBlackHuman();
 }

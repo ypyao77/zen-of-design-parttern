@@ -1,24 +1,24 @@
-package com.company.section2;
+package org.example.ch01srp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÓÃ»§ĞÅÏ¢¹ÜÀí
+ * ç”¨æˆ·ä¿¡æ¯ç®¡ç†
  */
 public interface IUserBiz {
 
-	//ĞŞ¸ÄÓÃ»§µÄÃÜÂë
+	//ä¿®æ”¹ç”¨æˆ·çš„å¯†ç 
 	public boolean changePassword(String oldPassword);
 	
-	//É¾³ıÓÃ»§
+	//åˆ é™¤ç”¨æˆ·
 	public boolean deleteUser();
 	
-	//ÓÃ»§Ó³Éä
+	//ç”¨æˆ·æ˜ å°„
 	public void mapUser();
 	
-	//Ôö¼ÓÒ»¸ö×éÖ¯
+	//å¢åŠ ä¸€ä¸ªç»„ç»‡
 	public void addOrg(IUserBO userBO,int orgID);
 	
-	//Ôö¼ÓÒ»¸ö½ÇÉ«
+	//å¢åŠ ä¸€ä¸ªè§’è‰²
 	public void addRole(IUserBO userBO,int roleID);
 }

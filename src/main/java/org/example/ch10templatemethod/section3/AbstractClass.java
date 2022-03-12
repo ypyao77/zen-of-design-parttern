@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch10templatemethod.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,16 +7,16 @@ package com.company.section3;
  */
 public abstract class AbstractClass {
 
-	//基本方法
+	//鍩烘湰鏂规硶
 	protected abstract void doSomething();
 	
-	//基本方法
+	//鍩烘湰鏂规硶
 	protected abstract void doAnything();
 	
-	//模版方法
+	//妯＄増鏂规硶
 	public void templateMethod(){
 		/*
-		 * 调用基本方法，完成相关的逻辑
+		 * 璋冪敤鍩烘湰鏂规硶锛屽畬鎴愮浉鍏崇殑閫昏緫
 		 */
 		this.doAnything();
 		this.doSomething();

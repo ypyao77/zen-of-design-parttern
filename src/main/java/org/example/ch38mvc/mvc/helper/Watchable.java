@@ -1,4 +1,4 @@
-package com.company.helper;
+package org.example.ch38mvc.mvc.helper;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.helper;
  */
 public interface Watchable {
 
-	//¼àÌı
+	//ç›‘å¬
 	public void watch();
 }

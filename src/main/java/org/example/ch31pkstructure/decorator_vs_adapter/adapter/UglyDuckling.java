@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch31pkstructure.decorator_vs_adapter.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,21 +6,21 @@ package com.company.adapter;
  */
 public class UglyDuckling extends WhiteSwan implements Duck {
 	
-	//³óĞ¡Ñ¼µÄ½ĞÉù
+	//ä¸‘å°é¸­çš„å«å£°
 	public void cry() {
 		super.cry();
 	}
 	
-	//³óĞ¡Ñ¼µÄÍâĞÎ
+	//ä¸‘å°é¸­çš„å¤–å½¢
 	public void desAppearance() {
 		super.desAppaearance();
 	}
 	
-	//³óĞ¡Ñ¼µÄÆäËûĞĞÎª
+	//ä¸‘å°é¸­çš„å…¶ä»–è¡Œä¸º
 	public void desBehavior(){
-		//³óĞ¡Ñ¼²»½ö»áÓÎÓ¾
-		System.out.println("»áÓÎÓ¾");
-		//»¹»á·ÉĞĞ
+		//ä¸‘å°é¸­ä¸ä»…ä¼šæ¸¸æ³³
+		System.out.println("ä¼šæ¸¸æ³³");
+		//è¿˜ä¼šé£è¡Œ
 		super.fly();
 	}
 }

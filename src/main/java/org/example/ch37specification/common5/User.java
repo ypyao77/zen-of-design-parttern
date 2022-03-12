@@ -1,13 +1,13 @@
-package com.cbf4life.common5;
+package org.example.ch37specification.common5;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public class User {
-	//ĞÕÃû
+	//å§“å
 	private String name;
-	//ÄêÁä
+	//å¹´é¾„
 	private int age;
 	
 	public User(String _name,int _age){
@@ -28,9 +28,9 @@ public class User {
 		this.age = age;
 	}
 	
-	//ÓÃ»§µÄĞÅÏ¢´òÓ¡
+	//ç”¨æˆ·çš„ä¿¡æ¯æ‰“å°
 	@Override
 	public String toString(){
-		return "ÓÃ»§Ãû£º" + name+"\tÄêÁä£º" + age;
+		return "ç”¨æˆ·åï¼š" + name+"\tå¹´é¾„ï¼š" + age;
 	}
 }

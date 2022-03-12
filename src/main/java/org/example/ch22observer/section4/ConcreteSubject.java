@@ -1,4 +1,4 @@
-package com.company.section4;
+package org.example.ch22observer.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,7 +6,7 @@ package com.company.section4;
  */
 public class ConcreteSubject extends Subject {
 	
-	//¾ßÌåµÄÒµÎñ
+	//å…·ä½“çš„ä¸šåŠ¡
 	public void doSomething(){
 		/*
 		 * do something

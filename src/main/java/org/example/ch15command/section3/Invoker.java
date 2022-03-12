@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch15command.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,12 +6,12 @@ package com.company.section3;
  */
 public class Invoker {
 	private Command command;
-	//受气包，接受命令
+	//鍙楁皵鍖咃紝鎺ュ彈鍛戒护
 	public void setCommand(Command _command){
 		this.command = _command;
 	}
 	
-	//执行命令
+	//鎵ц鍛戒护
 	public void action(){
 		this.command.execute();
 	}

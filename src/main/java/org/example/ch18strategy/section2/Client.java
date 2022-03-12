@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch18strategy.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,11 +7,11 @@ package com.company.section2;
 public class Client {
 	
 	public static void main(String[] args) {
-		//声明出一个具体的策略
+		//澹版槑鍑轰竴涓叿浣撶殑绛栫暐
 		Strategy strategy = new ConcreteStrategy1(); 
-		//声明出上下文对象
+		//澹版槑鍑轰笂涓嬫枃瀵硅薄
 		Context context = new Context(strategy);
-		//执行封装后的方法
+		//鎵ц灏佽鍚庣殑鏂规硶
 		context.doAnythinig();
 	}
 	

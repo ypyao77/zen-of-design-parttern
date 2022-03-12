@@ -1,4 +1,4 @@
-package com.company.adapter;
+package org.example.ch33pkoverzone.wrapper.adapter;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,7 +7,7 @@ package com.company.adapter;
 public class Standin implements IStar {
 	private IActor actor;
 	
-	//ÌæÉíÊÇË­
+	//æ›¿èº«æ˜¯è°
 	public Standin(IActor _actor){
 		this.actor = _actor;
 	}

@@ -1,4 +1,4 @@
-package com.company.decorator;
+package org.example.ch33pkoverzone.wrapper.decorator;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.decorator;
  */
 public interface IStar {
 	
-	//ÑİÏ·
+	//æ¼”æˆ
 	public void act();
 }

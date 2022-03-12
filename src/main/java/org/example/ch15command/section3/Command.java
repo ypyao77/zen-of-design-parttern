@@ -1,4 +1,4 @@
-package com.company.section3;
+package org.example.ch15command.section3;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,6 +6,6 @@ package com.company.section3;
  */
 public abstract class Command {
 	
-	//每个命令类都必须有一个执行命令的方法
+	//姣忎釜鍛戒护绫婚兘蹇呴』鏈変竴涓墽琛屽懡浠ょ殑鏂规硶
 	public abstract void execute();
 }

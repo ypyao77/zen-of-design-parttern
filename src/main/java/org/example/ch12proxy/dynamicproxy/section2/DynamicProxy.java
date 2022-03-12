@@ -1,4 +1,4 @@
-package com.company.section2;
+package org.example.ch12proxy.dynamicproxy.section2;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -10,12 +10,12 @@ import java.lang.reflect.Proxy;
 public class DynamicProxy<T> {
 
 	public static <T> T newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h){
-		//Ñ°ÕÒJoinPointÁ¬½Óµã£¬AOP¿ò¼ÜÊ¹ÓÃÔªÊı¾İ¶¨Òå
+		//å¯»æ‰¾JoinPointè¿æ¥ç‚¹ï¼ŒAOPæ¡†æ¶ä½¿ç”¨å…ƒæ•°æ®å®šä¹‰
 		if(true){
-			//Ö´ĞĞÒ»¸öÇ°ÖÃÍ¨Öª
+			//æ‰§è¡Œä¸€ä¸ªå‰ç½®é€šçŸ¥
 			(new BeforeAdvice()).exec();
 		}
-		//Ö´ĞĞÄ¿±ê£¬²¢·µ»Ø½á¹û
+		//æ‰§è¡Œç›®æ ‡ï¼Œå¹¶è¿”å›ç»“æœ
 		return (T)Proxy.newProxyInstance(loader,interfaces, h);		
 	}
 }

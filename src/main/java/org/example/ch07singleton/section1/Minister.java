@@ -1,26 +1,26 @@
 /**
- * 
+ *
  */
-package com.company.section1;
+package org.example.ch07singleton.section1;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´ó³¼ÊÇÌìÌìÒªÃæ¼û»ÊµÛ£¬½ñÌì¼ûµÄ»ÊµÛºÍ×òÌìµÄ£¬Ç°Ìì²»Ò»ÑùÄÇ¾Í³öÎÊÌâÁË£¡
+ * å¤§è‡£æ˜¯å¤©å¤©è¦é¢è§çš‡å¸ï¼Œä»Šå¤©è§çš„çš‡å¸å’Œæ˜¨å¤©çš„ï¼Œå‰å¤©ä¸ä¸€æ ·é‚£å°±å‡ºé—®é¢˜äº†ï¼
  */
 @SuppressWarnings("all")
 public class Minister {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		for(int day=0;day<3;day++){
-			Emperor  emperor=Emperor.getInstance();
-			emperor.say();  
-		}
-				
-		//ÈıÌì¼ûµÄ»ÊµÛ¶¼ÊÇÍ¬Ò»¸öÈË£¬ÈÙĞÒ°É£¡
-	}
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        for (int day = 0; day < 3; day++) {
+            Emperor emperor = Emperor.getInstance();
+            emperor.say();
+        }
+
+        //ä¸‰å¤©è§çš„çš‡å¸éƒ½æ˜¯åŒä¸€ä¸ªäººï¼Œè£å¹¸å§ï¼
+    }
 
 }

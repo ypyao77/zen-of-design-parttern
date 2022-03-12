@@ -1,4 +1,4 @@
-package com.company.section7;
+package org.example.ch28flyweight.section7;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -7,9 +7,9 @@ package com.company.section7;
 public class Test {
 
     public static void main(String[] args) { 
-        String str1 = "和谐"; 
-        String str2 = "社会"; 
-        String str3 = "和谐社会"; 
+        String str1 = "鍜岃皭"; 
+        String str2 = "绀句細"; 
+        String str3 = "鍜岃皭绀句細"; 
         String str4; 
 
         str4 = str1 + str2; 

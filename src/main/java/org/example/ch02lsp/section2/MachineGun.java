@@ -1,13 +1,13 @@
-package com.company.section2;
+package org.example.ch02lsp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * »úÇ¹
+ * æœºæžª
  */
 public class MachineGun extends AbstractGun{
 	
 	public void shoot(){
-		System.out.println("»úÇ¹É¨Éä...");
+		System.out.println("æœºæžªæ‰«å°„...");
 	}
 }

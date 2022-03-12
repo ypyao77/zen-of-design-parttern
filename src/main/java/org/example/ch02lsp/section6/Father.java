@@ -1,4 +1,4 @@
-package com.company.section6;
+package org.example.ch02lsp.section6;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,13 +7,13 @@ import java.util.List;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸¸Àà
+ * çˆ¶ç±»
  */
 @SuppressWarnings("all")
 public class Father {
 	
 	public ArrayList doSomething(HashMap map){
-		System.out.println("¸¸Àà±»Ö´ÐÐ...");
+		System.out.println("çˆ¶ç±»è¢«æ‰§è¡Œ...");
 		return new ArrayList();
 	}
 }

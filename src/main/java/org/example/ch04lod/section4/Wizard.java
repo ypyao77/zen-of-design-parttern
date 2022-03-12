@@ -1,36 +1,36 @@
-package com.company.section4;
+package org.example.ch04lod.section4;
 
 import java.util.Random;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * °´ÕÕ²½ÖèÖ´ÐÐµÄÒµÎñÂß¼­Àà
+ * æŒ‰ç…§æ­¥éª¤æ‰§è¡Œçš„ä¸šåŠ¡é€»è¾‘ç±»
  */
 public class Wizard {
 	private Random rand = new Random(System.currentTimeMillis());
-	//µÚÒ»²½
+	//ç¬¬ä¸€æ­¥
 	private int first(){
-		System.out.println("Ö´ÐÐµÚÒ»¸ö·½·¨...");
+		System.out.println("æ‰§è¡Œç¬¬ä¸€ä¸ªæ–¹æ³•...");
 		return rand.nextInt(100);
 	}
 	
-	//µÚ¶þ²½
+	//ç¬¬äºŒæ­¥
 	private int second(){
-		System.out.println("Ö´ÐÐµÚ¶þ¸ö·½·¨...");
+		System.out.println("æ‰§è¡Œç¬¬äºŒä¸ªæ–¹æ³•...");
 		return rand.nextInt(100);
 	}
 	
-	//µÚÈý¸ö·½·¨
+	//ç¬¬ä¸‰ä¸ªæ–¹æ³•
 	private int third(){
-		System.out.println("Ö´ÐÐµÚÈý¸ö·½·¨...");
+		System.out.println("æ‰§è¡Œç¬¬ä¸‰ä¸ªæ–¹æ³•...");
 		return rand.nextInt(100);
 	}
 	
-	//Èí¼þ°²×°¹ý³Ì	
+	//è½¯ä»¶å®‰è£…è¿‡ç¨‹	
 	public void installWizard(){		
 		int first = this.first();  
-		//¸ù¾Ýfirst·µ»ØµÄ½á¹û£¬¿´ÊÇ·ñÐèÒªÖ´ÐÐsecond
+		//æ ¹æ®firstè¿”å›žçš„ç»“æžœï¼Œçœ‹æ˜¯å¦éœ€è¦æ‰§è¡Œsecond
 		if(first>50){
 			int second = this.second();
 			if(second>50){

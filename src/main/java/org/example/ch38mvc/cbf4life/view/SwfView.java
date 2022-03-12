@@ -1,4 +1,4 @@
-package com.cbf4life.view;
+package org.example.ch38mvc.cbf4life.view;
 
 import java.util.Map;
 
@@ -17,7 +17,7 @@ public class SwfView extends AbsView {
 		Map<String,String> langMap = getLangData().getItems();
 		for(String key:langMap.keySet()){
 			/*
-			 * 组装一个HTTP的请求格式：
+			 * 缁勮涓�涓狧TTP鐨勮姹傛牸寮忥細
 			 * http://abc.com/xxx.swf?key1=value&key2=value
 			 */
 		}

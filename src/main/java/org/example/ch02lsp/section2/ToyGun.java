@@ -1,16 +1,16 @@
-package com.company.section2;
+package org.example.ch02lsp.section2;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Íæ¾ßÇ¹
+ * ç©å…·æª
  */
 public class ToyGun extends AbstractGun {
 
-	//Íæ¾ßÇ¹Ê½²»ÄÜÉä»÷µÄ£¬µ«ÊÇ±àÒëÆ÷ÓÖÒªÇóÊµÏÖÕâ¸ö·½·¨£¬ÔõÃ´°ì£¿Ğé¼ÙÒ»¸ößÂ£¡
+	//ç©å…·æªå¼ä¸èƒ½å°„å‡»çš„ï¼Œä½†æ˜¯ç¼–è¯‘å™¨åˆè¦æ±‚å®ç°è¿™ä¸ªæ–¹æ³•ï¼Œæ€ä¹ˆåŠï¼Ÿè™šå‡ä¸€ä¸ªå‘—ï¼
 	@Override
 	public void shoot() {
-		//Íæ¾ßÇ¹²»ÄÜÉä»÷£¬Õâ¸ö·½·¨¾Í²»ÄÜÊµÏÖÁË
+		//ç©å…·æªä¸èƒ½å°„å‡»ï¼Œè¿™ä¸ªæ–¹æ³•å°±ä¸èƒ½å®ç°äº†
 	}
 
 }

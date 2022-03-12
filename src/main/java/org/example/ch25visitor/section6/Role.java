@@ -1,10 +1,10 @@
-package com.company.section6;
+package org.example.ch25visitor.section6;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public interface Role {
-	//演员要扮演的角色
+	//婕斿憳瑕佹壆婕旂殑瑙掕壊
 }
 

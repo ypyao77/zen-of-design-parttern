@@ -1,4 +1,4 @@
-package com.company.strategy;
+package org.example.ch32pkaction.strategy_vs_state.strategy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -6,10 +6,10 @@ package com.company.strategy;
  */
 public class ChildWork extends WorkAlgorithm {
 
-	//Ğ¡º¢µÄ¹¤×÷
+	//å°å­©çš„å·¥ä½œ
 	@Override
 	public void work() {
-		System.out.println("¶ùÍ¯µÄ¹¤×÷ÊÇÍæË££¡");
+		System.out.println("å„¿ç«¥çš„å·¥ä½œæ˜¯ç©è€ï¼");
 
 	}
 

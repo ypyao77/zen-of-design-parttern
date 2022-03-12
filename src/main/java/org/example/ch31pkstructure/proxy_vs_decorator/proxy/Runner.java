@@ -1,4 +1,4 @@
-package com.company.proxy;
+package org.example.ch31pkstructure.proxy_vs_decorator.proxy;
 
 /**
  * @author cbf4Life cbf4life@126.com
@@ -8,7 +8,7 @@ public class Runner implements IRunner {
 
 
 	public void run() {
-		System.out.println("ÔË¶¯Ô±ÅÜ²½£º¶¯×÷ºÜäìÈ÷");
+		System.out.println("è¿åŠ¨å‘˜è·‘æ­¥ï¼šåŠ¨ä½œå¾ˆæ½‡æ´’");
 	}
 
 }

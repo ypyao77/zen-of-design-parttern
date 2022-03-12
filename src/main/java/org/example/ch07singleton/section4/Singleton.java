@@ -1,22 +1,22 @@
-package com.company.section4;
+package org.example.ch07singleton.section4;
 
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
  */
 public final class Singleton {
-	private static Singleton singleton = null;
-	
-	//ÏŞÖÆ²úÉú¶à¸ö¶ÔÏó
-	private Singleton(){
-		
-	}
-	
-	//Í¨¹ı¸Ã·½·¨»ñµÃÊµÀı¶ÔÏó
-	public synchronized static Singleton getSingleton(){
-		if(singleton == null){
-			singleton = new Singleton();
-		}
-		return singleton;		
-	}
+    private static Singleton singleton = null;
+
+    //é™åˆ¶äº§ç”Ÿå¤šä¸ªå¯¹è±¡
+    private Singleton() {
+
+    }
+
+    //é€šè¿‡è¯¥æ–¹æ³•è·å¾—å®ä¾‹å¯¹è±¡
+    public synchronized static Singleton getSingleton() {
+        if (singleton == null) {
+            singleton = new Singleton();
+        }
+        return singleton;
+    }
 }
